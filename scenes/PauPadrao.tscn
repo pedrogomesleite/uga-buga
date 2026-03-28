@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bxid8pbxf48t2"]
+
+[ext_resource type="Script" uid="uid://12v3jqfcrlo7" path="res://scripts/pau.gd" id="1_rnbof"]
+[ext_resource type="Shader" uid="uid://bsodxxcu0fv44" path="res://scenes/PauPadrao.gdshader" id="2_amlij"]
+[ext_resource type="Texture2D" uid="uid://dtcxudcbt2aca" path="res://assets/Porrete.svg" id="2_rnbof"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s64mm"]
+radius = 48.0
+height = 316.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ub4ok"]
+shader = ExtResource("2_amlij")
+shader_parameter/shadow_color = Color(0, 0, 0, 0.5019608)
+shader_parameter/offset = Vector2(5, 5)
+shader_parameter/blur_amount = 5.0
+
+[node name="Pau" type="Node2D" unique_id=1091668880]
+z_index = 1
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=12010396]
+collision_layer = 2
+collision_mask = 2
+gravity_scale = 0.0
+script = ExtResource("1_rnbof")
+
+[node name="Pau" type="CollisionShape2D" parent="RigidBody2D" unique_id=1156552929]
+shape = SubResource("CapsuleShape2D_s64mm")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1427643125]
+material = SubResource("ShaderMaterial_ub4ok")
+position = Vector2(0, -9.536743e-07)
+rotation = 0.6719518
+texture = ExtResource("2_rnbof")
