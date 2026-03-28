@@ -23,5 +23,5 @@ func _on_pau_objeto_tocado(corpo: Variant, direcao: Variant) -> void:
 	var vel_mouse = remap(Input.get_last_mouse_velocity().length(), 0, 2000, 0, 2)
 	var forca_final = forca_impacto
 	print(-posicao_relativa.normalized(), -direcao, position)
-	var vetor_impulso = -posicao_relativa.normalized() * forca_final
+	var vetor_impulso = posicao_relativa.normalized() * forca_final
 	empurrao_velocity = vetor_impulso.limit_length(2000.0)

@@ -11,22 +11,14 @@ config_version=5
 [application]
 
 config/name="uga buga"
-<<<<<<< HEAD
 run/main_scene="uid://dc8ur0pcxsdeb"
-=======
-run/main_scene="uid://cgwh21g7oa8x8"
->>>>>>> 8d451a4c4bc7b3b68a3ae54c8bc71bb0709a85d4
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
-
-[internationalization]
-
-rendering/force_right_to_left_layout_direction=true
 
 [layer_names]
 
 2d_physics/layer_1="player"
-2d_physics/layer_2="terreno"
+2d_physics/layer_2="pau"
 
 [physics]
 

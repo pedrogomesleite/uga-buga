@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dc8ur0pcxsdeb"]
 
+[ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://scenes/Guga.tscn" id="1_okb6u"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q3lic"]
 size = Vector2(520, 20)
 
@@ -20,9 +22,11 @@ size = Vector2(558, 20)
 
 [node name="mundo2D" type="Node2D" unique_id=449765058]
 
-[node name="Cena1-Caverna" type="Area2D" parent="." unique_id=1197162740]
+[node name="Cena1-Caverna" type="StaticBody2D" parent="." unique_id=227339078]
 position = Vector2(547, 322)
 scale = Vector2(2, 1.2)
+collision_layer = 3
+collision_mask = 3
 
 [node name="chao1" type="CollisionShape2D" parent="Cena1-Caverna" unique_id=1588574085]
 position = Vector2(-13, 261)
@@ -137,3 +141,7 @@ shape = SubResource("RectangleShape2D_wb0f6")
 position = Vector2(-45, -10)
 scale = Vector2(0.7222222, 1)
 polygon = PackedVector2Array(0, 0, 126, 0, 126, 20, 0, 20)
+
+[node name="Guga" parent="." unique_id=390553853 instance=ExtResource("1_okb6u")]
+position = Vector2(207, 426)
+scale = Vector2(0.2, 0.2)
