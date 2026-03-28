@@ -55,3 +55,5 @@ script = ExtResource("4_52iyu")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Olhos/OlhoD" unique_id=409606852]
 texture = ExtResource("5_52iyu")
+
+[connection signal="objeto_tocado" from="CharacterBody2D/Pau" to="CharacterBody2D" method="_on_pau_objeto_tocado"]
