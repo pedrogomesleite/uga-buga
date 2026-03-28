@@ -10,16 +10,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
-func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/mundo_2d.tscn")
-	pass # Replace with function body.
-
-
 func _on_options_pressed() -> void:
 	pass # Replace with function body.
 
 
-func _on_quit_pressed() -> void:
+func _on_start_game_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/mundo_2d.tscn")
+
+
+func _on_quit_game_pressed() -> void:
 	get_tree().quit()
-	pass # Replace with function body.

@@ -20,7 +20,7 @@ script = ExtResource("1_hvxtu")
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1749430329]
 texture = ExtResource("2_o38in")
 
-[node name="Pau" parent="CharacterBody2D" unique_id=1091668880 instance=ExtResource("3_o38in")]
+[node name="Pau" parent="CharacterBody2D" unique_id=1091668880 groups=["soPau"] instance=ExtResource("3_o38in")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=447911345]
 position = Vector2(0, 57)

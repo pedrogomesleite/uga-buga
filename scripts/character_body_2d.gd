@@ -19,4 +19,3 @@ func _on_pau_objeto_tocado(movimento_bloqueado: Vector2, delta: float) -> void:
 	vetor_impulso = vetor_impulso.limit_length(impulso_max)
 	velocity += vetor_impulso * delta * forca_impacto
 	velocity = velocity.limit_length(SPEED)
-	print(velocity)

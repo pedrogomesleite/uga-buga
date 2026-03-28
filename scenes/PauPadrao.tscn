@@ -15,18 +15,18 @@ shader_parameter/blur_amount = 5.0
 z_index = 1
 script = ExtResource("1_ub4ok")
 
-[node name="RigidBody2D" type="CharacterBody2D" parent="." unique_id=184975436]
+[node name="pauRigid" type="CharacterBody2D" parent="." unique_id=184975436 groups=["rachadores"]]
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_rnbof")
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1427643125]
+[node name="Sprite2D" type="Sprite2D" parent="pauRigid" unique_id=1427643125]
 material = SubResource("ShaderMaterial_ub4ok")
 position = Vector2(0, -9.536743e-07)
 rotation = 0.6719518
 texture = ExtResource("2_rnbof")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D" unique_id=1655537494]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pauRigid" unique_id=1655537494]
 polygon = PackedVector2Array(-18, -115, -13, -153, 4, -169, 21, -171, 37, -167, 43, -162, 45, -143, 39, -120, 32, -101, 20, -27, 12, 46, 14, 75, -7, 78, -9, 57, -11, 42, -14, 24, -15, -11, -14, -33, -11, -67, -15, -93)
 
-[connection signal="objeto_tocado" from="RigidBody2D" to="." method="_on_rigid_body_2d_objeto_tocado"]
+[connection signal="objeto_tocado" from="pauRigid" to="." method="_on_rigid_body_2d_objeto_tocado"]

@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cddpudbr4n2he"]
+
+[ext_resource type="Texture2D" uid="uid://by05v4dfwbepu" path="res://assets/tocha.png" id="1_ijpep"]
+[ext_resource type="Script" uid="uid://ly5iu1m2r7k" path="res://scenes/area_colisao.gd" id="1_phjmj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_phjmj"]
+size = Vector2(50, 128)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ijpep"]
+particles_animation = true
+particles_anim_h_frames = 3
+particles_anim_v_frames = 6
+particles_anim_loop = false
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ijpep"]
+load_path = "res://.godot/imported/tocha.png-557e06b4337f0a6b5a30d16306f950b5.ctex"
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_phjmj"]
+particle_flag_rotate_y = true
+particle_flag_disable_z = true
+angle_min = 10.700011
+angle_max = 320.00003
+direction = Vector3(0, 1, 0)
+initial_velocity_min = 44.44
+initial_velocity_max = 96.29
+gravity = Vector3(0, 98, 0)
+scale_min = 0.099999994
+scale_max = 0.19999999
+
+[node name="objetoQuebravel" type="Node2D" unique_id=2026073040]
+
+[node name="areaColisao" type="Area2D" parent="." unique_id=1142379440]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_phjmj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="areaColisao" unique_id=1400274033]
+shape = SubResource("RectangleShape2D_phjmj")
+
+[node name="Sprite2D" type="Sprite2D" parent="areaColisao/CollisionShape2D" unique_id=1593966410]
+position = Vector2(4.4703484e-07, 4.6491623e-06)
+scale = Vector2(0.18888889, 0.1777778)
+texture = ExtResource("1_ijpep")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="areaColisao" unique_id=1294509565]
+material = SubResource("CanvasItemMaterial_ijpep")
+position = Vector2(0, -9)
+emitting = false
+amount = 16
+texture = SubResource("CompressedTexture2D_ijpep")
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_phjmj")
+
+[connection signal="body_entered" from="areaColisao" to="areaColisao" method="_on_body_entered"]

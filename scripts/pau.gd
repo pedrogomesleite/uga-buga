@@ -23,7 +23,6 @@ func _physics_process(delta: float) -> void:
 	
 	# ir em direcao ao mouse
 	var direcao = alvo_centro - position
-	print(direcao, alvo_centro, position)
 	var velocidade_adicional = direcao * velocidade_movimento
 	#print(position)
 	

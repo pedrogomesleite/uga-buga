@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 <<<<<<<HEADrun/main_scene="uid://dc8ur0pcxsdeb"
 
+[global_group]
+
+rachadores="quebra quebraveis"
+
 [layer_names]
 
 2d_physics/layer_1="player"
