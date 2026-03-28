@@ -11,10 +11,13 @@ config_version=5
 [application]
 
 config/name="uga buga"
-run/main_scene="uid://covte7ufilva"
+run/main_scene="uid://faeemwuh44bw"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
-<<<<<<<HEADrun/main_scene="uid://dc8ur0pcxsdeb"
+
+[global_group]
+
+rachadores="quebra quebraveis"
 
 [layer_names]
 

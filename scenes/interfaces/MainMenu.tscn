@@ -1,21 +1,18 @@
 [gd_scene format=3 uid="uid://covte7ufilva"]
 
 [ext_resource type="Script" uid="uid://cmrn7x3alb3ok" path="res://scripts/main_menu.gd" id="1_l72w3"]
-[ext_resource type="Texture2D" uid="uid://c1510xb5wptp0" path="res://assets/placeHolderMainMenu.jpg" id="1_yqorp"]
-[ext_resource type="Texture2D" uid="uid://coyn5b5yw5rvo" path="res://assets/clay.jpg" id="2_0ykhv"]
-[ext_resource type="Texture2D" uid="uid://ciydm16qada6u" path="res://assets/clayHOVER.jpg" id="3_2wh52"]
-[ext_resource type="Texture2D" uid="uid://css3so8415o27" path="res://assets/clayPressed.jpg" id="3_ow34m"]
+[ext_resource type="Texture2D" uid="uid://b5m8711v2ftmo" path="res://assets/Main Menu.png" id="2_2wh52"]
+[ext_resource type="Texture2D" uid="uid://c64dn2lyfs8km" path="res://assets/Corpo sem olho.svg" id="5_8a8k8"]
+[ext_resource type="PackedScene" uid="uid://bxid8pbxf48t2" path="res://scenes/guga/PauPadrao.tscn" id="6_7la6k"]
+[ext_resource type="FontFile" uid="uid://bljfmm0jocjs1" path="res://Fonts/Etchstone-Regular.ttf" id="6_826wr"]
+[ext_resource type="Script" uid="uid://chf0qp2ksh4e5" path="res://scripts/olho.gd" id="7_2nypq"]
+[ext_resource type="Texture2D" uid="uid://coyddd1ci2gk1" path="res://assets/olho.svg" id="8_bky6r"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_ow34m"]
-font_size = 72
-font_color = Color(1, 1, 0, 1)
-outline_size = 16
-outline_color = Color(0, 0, 0, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ow34m"]
+bg_color = Color(0.88235295, 0.47843137, 0.14117648, 0.627451)
 
-[sub_resource type="LabelSettings" id="LabelSettings_2wh52"]
-font_size = 50
-shadow_size = 10
-shadow_color = Color(0, 0, 0, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_826wr"]
+bg_color = Color(0.88235295, 0.47843137, 0.14117648, 0.627451)
 
 [node name="Control" type="Control" unique_id=685622937]
 layout_mode = 3
@@ -31,108 +28,95 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -25.0
+offset_right = 27.0
+offset_bottom = 23.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("1_yqorp")
+texture = ExtResource("2_2wh52")
 expand_mode = 1
-
-[node name="Label" type="Label" parent="TextureRect" unique_id=1617556948]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 166.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 30
-text = "GUGA BUGA"
-label_settings = SubResource("LabelSettings_ow34m")
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=976471871]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -213.0
-offset_top = -151.5
-offset_right = 213.0
-offset_bottom = 151.5
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.2345679
+anchor_right = 0.9878472
+anchor_bottom = 0.72530866
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 0
 theme_override_constants/separation = 16
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer" unique_id=70464955]
+[node name="startGame" type="Button" parent="VBoxContainer" unique_id=514894054]
 layout_mode = 2
 size_flags_vertical = 3
-texture_normal = ExtResource("2_0ykhv")
-texture_pressed = ExtResource("3_ow34m")
-texture_hover = ExtResource("3_2wh52")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="VBoxContainer/TextureButton" unique_id=168025461]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+theme_override_colors/font_color = Color(0.63529414, 0.63529414, 0.63529414, 1)
+theme_override_colors/font_outline_color = Color(0.32941177, 0.32941177, 0.32941177, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("6_826wr")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_ow34m")
 text = "START GAME"
-label_settings = SubResource("LabelSettings_2wh52")
-horizontal_alignment = 1
-vertical_alignment = 1
+flat = true
 
-[node name="TextureButton2" type="TextureButton" parent="VBoxContainer" unique_id=1161496923]
+[node name="options Menu" type="Button" parent="VBoxContainer" unique_id=581499532]
 layout_mode = 2
 size_flags_vertical = 3
-texture_normal = ExtResource("2_0ykhv")
-texture_pressed = ExtResource("3_ow34m")
-texture_hover = ExtResource("3_2wh52")
-ignore_texture_size = true
-stretch_mode = 1
-flip_h = true
-flip_v = true
-
-[node name="Label" type="Label" parent="VBoxContainer/TextureButton2" unique_id=423838727]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 30
+theme_override_colors/font_color = Color(0.63529414, 0.63529414, 0.63529414, 1)
+theme_override_colors/font_outline_color = Color(0.32941177, 0.32941177, 0.32941177, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("6_826wr")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_826wr")
 text = "OPTIONS"
-label_settings = SubResource("LabelSettings_2wh52")
-horizontal_alignment = 1
-vertical_alignment = 1
+flat = true
 
-[node name="TextureButton3" type="TextureButton" parent="VBoxContainer" unique_id=2053403569]
+[node name="quitGame" type="Button" parent="VBoxContainer" unique_id=1884126419]
 layout_mode = 2
 size_flags_vertical = 3
-texture_normal = ExtResource("2_0ykhv")
-texture_pressed = ExtResource("3_ow34m")
-texture_hover = ExtResource("3_2wh52")
-ignore_texture_size = true
-stretch_mode = 0
-flip_h = true
+theme_override_colors/font_color = Color(0.63529414, 0.63529414, 0.63529414, 1)
+theme_override_colors/font_outline_color = Color(0.32941177, 0.32941177, 0.32941177, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("6_826wr")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_826wr")
+text = "QUIT"
+flat = true
 
-[node name="Label" type="Label" parent="VBoxContainer/TextureButton3" unique_id=1042519705]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 30
-text = "QUIT GAME"
-label_settings = SubResource("LabelSettings_2wh52")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Node2D" type="Node2D" parent="." unique_id=1058463523]
+position = Vector2(201, 416)
+scale = Vector2(0.8, 0.8)
 
-[connection signal="pressed" from="VBoxContainer/TextureButton" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/TextureButton2" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="VBoxContainer/TextureButton3" to="." method="_on_quit_pressed"]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Node2D" unique_id=1653615638]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/CharacterBody2D" unique_id=1314207110]
+texture = ExtResource("5_8a8k8")
+
+[node name="Pau" parent="Node2D/CharacterBody2D" unique_id=1091668880 instance=ExtResource("6_7la6k")]
+position = Vector2(70, -81)
+rotation = 0.2617994
+script = null
+
+[node name="Olhos" type="Node2D" parent="Node2D/CharacterBody2D" unique_id=89355532]
+position = Vector2(0, -114)
+
+[node name="OlhoE" type="Node2D" parent="Node2D/CharacterBody2D/Olhos" unique_id=1406836115]
+position = Vector2(30, 0)
+script = ExtResource("7_2nypq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/CharacterBody2D/Olhos/OlhoE" unique_id=1956541546]
+texture = ExtResource("8_bky6r")
+
+[node name="OlhoD" type="Node2D" parent="Node2D/CharacterBody2D/Olhos" unique_id=923156214]
+position = Vector2(-30, 0)
+script = ExtResource("7_2nypq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/CharacterBody2D/Olhos/OlhoD" unique_id=1940744303]
+texture = ExtResource("8_bky6r")
+
+[connection signal="pressed" from="VBoxContainer/startGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/quitGame" to="." method="_on_quit_game_pressed"]

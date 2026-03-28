@@ -21,11 +21,8 @@ func _physics_process(delta: float) -> void:
 	var offset_ponta = Vector2(0, -distancia_ponta).rotated(rotation)
 	alvo_centro = alvo_limitado - offset_ponta
 	
-	# ir em direcao ao mouse
 	var direcao = alvo_centro - position
-	# print(direcao, alvo_centro, position)
 	var velocidade_adicional = direcao * velocidade_movimento
-	#print(position)
 	
 	
 	checar_colisoes(velocidade_adicional, delta)

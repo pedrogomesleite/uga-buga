@@ -4,10 +4,20 @@
 load_path = "res://.godot/imported/Ativo 14.svg-c71ef7267245d39057d362fd869c1518.ctex"
 
 [node name="DialogueBox" type="MarginContainer" unique_id=572906939]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 119.0
+offset_bottom = 54.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=749268494]
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_ilnc5")
 region_rect = Rect2(69, 26, 68, 26)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1026741745]
+layout_mode = 2
+
+[node name="RichTextLabel" type="Label" parent="MarginContainer" unique_id=1058428774]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Ola rapaziada"
+vertical_alignment = 1
