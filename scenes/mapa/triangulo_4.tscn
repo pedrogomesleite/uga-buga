@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ydpq35gha36c"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a4b71"]
+load_path = "res://.godot/imported/Ativo 28.svg-b8de79422436ef8c81ab0d7538cf00b5.ctex"
+
+[node name="Triangulo4_" type="CollisionPolygon2D" unique_id=1422305529]
+polygon = PackedVector2Array(-83, -84, 83, 83, -84, 83)
+
+[node name="t4" type="Sprite2D" parent="." unique_id=1174186985]
+texture = SubResource("CompressedTexture2D_a4b71")

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://covte7ufilva"]
 
-[ext_resource type="Script" uid="uid://cmrn7x3alb3ok" path="res://scenes/main_menu.gd" id="1_l72w3"]
+[ext_resource type="Script" uid="uid://cmrn7x3alb3ok" path="res://scripts/main_menu.gd" id="1_l72w3"]
 [ext_resource type="Texture2D" uid="uid://c1510xb5wptp0" path="res://assets/placeHolderMainMenu.jpg" id="1_yqorp"]
 [ext_resource type="Texture2D" uid="uid://coyn5b5yw5rvo" path="res://assets/clay.jpg" id="2_0ykhv"]
 [ext_resource type="Texture2D" uid="uid://ciydm16qada6u" path="res://assets/clayHOVER.jpg" id="3_2wh52"]

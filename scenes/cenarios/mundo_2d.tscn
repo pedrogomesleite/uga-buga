@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://dc8ur0pcxsdeb"]
+
+[ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://scenes/guga/Guga.tscn" id="1_okb6u"]
+[ext_resource type="PackedScene" uid="uid://dwdf0jpqp53ww" path="res://scenes/mapa/retangulo_2.tscn" id="2_lhjed"]
+[ext_resource type="PackedScene" uid="uid://dfto8idrue4ey" path="res://scenes/mapa/triangulo_1.tscn" id="3_0g7lw"]
+[ext_resource type="PackedScene" uid="uid://cc5wiqhp0bh5o" path="res://scenes/mapa/l_2.tscn" id="3_ocuyd"]
+[ext_resource type="PackedScene" uid="uid://eeqvxrwdubkp" path="res://scenes/mapa/hexagono_2.tscn" id="4_m68vj"]
+[ext_resource type="PackedScene" uid="uid://dom2w78nfonx6" path="res://scenes/mapa/retangulo_4.tscn" id="5_4c18f"]
+[ext_resource type="PackedScene" uid="uid://0up7jfo0kss8" path="res://scenes/mapa/retangulo_3.tscn" id="6_31gxm"]
+[ext_resource type="PackedScene" uid="uid://cw5omuljlsccm" path="res://scenes/mapa/l_1.tscn" id="8_8xuji"]
+[ext_resource type="PackedScene" uid="uid://ydpq35gha36c" path="res://scenes/mapa/triangulo_4.tscn" id="9_x68nw"]
+[ext_resource type="PackedScene" uid="uid://bn2ea5juwq07m" path="res://scenes/mapa/triangulo_2.tscn" id="10_na8n1"]
+[ext_resource type="PackedScene" uid="uid://5xrx6galaxgt" path="res://scenes/mapa/quadrado_2.tscn" id="11_wbxmj"]
+[ext_resource type="PackedScene" uid="uid://badpo5co7sk1k" path="res://scenes/mapa/bump_2.tscn" id="12_wbxmj"]
+[ext_resource type="PackedScene" uid="uid://b62leim6tu346" path="res://scenes/mapa/bump_1.tscn" id="13_omxtg"]
+[ext_resource type="PackedScene" uid="uid://bt8tsfe2vyo6w" path="res://scenes/mapa/bola_1.tscn" id="14_3o318"]
+[ext_resource type="PackedScene" uid="uid://b83ol5brtevqk" path="res://scenes/mapa/quadrado_1.tscn" id="15_3o318"]
+[ext_resource type="PackedScene" uid="uid://dgpo4n8m1xpk" path="res://scenes/mapa/hexagono_4.tscn" id="16_jjxu3"]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=897396245]
+collision_layer = 3
+collision_mask = 3
+
+[node name="Retangulo2" parent="." unique_id=1686322870 instance=ExtResource("2_lhjed")]
+position = Vector2(108, 604)
+polygon = PackedVector2Array(-104, -40, 103, -39, 103, 40, -2.220581, 40, -103, 40)
+
+[node name="r2" parent="." unique_id=2069210807 instance=ExtResource("2_lhjed")]
+position = Vector2(312, 604)
+
+[node name="r3" parent="." unique_id=1614098066 instance=ExtResource("2_lhjed")]
+position = Vector2(659, 604)
+scale = Vector2(2.4217994, 1)
+polygon = PackedVector2Array(-104, -40, 103, -39, 103, 2.2000122, 103, 40, -103, 40)
+
+[node name="Triangulo1_" parent="." unique_id=594190302 instance=ExtResource("3_0g7lw")]
+position = Vector2(478, 515)
+
+[node name="l1_" parent="." unique_id=615815876 instance=ExtResource("3_ocuyd")]
+position = Vector2(-23, 533)
+
+[node name="Hexagono2_" parent="." unique_id=1396879396 instance=ExtResource("4_m68vj")]
+position = Vector2(854, 535)
+
+[node name="Retangulo4_" parent="." unique_id=1170372113 instance=ExtResource("5_4c18f")]
+position = Vector2(198, 540)
+
+[node name="Retangulo3_" parent="." unique_id=573530722 instance=ExtResource("6_31gxm")]
+position = Vector2(712, 526)
+
+[node name="mundo2D" type="Node2D" parent="." unique_id=449765058]
+
+[node name="l2_" parent="." unique_id=994805361 instance=ExtResource("8_8xuji")]
+position = Vector2(1007, 497)
+rotation = -1.5707964
+
+[node name="Triangulo4_" parent="." unique_id=1422305529 instance=ExtResource("9_x68nw")]
+position = Vector2(1172, 341)
+rotation = -1.1780972
+
+[node name="Triangulo2_" parent="." unique_id=2031098736 instance=ExtResource("10_na8n1")]
+position = Vector2(1303, 321)
+
+[node name="Quadrado2_" parent="." unique_id=1496919537 instance=ExtResource("11_wbxmj")]
+position = Vector2(1400, 313.99997)
+skew = 0.37524578
+
+[node name="Bump2_" parent="." unique_id=1334139759 instance=ExtResource("12_wbxmj")]
+position = Vector2(1355, 308)
+
+[node name="Bump1_" parent="." unique_id=594397363 instance=ExtResource("13_omxtg")]
+position = Vector2(1485, 304)
+
+[node name="Bola1_" parent="." unique_id=156844881 instance=ExtResource("14_3o318")]
+position = Vector2(1659.0001, 316)
+scale = Vector2(1.5, 1.5)
+
+[node name="Guga" parent="." unique_id=390553853 instance=ExtResource("1_okb6u")]
+position = Vector2(207, 426)
+scale = Vector2(0.2, 0.2)
+
+[node name="Quadrado1_" parent="." unique_id=1801276064 instance=ExtResource("15_3o318")]
+position = Vector2(1851, 271)
+
+[node name="Triangulo4_2" parent="." unique_id=2026576165 instance=ExtResource("9_x68nw")]
+position = Vector2(1927, 195)
+
+[node name="l1_2" parent="." unique_id=592069408 instance=ExtResource("3_ocuyd")]
+position = Vector2(2062, 190.99992)
+rotation = 5.4750977
+
+[node name="Hexagono4_" parent="." unique_id=1610415468 instance=ExtResource("16_jjxu3")]
+visible = true
+position = Vector2(823, 508)
+scale = Vector2(2.4763515, 1)
+polygon = PackedVector2Array(-74, -17, -1, -70, 74, -17, 61.03076, 23.297272, 46, 70, -46, 71)

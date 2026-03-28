@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bt8tsfe2vyo6w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oooh7"]
+radius = 83.48653
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7mkok"]
+load_path = "res://.godot/imported/Ativo 29.svg-1472333bd5ddfc7e4fa76a787774daa7.ctex"
+
+[node name="Bola1_" type="CollisionShape2D" unique_id=156844881]
+shape = SubResource("CircleShape2D_oooh7")
+
+[node name="b1" type="Sprite2D" parent="." unique_id=589757252]
+texture = SubResource("CompressedTexture2D_7mkok")

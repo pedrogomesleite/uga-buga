@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dgpo4n8m1xpk"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kel6r"]
+load_path = "res://.godot/imported/Ativo 23.svg-41da563fc5996fcfb1b9af90696fe2c2.ctex"
+
+[node name="Hexagono4_" type="CollisionPolygon2D" unique_id=1610415468]
+visible = false
+polygon = PackedVector2Array(-74, -17, -1, -70, 74, -17, 46, 70, -46, 71)
+
+[node name="h4" type="Sprite2D" parent="." unique_id=2089306800]
+texture = SubResource("CompressedTexture2D_kel6r")

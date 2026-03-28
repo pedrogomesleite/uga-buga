@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://d1nbbpvcy27m3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t80bg"]
+size = Vector2(166, 166)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4qquv"]
+load_path = "res://.godot/imported/Ativo 32.svg-02bccaa022cb55e11081f887e210f126.ctex"
+
+[node name="Quadrado3_" type="CollisionShape2D" unique_id=1555182967]
+shape = SubResource("RectangleShape2D_t80bg")
+
+[node name="q3" type="Sprite2D" parent="." unique_id=884238286]
+texture = SubResource("CompressedTexture2D_4qquv")

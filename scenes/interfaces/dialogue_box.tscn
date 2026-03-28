@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cr8waum0e74q"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ilnc5"]
+load_path = "res://.godot/imported/Ativo 14.svg-c71ef7267245d39057d362fd869c1518.ctex"
+
+[node name="DialogueBox" type="MarginContainer" unique_id=572906939]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=749268494]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_ilnc5")
+region_rect = Rect2(69, 26, 68, 26)
