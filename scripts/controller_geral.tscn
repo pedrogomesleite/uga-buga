@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://faeemwuh44bw"]
+
+[ext_resource type="Script" uid="uid://ce6yty764pgkg" path="res://scripts/global.gd" id="1_wb0f6"]
+[ext_resource type="PackedScene" uid="uid://dc8ur0pcxsdeb" path="res://scripts/mundo_2d.tscn" id="2_q3lic"]
+
+[node name="controllerGeral" type="Node" unique_id=96255319]
+script = ExtResource("1_wb0f6")
+
+[node name="mundo2D" parent="." unique_id=449765058 instance=ExtResource("2_q3lic")]
+
+[node name="Control" type="Control" parent="." unique_id=686515431]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
