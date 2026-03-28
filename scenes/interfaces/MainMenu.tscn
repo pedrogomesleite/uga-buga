@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://c64dn2lyfs8km" path="res://assets/Corpo sem olho.svg" id="5_8a8k8"]
 [ext_resource type="PackedScene" uid="uid://bxid8pbxf48t2" path="res://scenes/guga/PauPadrao.tscn" id="6_7la6k"]
 [ext_resource type="FontFile" uid="uid://bljfmm0jocjs1" path="res://Fonts/Etchstone-Regular.ttf" id="6_826wr"]
-[ext_resource type="Script" uid="uid://chf0qp2ksh4e5" path="res://scripts/olho.gd" id="7_2nypq"]
-[ext_resource type="Texture2D" uid="uid://coyddd1ci2gk1" path="res://assets/olho.svg" id="8_bky6r"]
+[ext_resource type="Script" path="res://scripts/olho.gd" id="7_2nypq"]
+[ext_resource type="Texture2D" uid="uid://d4ihsmrrhoap3" path="res://assets/Olho.svg" id="8_bky6r"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ow34m"]
 bg_color = Color(0.88235295, 0.47843137, 0.14117648, 0.627451)

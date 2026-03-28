@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bchh5bmfmpdwo"
-path="res://.godot/imported/Olho.svg-27274944efad56e2fab59bb3985e3acb.ctex"
+uid="uid://coyddd1ci2gk1"
+path="res://.godot/imported/olho.svg-4c512a182cecf3d1702ae6ac554e6bc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Olho.svg"
-dest_files=["res://.godot/imported/Olho.svg-27274944efad56e2fab59bb3985e3acb.ctex"]
+source_file="res://assets/olho.svg"
+dest_files=["res://.godot/imported/olho.svg-4c512a182cecf3d1702ae6ac554e6bc6.ctex"]
 
 [params]
 

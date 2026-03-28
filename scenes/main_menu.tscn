@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://faeemwuh44bw"]
+
+[ext_resource type="Script" uid="uid://ce6yty764pgkg" path="res://scripts/global.gd" id="1_ekxnf"]
+[ext_resource type="PackedScene" uid="uid://covte7ufilva" path="res://scenes/interfaces/MainMenu.tscn" id="2_bqqt6"]
+
+[node name="controllerGeral" type="Node" unique_id=96255319]
+script = ExtResource("1_ekxnf")
+
+[node name="Control" parent="." unique_id=685622937 instance=ExtResource("2_bqqt6")]
+z_index = 1
