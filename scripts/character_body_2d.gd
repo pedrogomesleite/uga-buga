@@ -1,9 +1,8 @@
 extends CharacterBody2D
 
-const SPEED = 5.0
-@export var forca_impacto: float = .0625
+const SPEED = 500.0
+@export var forca_impacto: float = 15
 var impulso_max: float = 200
-
 var empurrao_velocity: Vector2 = Vector2.ZERO
 
 func _physics_process(delta: float) -> void:
@@ -11,14 +10,13 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	else:
 		#atrito
-		velocity.x = lerp(velocity.x, 0.0, 5.0 * delta)
+		velocity.x = lerp(velocity.x, 0.0, 15.0 * delta)
 		
 	move_and_slide()
 
-func _on_pau_objeto_tocado(vel_martelo: Vector2, _normal: Vector2) -> void:
-	var vetor_impulso = -vel_martelo * forca_impacto
+func _on_pau_objeto_tocado(movimento_bloqueado: Vector2, delta: float) -> void:
+	var vetor_impulso = -movimento_bloqueado * forca_impacto
 	vetor_impulso = vetor_impulso.limit_length(impulso_max)
-	var velocidade_max: float= SPEED * Input.get_last_mouse_velocity().length()
-	velocity += vetor_impulso
-	velocity = velocity.limit_length(velocidade_max)
+	velocity += vetor_impulso * delta * forca_impacto
+	velocity = velocity.limit_length(SPEED)
 	print(velocity)
