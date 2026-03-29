@@ -23,5 +23,5 @@ func _animar_texto(text: String):
 	tween.tween_property(label, "visible_ratio", 1.0, 2.0).set_trans(Tween.TRANS_LINEAR)
 
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
+func _on_area_2d_body_entered(_body: Node2D) -> void:
 	iniciar_dialogo(texto_da_instancia)

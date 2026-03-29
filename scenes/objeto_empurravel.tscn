@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://btno2noxuwobp"]
 
-[ext_resource type="Texture2D" uid="uid://d4ihsmrrhoap3" path="res://assets/Old Assets/olho.svg" id="1_g66cw"]
+[ext_resource type="Texture2D" uid="uid://dko1qfegrpsds" path="res://assets/Old Assets/olho.svg" id="1_g66cw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_db8xc"]
 

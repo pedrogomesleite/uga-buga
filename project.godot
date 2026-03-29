@@ -26,6 +26,7 @@ enabled=PackedStringArray()
 [global_group]
 
 rachadores="quebra quebraveis"
+player="apenas o player (Guga)"
 
 [gui]
 

@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://c0bli2vbel2yy"]
+
+[ext_resource type="Script" uid="uid://dmxeucswg06iv" path="res://scripts/dialogue_box.gd" id="1_khppm"]
+[ext_resource type="Shader" uid="uid://dry77qr3irtya" path="res://shaders/dissolve_effect.gdshader" id="2_8xxy5"]
+[ext_resource type="Texture2D" uid="uid://c64dn2lyfs8km" path="res://assets/Old Assets/Corpo sem olho.svg" id="2_swh2b"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ilnc5"]
+load_path = "res://.godot/imported/Ativo 14.svg-c71ef7267245d39057d362fd869c1518.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atnx8"]
+size = Vector2(153.0625, 259.875)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_s4ldb"]
+noise_type = 3
+frequency = 0.0312
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_rb3qs"]
+noise = SubResource("FastNoiseLite_s4ldb")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_rb3qs"]
+noise_type = 3
+frequency = 0.0155
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_8qnb5"]
+noise = SubResource("FastNoiseLite_rb3qs")
+as_normal_map = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iowr0"]
+shader = ExtResource("2_8xxy5")
+shader_parameter/noise_tex_normal = SubResource("NoiseTexture2D_8qnb5")
+shader_parameter/noise_tex = SubResource("NoiseTexture2D_rb3qs")
+shader_parameter/strength = 4.0
+shader_parameter/pixel_count = 512.0
+shader_parameter/alpha_threshold = 1.0
+shader_parameter/hole_color = Color(0.4012269, 0.20473489, 0.13465631, 1)
+shader_parameter/hole_thickness = 0.1170000055575
+shader_parameter/hole_glow = 2.0
+shader_parameter/inside_color = Color(0.010699962, 0.0073814183, 0.0071542934, 1)
+shader_parameter/inside_alpha = 0.770000036575
+
+[node name="HomemSombra" type="MarginContainer" unique_id=572906939]
+offset_right = 153.0
+offset_bottom = 87.0
+script = ExtResource("1_khppm")
+metadata/text = ""
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=749268494]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_ilnc5")
+region_rect = Rect2(69, 26, 68, 26)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2081473434]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Text" type="RichTextLabel" parent="MarginContainer" unique_id=75571064]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+fit_content = true
+vertical_alignment = 1
+
+[node name="Area2D" type="Area2D" parent="." unique_id=617009404]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=794846668]
+position = Vector2(76.46875, 130.0625)
+shape = SubResource("RectangleShape2D_atnx8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1666539114]
+modulate = Color(0.19881096, 0.19881096, 0.19881096, 1)
+self_modulate = Color(0.7162962, 0.7162962, 0.7162962, 1)
+material = SubResource("ShaderMaterial_iowr0")
+position = Vector2(77, 155)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_swh2b")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

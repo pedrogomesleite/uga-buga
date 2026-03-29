@@ -23,10 +23,6 @@ func _on_pau_objeto_tocado(movimento_bloqueado: Vector2, delta: float) -> void:
 	var mapped_strength = remap(speed, 0, max_mouse_speed, 0, 2)
 	mapped_strength = clamp(mapped_strength, 0, 4)
 	
-	
-	var mouse_velocity = Input.get_last_mouse_velocity()
-	
-	
 	var vetor_impulso = -movimento_bloqueado * forca_impacto
 	vetor_impulso = vetor_impulso.limit_length(impulso_max)
 	velocity += (vetor_impulso * delta * forca_impacto) * mapped_strength
