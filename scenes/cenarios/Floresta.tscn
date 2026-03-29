@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://hrlieo6tgl0b"]
+
+[ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_e1oua"]
+[ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_hxwco"]
+[ext_resource type="PackedScene" uid="uid://b8i4mlpodgbyv" path="res://scenes/interfaces/pause_menu.tscn" id="3_hxwco"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hxwco"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hxwco"]
+size = Vector2(20, 531)
+
+[node name="Floresta" type="Node2D" unique_id=276136146]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1585869293]
+light_mask = 3
+visibility_layer = 3
+material = SubResource("CanvasItemMaterial_hxwco")
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=341438907]
+top_level = true
+light_mask = 3
+visibility_layer = 3
+position = Vector2(10, -1)
+polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 530, 435, 604, 462, 685, 474, 751, 460, 757, 491, 772, 508, 825, 506, 831, 481, 841, 439, 846, 403, 879, 349, 981, 344, 1086, 343, 1294, 343, 1769, 343, 2150, 345, 2150, 801, -552, 800, -552, 536)
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D/CollisionPolygon2D" unique_id=66684201]
+position = Vector2(-10, 1)
+polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 536, 434, 613, 462, 685, 474, 763, 459, 768, 491, 784, 507, 836, 504, 842, 483, 856, 402, 889, 349, 981, 344, 1086, 343, 1294, 343, 1769, 343, 2160, 344, 2160, 800, -552, 800, -552, 536)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=609954890]
+light_mask = 3
+visibility_layer = 3
+polygon = PackedVector2Array(2364, 319, 3234, 322, 3302, 347, 3359, 419, 3397, 489, 3576, 496, 3779, 487, 4057, 517, 4203, 413, 4262, 350, 4305, 284, 4432, 289, 4519, 298, 4925, 300, 4927, 668, 2366, 678)
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D/CollisionPolygon2D2" unique_id=44903950]
+polygon = PackedVector2Array(2364, 319, 3234, 322, 3302, 347, 3359, 419, 3397, 489, 3576, 496, 3779, 487, 4057, 517, 4203, 413, 4262, 350, 4305, 284, 4432, 289, 4519, 298, 4925, 300, 4927, 668, 2366, 678)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1528661187]
+visible = false
+light_mask = 3
+visibility_layer = 3
+position = Vector2(-10, 266.5)
+shape = SubResource("RectangleShape2D_hxwco")
+
+[node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_e1oua")]
+position = Vector2(57, 441)
+scale = Vector2(0.2, 0.2)
+
+[node name="objetoEmpurravel" parent="." unique_id=1341418358 instance=ExtResource("2_hxwco")]
+position = Vector2(450, 218)
+
+[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("3_hxwco")]
+visible = false

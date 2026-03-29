@@ -3,10 +3,13 @@
 [ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_w0sfl"]
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_jh1cc"]
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="3_6css3"]
+<<<<<<< HEAD
+[ext_resource type="PackedScene" uid="uid://b8i4mlpodgbyv" path="res://scenes/interfaces/pause_menu.tscn" id="4_55eat"]
+=======
 [ext_resource type="PackedScene" uid="uid://c0bli2vbel2yy" path="res://Prefab/homem_sombra.tscn" id="4_55eat"]
-[ext_resource type="PackedScene" uid="uid://b8i4mlpodgbyv" path="res://scenes/interfaces/pause_menu.tscn" id="5_tlmes"]
+>>>>>>> a21f889a9660247eddcfd12c956cbd62ebd8527b
 
-[node name="mundo2D2" type="Node2D" unique_id=449765058]
+[node name="mundo2D" type="Node2D" unique_id=449765058]
 
 [node name="BG" type="Polygon2D" parent="." unique_id=581653550]
 position = Vector2(0, -9)
@@ -144,6 +147,21 @@ offset_bottom = -860.0
 texto_da_instancia = "hummmm chunken [img=34x34]res://assets/chiken.jpg[/img]
 "
 
+<<<<<<< HEAD
+[node name="PauseMenu" parent="." unique_id=264823625 instance=ExtResource("4_55eat")]
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 828.0
+offset_top = 34.0
+offset_right = 1148.0
+offset_bottom = 526.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 8
+=======
 [node name="DialogueBox2" parent="." unique_id=1263513325 instance=ExtResource("3_6css3")]
 offset_left = 4454.0
 offset_top = -959.0
@@ -170,5 +188,4 @@ offset_left = 3589.0
 offset_top = -924.0
 offset_right = 3742.0
 offset_bottom = -837.0
-
-[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("5_tlmes")]
+>>>>>>> a21f889a9660247eddcfd12c956cbd62ebd8527b
