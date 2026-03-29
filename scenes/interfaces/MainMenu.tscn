@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://covte7ufilva"]
 
+[ext_resource type="Script" uid="uid://cmrn7x3alb3ok" path="res://scripts/main_menu.gd" id="1_l72w3"]
 [ext_resource type="Texture2D" uid="uid://b5m8711v2ftmo" path="res://assets/Old Assets/Main Menu.png" id="2_2wh52"]
 [ext_resource type="Texture2D" uid="uid://c64dn2lyfs8km" path="res://assets/Old Assets/Corpo sem olho.svg" id="5_8a8k8"]
 [ext_resource type="PackedScene" uid="uid://bxid8pbxf48t2" path="res://Prefab/guga/PauPadrao.tscn" id="6_7la6k"]
@@ -20,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_l72w3")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1924014823]
 layout_mode = 1

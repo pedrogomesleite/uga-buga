@@ -1,10 +1,27 @@
 extends MarginContainer
 
-signal enviar_texto(frase: String)
+
+@export_multiline var texto_da_instancia: String = "Texto padrão aqui..."
+
+@onready var label: RichTextLabel = %Text
+
+var started = false
 
 func _ready() -> void:
 	hide()
 
-func on_texto_recebido(frase: String) -> void:
-	show()
-	enviar_texto.emit(frase)
+func iniciar_dialogo(conteudo: String):
+	if not started:
+		show()
+		started = true
+		_animar_texto(conteudo)
+
+func _animar_texto(text: String):
+	label.text = text
+	label.visible_characters = 0
+	var tween = create_tween()
+	tween.tween_property(label, "visible_ratio", 1.0, 2.0).set_trans(Tween.TRANS_LINEAR)
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	iniciar_dialogo(texto_da_instancia)

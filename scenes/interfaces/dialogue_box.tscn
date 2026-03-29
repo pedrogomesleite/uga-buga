@@ -1,15 +1,18 @@
 [gd_scene format=3 uid="uid://cr8waum0e74q"]
 
-[ext_resource type="Script" uid="uid://dpjh0xt0g4nfp" path="res://scripts/rich_text_label.gd" id="1_atnx8"]
-[ext_resource type="Script" uid="uid://d4gr8qxnb454r" path="res://scripts/dialogue_box.gd" id="1_nwrkd"]
+[ext_resource type="Script" uid="uid://dmxeucswg06iv" path="res://scripts/dialogue_box.gd" id="1_nwrkd"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ilnc5"]
 load_path = "res://.godot/imported/Ativo 14.svg-c71ef7267245d39057d362fd869c1518.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atnx8"]
+size = Vector2(153.0625, 259.875)
 
 [node name="DialogueBox" type="MarginContainer" unique_id=572906939]
 offset_right = 153.0
 offset_bottom = 87.0
 script = ExtResource("1_nwrkd")
+metadata/text = ""
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=749268494]
 layout_mode = 2
@@ -23,14 +26,18 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer" unique_id=75571064]
+[node name="Text" type="RichTextLabel" parent="MarginContainer" unique_id=75571064]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
-text = "[wave]hummmm fraguim[/wave]
-[img=50x50]res://assets/chiken.jpg[/img]"
 fit_content = true
 vertical_alignment = 1
-script = ExtResource("1_atnx8")
 
-[connection signal="enviar_texto" from="." to="MarginContainer/RichTextLabel" method="_on_evento_de_texto_recebido"]
+[node name="Area2D" type="Area2D" parent="." unique_id=617009404]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=794846668]
+position = Vector2(76.46875, 130.0625)
+shape = SubResource("RectangleShape2D_atnx8")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

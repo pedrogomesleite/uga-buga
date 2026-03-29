@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bxpc51e1sbstm"]
+
+[ext_resource type="Script" uid="uid://bhu5k07va1hg6" path="res://scripts/rich_text_label_fade_in.gd" id="1_vcjkt"]
+
+[node name="Slide" type="Control" unique_id=747550216]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1182166119]
+modulate = Color(0.36078432, 0.2509804, 0.2, 1)
+polygon = PackedVector2Array(72, 18, 36, 102, 93, 185, 62, 240, 83, 358, 86, 460, 58, 586, 127, 581, 167, 529, 306, 595, 415, 620, 570, 601, 630, 582, 815, 612, 947, 575, 1062, 532, 1090, 452, 1029, 423, 1066, 320, 1029, 142, 991, 103, 1002, 28, 905, 9, 818, 42, 747, 82, 636, 51, 550, 23, 334, 31, 204, 79, 89, 45)
+
+[node name="Polygon2D2" type="Polygon2D" parent="." unique_id=123538499]
+modulate = Color(0.1293737, 0.05514481, 0.0118202325, 1)
+z_index = -1
+polygon = PackedVector2Array(77, -66, 1146, -24, 1333, 477, 1241, 735, 253, 808, -363, 690, -176, 101, 12, -100)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=239007220]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 650.0
+theme_override_constants/margin_left = 150
+theme_override_constants/margin_top = 150
+theme_override_constants/margin_right = 150
+theme_override_constants/margin_bottom = 150
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer" unique_id=935710895]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 39
+theme_override_font_sizes/bold_font_size = 39
+theme_override_font_sizes/bold_italics_font_size = 39
+theme_override_font_sizes/italics_font_size = 39
+theme_override_font_sizes/mono_font_size = 39
+bbcode_enabled = true
+text = "A very long time ago 
+A man named Guga 
+Found himself very [shake]hungry[/shake]
+So he did the most sensible
+Shing that came to his mind
+[wave]Steal[/wave] some food
+From the tribe [i]leader Bunga[/i]"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_vcjkt")

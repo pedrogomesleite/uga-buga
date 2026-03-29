@@ -1,7 +1,8 @@
-[gd_scene format=3 uid="uid://bkx1224bn1syv"]
+[gd_scene format=3 uid="uid://dfvd1mjdrah7j"]
 
 [ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_w0sfl"]
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_jh1cc"]
+[ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="3_6css3"]
 
 [node name="mundo2D" type="Node2D" unique_id=449765058]
 
@@ -132,3 +133,11 @@ position = Vector2(4391, -704)
 
 [node name="objetoEmpurravel3" parent="." unique_id=449770110 instance=ExtResource("2_jh1cc")]
 position = Vector2(4356, -757)
+
+[node name="DialogueBox" parent="." unique_id=572906939 instance=ExtResource("3_6css3")]
+offset_left = 4171.0
+offset_top = -1086.0
+offset_right = 4324.0
+offset_bottom = -999.0
+texto_da_instancia = "texto
+"
