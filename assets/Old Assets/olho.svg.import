@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4ihsmrrhoap3"
-<<<<<<< HEAD:assets/olho.svg.import
-path="res://.godot/imported/olho.svg-4c512a182cecf3d1702ae6ac554e6bc6.ctex"
-=======
+uid="uid://dko1qfegrpsds"
 path="res://.godot/imported/olho.svg-56970a7a95358eb30e407204a1cda317.ctex"
->>>>>>> a14042fd06a1b8723acddd1ac9a7f4e047669863:assets/Old Assets/olho.svg.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:assets/olho.svg.import
-source_file="res://assets/olho.svg"
-dest_files=["res://.godot/imported/olho.svg-4c512a182cecf3d1702ae6ac554e6bc6.ctex"]
-=======
 source_file="res://assets/Old Assets/olho.svg"
 dest_files=["res://.godot/imported/olho.svg-56970a7a95358eb30e407204a1cda317.ctex"]
->>>>>>> a14042fd06a1b8723acddd1ac9a7f4e047669863:assets/Old Assets/olho.svg.import
 
 [params]
 
