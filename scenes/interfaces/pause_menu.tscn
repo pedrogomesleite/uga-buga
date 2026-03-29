@@ -1,0 +1,150 @@
+[gd_scene format=3 uid="uid://b8i4mlpodgbyv"]
+
+[ext_resource type="Script" uid="uid://n7j0qamafqcv" path="res://scripts/pause_menu.gd" id="1_2tgx6"]
+[ext_resource type="FontFile" uid="uid://bljfmm0jocjs1" path="res://Fonts/Etchstone-Regular.ttf" id="3_ru053"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2tgx6"]
+load_path = "res://.godot/imported/blank_clay.png-d8d83ef411405077022c4614d7f63c58.ctex"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myx47"]
+bg_color = Color(0.88235295, 0.47843137, 0.14117648, 0.627451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kukqi"]
+bg_color = Color(0.88235295, 0.47843137, 0.14117648, 0.627451)
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=2087021427]
+process_mode = 3
+script = ExtResource("1_2tgx6")
+
+[node name="pauseSlide" type="Control" parent="." unique_id=85183280]
+custom_minimum_size = Vector2(300, 600)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="pauseSlide" unique_id=1097073949]
+texture_filter = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+texture = SubResource("CompressedTexture2D_2tgx6")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="pauseSlide" unique_id=919207496]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -194.0
+offset_top = -217.0
+offset_right = 194.0
+offset_bottom = 217.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+theme_override_constants/separation = 16
+
+[node name="Resume" type="Button" parent="pauseSlide/VBoxContainer" unique_id=1756930616]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.68235296, 0.5058824, 0.32156864, 1)
+theme_override_colors/font_outline_color = Color(0.40392157, 0.22745098, 0.105882354, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("3_ru053")
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxFlat_myx47")
+text = "RESUME"
+flat = true
+
+[node name="options Menu" type="Button" parent="pauseSlide/VBoxContainer" unique_id=465606797]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.68235296, 0.5058824, 0.32156864, 1)
+theme_override_colors/font_outline_color = Color(0.40392157, 0.22745098, 0.105882354, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("3_ru053")
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxFlat_kukqi")
+text = "OPTIONS"
+flat = true
+
+[node name="quitGame" type="Button" parent="pauseSlide/VBoxContainer" unique_id=1895644525]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.68235296, 0.5058824, 0.32156864, 1)
+theme_override_colors/font_outline_color = Color(0.40392157, 0.22745098, 0.105882354, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("3_ru053")
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxFlat_kukqi")
+text = "QUIT"
+flat = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="pauseSlide" unique_id=125138990]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -194.0
+offset_top = -217.0
+offset_right = 194.0
+offset_bottom = 217.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+theme_override_constants/separation = 16
+
+[node name="Resume" type="Button" parent="pauseSlide/VBoxContainer2" unique_id=29894107]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.68235296, 0.5058824, 0.32156864, 1)
+theme_override_colors/font_outline_color = Color(0.40392157, 0.22745098, 0.105882354, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("3_ru053")
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxFlat_myx47")
+text = "RESUME"
+flat = true
+
+[node name="fullScreen" type="Button" parent="pauseSlide/VBoxContainer2" unique_id=1963933608]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.68235296, 0.5058824, 0.32156864, 1)
+theme_override_colors/font_outline_color = Color(0.40392157, 0.22745098, 0.105882354, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("3_ru053")
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxFlat_kukqi")
+toggle_mode = true
+text = "FULLSCREEN"
+flat = true
+
+[node name="return" type="Button" parent="pauseSlide/VBoxContainer2" unique_id=224523465]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.68235296, 0.5058824, 0.32156864, 1)
+theme_override_colors/font_outline_color = Color(0.40392157, 0.22745098, 0.105882354, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("3_ru053")
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxFlat_kukqi")
+text = "RETURN"
+flat = true
+
+[connection signal="pressed" from="pauseSlide/VBoxContainer/Resume" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="pauseSlide/VBoxContainer/options Menu" to="." method="_on_options_menu_pressed"]
+[connection signal="pressed" from="pauseSlide/VBoxContainer/quitGame" to="." method="_on_quit_game_pressed"]
+[connection signal="pressed" from="pauseSlide/VBoxContainer2/Resume" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="pauseSlide/VBoxContainer2/fullScreen" to="." method="_on_fullScreen_pressed"]
+[connection signal="pressed" from="pauseSlide/VBoxContainer2/return" to="." method="_on_options_menu_pressed"]

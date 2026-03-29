@@ -1,8 +1,9 @@
-[gd_scene format=3 uid="uid://bcxiu071d7lop"]
+[gd_scene format=3 uid="uid://4f5dxhp77pke"]
 
 [ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_okb6u"]
 [ext_resource type="PackedScene" uid="uid://cddpudbr4n2he" path="res://scenes/objeto_quebravel.tscn" id="2_lhjed"]
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="3_0g7lw"]
+[ext_resource type="PackedScene" uid="uid://b8i4mlpodgbyv" path="res://scenes/interfaces/pause_menu.tscn" id="4_iqjhq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_okb6u"]
 size = Vector2(1384.5, 20)
@@ -143,3 +144,5 @@ position = Vector2(391, 558)
 
 [node name="objetoEmpurravel" parent="." unique_id=1341418358 instance=ExtResource("3_0g7lw")]
 position = Vector2(144, -7)
+
+[node name="PauseMenu" parent="." unique_id=264823625 instance=ExtResource("4_iqjhq")]
