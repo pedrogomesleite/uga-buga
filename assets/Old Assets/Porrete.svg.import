@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1510xb5wptp0"
-path="res://.godot/imported/placeHolderMainMenu.jpg-9d6e69853e52091dfc28b0418420ad74.ctex"
+uid="uid://dtcxudcbt2aca"
+path="res://.godot/imported/Porrete.svg-0db8d1fd2063c7c48a1271db405253c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/placeHolderMainMenu.jpg"
-dest_files=["res://.godot/imported/placeHolderMainMenu.jpg-9d6e69853e52091dfc28b0418420ad74.ctex"]
+source_file="res://assets/Old Assets/Porrete.svg"
+dest_files=["res://.godot/imported/Porrete.svg-0db8d1fd2063c7c48a1271db405253c2.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

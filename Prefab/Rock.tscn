@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dv3bg3l6hap5q"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3ndms"]
+load_path = "res://.godot/imported/Ativo 18.svg-f8e9d58b803506188f742e4e5e570698.ctex"
+
+[node name="Rock" type="Node2D" unique_id=1699273113]
+
+[node name="Rock1" type="Sprite2D" parent="." unique_id=437778039]
+position = Vector2(573.00006, 313)
+scale = Vector2(0.2, 0.2)
+texture = SubResource("CompressedTexture2D_3ndms")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Rock1" unique_id=808350947]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Rock1/StaticBody2D" unique_id=2000784914]
+scale = Vector2(0.99999994, 0.99999994)
+polygon = PackedVector2Array(746, -1359, 732, -1359, 63.400024, -794.3, -834.9, -923, -843.7, -923, -1645.7, -300, -1647.6, -300, -1799, 307.90002, -1799, 328.5, -1796, 330.90002, -1796, 332, -975, 998, -975, 999.3999, 104.69995, 1359, 125.599976, 1359, 1119.5, 746, 1121.7, 746, 1799, 173.5, 1799, 157.30005, 1234, -1021.5, 1234, -1024.1, 746, -1358.1)

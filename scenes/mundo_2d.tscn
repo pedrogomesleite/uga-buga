@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dc8ur0pcxsdeb"]
 
-[ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://scenes/guga/Guga.tscn" id="1_okb6u"]
+[ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_okb6u"]
 [ext_resource type="PackedScene" uid="uid://cddpudbr4n2he" path="res://scenes/objeto_quebravel.tscn" id="2_lhjed"]
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="3_0g7lw"]
 

@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c64dn2lyfs8km"
-path="res://.godot/imported/Corpo sem olho.svg-c860870083b6a033500fd4ddeed91623.ctex"
+<<<<<<< HEAD:assets/Olho.svg.import
+uid="uid://coyddd1ci2gk1"
+path="res://.godot/imported/Olho.svg-27274944efad56e2fab59bb3985e3acb.ctex"
+=======
+uid="uid://rtiesgyul4ju"
+path="res://.godot/imported/Ativo 36.svg-59d408875d1c108cb1daf2db06ecd076.ctex"
+>>>>>>> a14042fd06a1b8723acddd1ac9a7f4e047669863:assets/SVG/Ativo 36.svg.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Corpo sem olho.svg"
-dest_files=["res://.godot/imported/Corpo sem olho.svg-c860870083b6a033500fd4ddeed91623.ctex"]
+<<<<<<< HEAD:assets/Olho.svg.import
+source_file="res://assets/Olho.svg"
+dest_files=["res://.godot/imported/Olho.svg-27274944efad56e2fab59bb3985e3acb.ctex"]
+=======
+source_file="res://assets/SVG/Ativo 36.svg"
+dest_files=["res://.godot/imported/Ativo 36.svg-59d408875d1c108cb1daf2db06ecd076.ctex"]
+>>>>>>> a14042fd06a1b8723acddd1ac9a7f4e047669863:assets/SVG/Ativo 36.svg.import
 
 [params]
 

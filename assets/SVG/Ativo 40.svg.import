@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://css3so8415o27"
-path="res://.godot/imported/clayPressed.jpg-b6af07ad0e8988fc57aded7fd2a26825.ctex"
+uid="uid://bj7getjh03f86"
+path="res://.godot/imported/Ativo 40.svg-18b18657835a489bd3cb249ee587afff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/clayPressed.jpg"
-dest_files=["res://.godot/imported/clayPressed.jpg-b6af07ad0e8988fc57aded7fd2a26825.ctex"]
+source_file="res://assets/SVG/Ativo 40.svg"
+dest_files=["res://.godot/imported/Ativo 40.svg-18b18657835a489bd3cb249ee587afff.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

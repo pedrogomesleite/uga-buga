@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4ihsmrrhoap3"
-path="res://.godot/imported/olho.svg-4c512a182cecf3d1702ae6ac554e6bc6.ctex"
+uid="uid://ckqbvbu8a5wdt"
+path="res://.godot/imported/Ativo 44.svg-a0766ed00ca3865bb78adab8e114f7f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/olho.svg"
-dest_files=["res://.godot/imported/olho.svg-4c512a182cecf3d1702ae6ac554e6bc6.ctex"]
+source_file="res://assets/SVG/Ativo 44.svg"
+dest_files=["res://.godot/imported/Ativo 44.svg-a0766ed00ca3865bb78adab8e114f7f9.ctex"]
 
 [params]
 
