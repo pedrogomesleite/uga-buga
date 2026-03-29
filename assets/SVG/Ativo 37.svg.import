@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b60tjkekhcrpq"
-path="res://.godot/imported/Ativo 14.svg-c71ef7267245d39057d362fd869c1518.ctex"
+uid="uid://dig06px8hnugh"
+path="res://.godot/imported/Ativo 37.svg-49bea8ac0dad2d47bf1ec15bcdac60f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ativo 14.svg"
-dest_files=["res://.godot/imported/Ativo 14.svg-c71ef7267245d39057d362fd869c1518.ctex"]
+source_file="res://assets/SVG/Ativo 37.svg"
+dest_files=["res://.godot/imported/Ativo 37.svg-49bea8ac0dad2d47bf1ec15bcdac60f7.ctex"]
 
 [params]
 

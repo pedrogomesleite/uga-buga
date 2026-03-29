@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://12v3jqfcrlo7" path="res://scripts/pau.gd" id="1_rnbof"]
 [ext_resource type="Script" uid="uid://dlp7eov0ofgy4" path="res://scripts/pau_padrao.gd" id="1_ub4ok"]
 [ext_resource type="Shader" uid="uid://bsodxxcu0fv44" path="res://shaders/Sombra.gdshader" id="2_amlij"]
-[ext_resource type="Texture2D" uid="uid://dtcxudcbt2aca" path="res://assets/Porrete.svg" id="2_rnbof"]
+[ext_resource type="Texture2D" uid="uid://dtcxudcbt2aca" path="res://assets/Old Assets/Porrete.svg" id="2_rnbof"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ub4ok"]
 shader = ExtResource("2_amlij")

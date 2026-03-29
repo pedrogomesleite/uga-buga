@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sahlijnahil3"
-path="res://.godot/imported/Componentes.svg-9b97d7e4ce4bc401be55960275bd673d.ctex"
+uid="uid://ciydm16qada6u"
+path="res://.godot/imported/clayHOVER.jpg-096f33d07452d1cd7318d6b064ce73ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Componentes.svg"
-dest_files=["res://.godot/imported/Componentes.svg-9b97d7e4ce4bc401be55960275bd673d.ctex"]
+source_file="res://assets/Old Assets/clayHOVER.jpg"
+dest_files=["res://.godot/imported/clayHOVER.jpg-096f33d07452d1cd7318d6b064ce73ed.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

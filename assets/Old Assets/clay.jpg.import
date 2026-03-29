@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by05v4dfwbepu"
-path="res://.godot/imported/tocha.png-557e06b4337f0a6b5a30d16306f950b5.ctex"
+uid="uid://coyn5b5yw5rvo"
+path="res://.godot/imported/clay.jpg-d9f070c11a0523bf6196cfc1de1981e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tocha.png"
-dest_files=["res://.godot/imported/tocha.png-557e06b4337f0a6b5a30d16306f950b5.ctex"]
+source_file="res://assets/Old Assets/clay.jpg"
+dest_files=["res://.godot/imported/clay.jpg-d9f070c11a0523bf6196cfc1de1981e6.ctex"]
 
 [params]
 

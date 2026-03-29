@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c64dn2lyfs8km"
-path="res://.godot/imported/Corpo sem olho.svg-c860870083b6a033500fd4ddeed91623.ctex"
+uid="uid://b60tjkekhcrpq"
+path="res://.godot/imported/Ativo 14.svg-b0eb00513becf5468837040b7b8953ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Corpo sem olho.svg"
-dest_files=["res://.godot/imported/Corpo sem olho.svg-c860870083b6a033500fd4ddeed91623.ctex"]
+source_file="res://assets/Old Assets/Ativo 14.svg"
+dest_files=["res://.godot/imported/Ativo 14.svg-b0eb00513becf5468837040b7b8953ab.ctex"]
 
 [params]
 
