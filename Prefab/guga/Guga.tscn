@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c64dn2lyfs8km" path="res://assets/Old Assets/Corpo sem olho.svg" id="2_o38in"]
 [ext_resource type="PackedScene" uid="uid://bxid8pbxf48t2" path="res://Prefab/guga/PauPadrao.tscn" id="3_o38in"]
 [ext_resource type="Script" uid="uid://chf0qp2ksh4e5" path="res://scripts/olho.gd" id="4_52iyu"]
-[ext_resource type="Texture2D" uid="uid://dko1qfegrpsds" path="res://assets/Old Assets/olho.svg" id="5_52iyu"]
+[ext_resource type="Texture2D" uid="uid://hnpuwjsd6h65" path="res://assets/Old Assets/olho.tres" id="5_4r24s"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ul5uw"]
 radius = 68.007355
@@ -42,14 +42,16 @@ position = Vector2(30, 0)
 script = ExtResource("4_52iyu")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Olhos/OlhoE" unique_id=887933358]
-texture = ExtResource("5_52iyu")
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_4r24s")
 
 [node name="OlhoD" type="Node2D" parent="CharacterBody2D/Olhos" unique_id=844030718]
 position = Vector2(-30, 0)
 script = ExtResource("4_52iyu")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Olhos/OlhoD" unique_id=409606852]
-texture = ExtResource("5_52iyu")
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_4r24s")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=702350611]
 position_smoothing_enabled = true

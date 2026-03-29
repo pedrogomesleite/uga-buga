@@ -166,9 +166,7 @@ offset_bottom = -1007.0
 texto_da_instancia = "Guga very dumb"
 
 [node name="HomemSombra" parent="." unique_id=181108715 instance=ExtResource("4_55eat")]
-offset_left = 3589.0
-offset_top = -924.0
-offset_right = 3742.0
-offset_bottom = -837.0
-
-[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("5_tlmes")]
+offset_left = 3581.0
+offset_top = -916.0
+offset_right = 3734.0
+offset_bottom = -829.0

@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://btno2noxuwobp"]
 
-[ext_resource type="Texture2D" uid="uid://dko1qfegrpsds" path="res://assets/Old Assets/olho.svg" id="1_g66cw"]
+[ext_resource type="Texture2D" uid="uid://hnpuwjsd6h65" path="res://assets/Old Assets/olho.tres" id="1_g66cw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_db8xc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_db8xc"]
+radius = 9.672413
 
 [node name="objetoEmpurravel" type="Node2D" unique_id=1341418358]
 
@@ -20,6 +21,5 @@ scale = Vector2(3, 3)
 shape = SubResource("CircleShape2D_db8xc")
 
 [node name="Sprite2D" type="Sprite2D" parent="objetoRigido" unique_id=2034197993]
-position = Vector2(-5.9604645e-08, 0)
-scale = Vector2(3, 3)
+modulate = Color(0, 0, 0, 1)
 texture = ExtResource("1_g66cw")
