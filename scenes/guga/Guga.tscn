@@ -13,6 +13,7 @@ radius = 68.007355
 radius = 108.0
 
 [node name="Guga" type="Node2D" unique_id=390553853]
+z_index = 1
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1468088366]
 script = ExtResource("1_hvxtu")
@@ -49,7 +50,6 @@ script = ExtResource("4_52iyu")
 texture = ExtResource("5_52iyu")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=702350611]
-zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 
 [connection signal="objeto_tocado" from="CharacterBody2D/Pau" to="CharacterBody2D" method="_on_pau_objeto_tocado"]

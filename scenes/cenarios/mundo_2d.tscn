@@ -3,9 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://scenes/guga/Guga.tscn" id="1_okb6u"]
 [ext_resource type="PackedScene" uid="uid://cddpudbr4n2he" path="res://scenes/objeto_quebravel.tscn" id="2_8am2l"]
 [ext_resource type="PackedScene" uid="uid://dwdf0jpqp53ww" path="res://scenes/mapa/retangulo_2.tscn" id="2_c68hb"]
-[ext_resource type="PackedScene" uid="uid://bt8tsfe2vyo6w" path="res://scenes/mapa/bola_1.tscn" id="3_f6cmg"]
 [ext_resource type="PackedScene" uid="uid://dgpo4n8m1xpk" path="res://scenes/mapa/hexagono_4.tscn" id="3_f7wls"]
-[ext_resource type="PackedScene" uid="uid://b83ol5brtevqk" path="res://scenes/mapa/quadrado_1.tscn" id="4_5cgrd"]
+[ext_resource type="PackedScene" uid="uid://b62leim6tu346" path="res://scenes/mapa/bump_1.tscn" id="5_db06b"]
+[ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="6_c68hb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_okb6u"]
 size = Vector2(1384.5, 20)
@@ -22,14 +22,11 @@ size = Vector2(20, 848.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mfwte"]
 size = Vector2(20, 825.1666)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wb0f6"]
-size = Vector2(91, 20)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vbnqh"]
 size = Vector2(614.75, 20)
 
 [node name="Cena1-Caverna" type="StaticBody2D" unique_id=227339078]
-position = Vector2(547, 322)
+position = Vector2(545, 339)
 scale = Vector2(2, 1.2)
 collision_layer = 3
 collision_mask = 3
@@ -76,19 +73,9 @@ position = Vector2(292.5, -161.58328)
 shape = SubResource("RectangleShape2D_mfwte")
 
 [node name="Polygon2D" type="Polygon2D" parent="paredeDireita1" unique_id=1768246054]
-visible = false
 position = Vector2(-10, -229)
 scale = Vector2(0.15873007, 22.849998)
 polygon = PackedVector2Array(0, 0, 126, 0, 125.99999, 10.417831, 126, 20, 0, 20)
-
-[node name="plataforma1" type="CollisionShape2D" parent="." unique_id=498268814]
-position = Vector2(105, 99)
-shape = SubResource("RectangleShape2D_wb0f6")
-
-[node name="Polygon2D" type="Polygon2D" parent="plataforma1" unique_id=46995318]
-position = Vector2(-45, -10)
-scale = Vector2(0.7222222, 1)
-polygon = PackedVector2Array(0, 0, 126, 0, 126, 20, 0, 20)
 
 [node name="teto1" type="CollisionShape2D" parent="." unique_id=147699274]
 position = Vector2(135.125, -759.9999)
@@ -99,61 +86,32 @@ position = Vector2(-278, -10)
 scale = Vector2(4.428571, 1)
 polygon = PackedVector2Array(0, 0, 126, 0, 126, 20, 0, 20)
 
-[node name="plataforma2" type="CollisionShape2D" parent="." unique_id=261800827]
-position = Vector2(-14.5, 18.333332)
-shape = SubResource("RectangleShape2D_wb0f6")
-
-[node name="Polygon2D" type="Polygon2D" parent="plataforma2" unique_id=1177201843]
-position = Vector2(-45.5, -10.000027)
-scale = Vector2(0.7222222, 1)
-polygon = PackedVector2Array(0, 0, 126, 0, 126, 20, 0, 20)
-
-[node name="plataforma3" type="CollisionShape2D" parent="." unique_id=2050230907]
-position = Vector2(98, -75.83332)
-shape = SubResource("RectangleShape2D_wb0f6")
-
-[node name="Polygon2D" type="Polygon2D" parent="plataforma3" unique_id=1250834879]
-position = Vector2(-45, -10)
-scale = Vector2(0.7222222, 1)
-polygon = PackedVector2Array(0, 0, 126, 0, 126, 20, 0, 20)
-
-[node name="plataforma4" type="CollisionShape2D" parent="." unique_id=907375673]
-position = Vector2(-108.5, -112.499985)
-shape = SubResource("RectangleShape2D_wb0f6")
-
-[node name="Polygon2D" type="Polygon2D" parent="plataforma4" unique_id=84755459]
-position = Vector2(-45, -10)
-scale = Vector2(0.7222222, 1)
-polygon = PackedVector2Array(0, 0, 126, 0, 126, 20, 0, 20)
-
-[node name="plataforma5" type="CollisionShape2D" parent="." unique_id=85187071]
-position = Vector2(181.5, -146.66666)
-shape = SubResource("RectangleShape2D_wb0f6")
-
-[node name="Polygon2D" type="Polygon2D" parent="plataforma5" unique_id=15367551]
-position = Vector2(-45, -10)
-scale = Vector2(0.7222222, 1)
-polygon = PackedVector2Array(0, 0, 126, 0, 126, 20, 0, 20)
-
-[node name="Bola1_" parent="." unique_id=156844881 instance=ExtResource("3_f6cmg")]
-position = Vector2(-166, -205.83333)
-
 [node name="Retangulo2_" parent="." unique_id=2069210807 instance=ExtResource("2_c68hb")]
-position = Vector2(7.5, -240.83336)
-scale = Vector2(1.0867422, 0.24218762)
+position = Vector2(43, -249.16666)
+scale = Vector2(1.2741783, 2.835929)
 polygon = PackedVector2Array(-104, -40, 31.728882, -39.34424, 78.65466, -39.11743, 103, -39, 103, 40, 62.59912, 40.000122, 0.50964355, 40.000244, -103, 40)
 
 [node name="Hexagono4_" parent="." unique_id=1610415468 instance=ExtResource("3_f7wls")]
-position = Vector2(881, 33)
+visible = true
+position = Vector2(154.54999, 10.700737)
+scale = Vector2(0.76815873, 1.8984928)
 
-[node name="Quadrado1_" parent="." unique_id=1801276064 instance=ExtResource("4_5cgrd")]
-position = Vector2(-151, -364.16666)
-
-[node name="mundo2D" type="Node2D" parent="." unique_id=449765058]
+[node name="Hexagono4_2" parent="." unique_id=1228535751 instance=ExtResource("3_f7wls")]
+visible = true
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_okb6u")]
-position = Vector2(-141, 202.49997)
-scale = Vector2(0.2, 0.2)
+position = Vector2(-141, 202.5)
+scale = Vector2(0.1, 0.1)
 
 [node name="objetoQuebravel" parent="." unique_id=2026073040 instance=ExtResource("2_8am2l")]
-position = Vector2(-46, 195.83331)
+position = Vector2(-47.5, 244.16667)
+scale = Vector2(0.1, 0.1)
+
+[node name="Bump1_" parent="." unique_id=594397363 instance=ExtResource("5_db06b")]
+position = Vector2(103.5, 217.5)
+
+[node name="DialogueBox" parent="." unique_id=572906939 instance=ExtResource("6_c68hb")]
+offset_left = -234.0
+offset_top = 19.166668
+offset_right = -64.0
+offset_bottom = 134.16667

@@ -1,23 +1,36 @@
 [gd_scene format=3 uid="uid://cr8waum0e74q"]
 
+[ext_resource type="Script" uid="uid://dpjh0xt0g4nfp" path="res://scenes/interfaces/rich_text_label.gd" id="1_atnx8"]
+[ext_resource type="Script" uid="uid://d4gr8qxnb454r" path="res://scenes/interfaces/dialogue_box.gd" id="1_nwrkd"]
+
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ilnc5"]
 load_path = "res://.godot/imported/Ativo 14.svg-c71ef7267245d39057d362fd869c1518.ctex"
 
 [node name="DialogueBox" type="MarginContainer" unique_id=572906939]
-offset_right = 119.0
-offset_bottom = 54.0
+offset_right = 153.0
+offset_bottom = 87.0
+script = ExtResource("1_nwrkd")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=749268494]
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_ilnc5")
 region_rect = Rect2(69, 26, 68, 26)
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1026741745]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2081473434]
 layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
 
-[node name="RichTextLabel" type="Label" parent="MarginContainer" unique_id=1058428774]
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer" unique_id=75571064]
 layout_mode = 2
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Ola rapaziada"
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[wave]hummmm fraguim[/wave]
+[img=50x50]res://assets/chiken.jpg[/img]"
+fit_content = true
 vertical_alignment = 1
+script = ExtResource("1_atnx8")
+
+[connection signal="enviar_texto" from="." to="MarginContainer/RichTextLabel" method="_on_evento_de_texto_recebido"]
