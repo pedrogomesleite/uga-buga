@@ -11,10 +11,9 @@ config_version=5
 [application]
 
 config/name="uga buga"
-run/main_scene="uid://faeemwuh44bw"
+run/main_scene="uid://c523cbdjh2cww"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
-<<<<<<<HEADrun/main_scene="uid://dc8ur0pcxsdeb"
 
 [editor_plugins]
 

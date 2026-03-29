@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cr8waum0e74q"]
 
-[ext_resource type="Script" uid="uid://dpjh0xt0g4nfp" path="res://scenes/interfaces/rich_text_label.gd" id="1_atnx8"]
-[ext_resource type="Script" uid="uid://d4gr8qxnb454r" path="res://scenes/interfaces/dialogue_box.gd" id="1_nwrkd"]
+[ext_resource type="Script" uid="uid://dpjh0xt0g4nfp" path="res://scripts/rich_text_label.gd" id="1_atnx8"]
+[ext_resource type="Script" uid="uid://d4gr8qxnb454r" path="res://scripts/dialogue_box.gd" id="1_nwrkd"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ilnc5"]
 load_path = "res://.godot/imported/Ativo 14.svg-c71ef7267245d39057d362fd869c1518.ctex"
