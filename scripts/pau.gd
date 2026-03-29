@@ -30,6 +30,5 @@ func _physics_process(delta: float) -> void:
 func checar_colisoes(velocidade: Vector2, delta: float):
 	var colisao = move_and_collide(velocidade * delta)
 	if colisao:
-		var normal = colisao.get_normal()
 		var movimento_bloqueado = colisao.get_remainder()
 		objeto_tocado.emit(movimento_bloqueado, delta)
