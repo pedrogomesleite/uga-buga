@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://faeemwuh44bw"]
+
+<<<<<<< HEAD:scenes/controller_geral.tscn
+[ext_resource type="Script" uid="uid://ce6yty764pgkg" path="res://scripts/global.gd" id="1_wb0f6"]
+[ext_resource type="PackedScene" uid="uid://covte7ufilva" path="res://scenes/interfaces/MainMenu.tscn" id="3_r6s1a"]
+[ext_resource type="Script" uid="uid://cmrn7x3alb3ok" path="res://scripts/main_menu.gd" id="3_tj8yn"]
+=======
+[ext_resource type="Script" uid="uid://ce6yty764pgkg" path="res://scripts/global.gd" id="1_ekxnf"]
+[ext_resource type="PackedScene" uid="uid://covte7ufilva" path="res://scenes/interfaces/MainMenu.tscn" id="2_bqqt6"]
+>>>>>>> c3999c2093a5b304437b98e4076a9c959d8dd513:scenes/main_menu.tscn
+
+[node name="controllerGeral" type="Node" unique_id=96255319]
+script = ExtResource("1_ekxnf")
+
+[node name="Control" parent="." unique_id=685622937 instance=ExtResource("2_bqqt6")]
+z_index = 1
+script = ExtResource("3_tj8yn")
