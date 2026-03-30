@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://btno2noxuwobp"]
 
-[ext_resource type="Texture2D" uid="uid://hnpuwjsd6h65" path="res://assets/Old Assets/olho.tres" id="1_g66cw"]
+[ext_resource type="Texture2D" uid="uid://c16gnancg4lsg" path="res://assets/SVG/Ativo 61.svg" id="1_g66cw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_db8xc"]
 
@@ -20,6 +20,7 @@ contact_monitor = true
 scale = Vector2(3, 3)
 shape = SubResource("CircleShape2D_db8xc")
 
-[node name="Sprite2D" type="Sprite2D" parent="objetoRigido" unique_id=2034197993]
-modulate = Color(0, 0, 0, 1)
+[node name="Ativo61" type="Sprite2D" parent="objetoRigido" unique_id=548536595]
+position = Vector2(-9.536743e-07, 1.9999995)
+scale = Vector2(0.80263156, 0.80263156)
 texture = ExtResource("1_g66cw")
