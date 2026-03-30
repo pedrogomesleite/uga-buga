@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://bjrqvymjsoxm"]
+
+[ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_w6p1k"]
+[ext_resource type="PackedScene" uid="uid://dgyqjphvdjc2q" path="res://scenes/objeto_empurravelcarne.tscn" id="2_ncmk2"]
+
+[node name="Maloca" type="Node2D" unique_id=342589492]
+
+[node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_w6p1k")]
+position = Vector2(57, 441)
+scale = Vector2(0.2, 0.2)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1838521350]
+collision_layer = 3
+collision_mask = 3
+
+[node name="Polygon2D4" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=713088115]
+polygon = PackedVector2Array(-88, 765, -79, 487, -62, 214, 59, 14, 323, -94, 1086, -103, 1315, -50, 1412, 113, 1423, 264, 1904, 269, 1920, 483, 1915, 582, 1908, 678, 1899, 793, 2102, 791, 2130, 91, 1818, -155, 1569, -281, 1340, -304, 843, -343, 600, -345, 202, -313, -77, -253, -210, -90, -309, 185, -311, 493, -306, 755)
+
+[node name="Polygon2D5" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=792332953]
+polygon = PackedVector2Array(-85, 510, 374, 603, 1104, 595, 1407, 474, 1482, 489, 1957, 491, 1909, 801, -99, 768)
+
+[node name="Polygon2D3" type="Polygon2D" parent="." unique_id=1587924092]
+color = Color(0.28852957, 0.2050069, 0.10337318, 1)
+polygon = PackedVector2Array(-686, -403, 2449, -380, 2449, 958, -541, 1181)
+
+[node name="Polygon2D2" type="Polygon2D" parent="." unique_id=1554791868]
+color = Color(0.25963205, 0.16068745, 0.0999944, 1)
+polygon = PackedVector2Array(-107, 1041, -79, 487, -62, 214, 59, 14, 323, -94, 1086, -103, 1315, -50, 1412, 113, 1423, 264, 1900, 310, 1950, 453, 1915, 582, 1908, 678, 1931, 1057, 2554, 1042, 2588, 44, 2189, -408, 1703, -469, 1373, -469, 872, -469, 541, -477, 165, -465, -305, -446, -598, -317, -678, 78, -678, 488, -685, 1076)
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=130063296]
+position = Vector2(-2, 26)
+color = Color(0.20814312, 0.114500545, 0.049978457, 1)
+polygon = PackedVector2Array(-82, 486, 378, 576, 1104, 568, 1411, 447, 1482.2601, 462.27838, 2657, 467, 2652, 1035, -113, 1089, -693, 1087, -681, 470)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=601224031]
+
+[node name="objetoEmpurravel" parent="Node2D" unique_id=1341418358 instance=ExtResource("2_ncmk2")]
+position = Vector2(1713, 420)
+
+[node name="objetoEmpurravel2" parent="Node2D" unique_id=1748987119 instance=ExtResource("2_ncmk2")]
+position = Vector2(1666, 333)
+rotation = 2.2531128
+
+[node name="objetoEmpurravel19" parent="Node2D" unique_id=1056011452 instance=ExtResource("2_ncmk2")]
+position = Vector2(1719, 327)
+
+[node name="objetoEmpurravel20" parent="Node2D" unique_id=440006178 instance=ExtResource("2_ncmk2")]
+position = Vector2(1769, 326)
+rotation = 2.095614
+
+[node name="objetoEmpurravel21" parent="Node2D" unique_id=1590597366 instance=ExtResource("2_ncmk2")]
+position = Vector2(1828, 328)
+
+[node name="objetoEmpurravel22" parent="Node2D" unique_id=171899934 instance=ExtResource("2_ncmk2")]
+position = Vector2(1847, 368)
+
+[node name="objetoEmpurravel23" parent="Node2D" unique_id=275344184 instance=ExtResource("2_ncmk2")]
+position = Vector2(1892, 374)
+
+[node name="objetoEmpurravel24" parent="Node2D" unique_id=1487834064 instance=ExtResource("2_ncmk2")]
+position = Vector2(1875, 336)
+
+[node name="objetoEmpurravel25" parent="Node2D" unique_id=1276910018 instance=ExtResource("2_ncmk2")]
+position = Vector2(1910, 418)
+rotation = -1.659846
+
+[node name="objetoEmpurravel26" parent="Node2D" unique_id=909545851 instance=ExtResource("2_ncmk2")]
+position = Vector2(1923, 466)
+
+[node name="objetoEmpurravel27" parent="Node2D" unique_id=1381165433 instance=ExtResource("2_ncmk2")]
+position = Vector2(1533, 466)
+
+[node name="objetoEmpurravel28" parent="Node2D" unique_id=700480344 instance=ExtResource("2_ncmk2")]
+position = Vector2(1557, 419)
+
+[node name="objetoEmpurravel31" parent="Node2D" unique_id=833825981 instance=ExtResource("2_ncmk2")]
+position = Vector2(1488, 460.00006)
+rotation = -0.592033
+
+[node name="objetoEmpurravel32" parent="Node2D" unique_id=411015076 instance=ExtResource("2_ncmk2")]
+position = Vector2(1513, 425)
+rotation = -0.592033
+
+[node name="objetoEmpurravel3" parent="Node2D" unique_id=1763326514 instance=ExtResource("2_ncmk2")]
+position = Vector2(1780, 456)
+rotation = 1.6396528
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="objetoEmpurravel12" parent="Node2D" unique_id=681271942 instance=ExtResource("2_ncmk2")]
+position = Vector2(1763, 415)
+
+[node name="objetoEmpurravel13" parent="Node2D" unique_id=1259686071 instance=ExtResource("2_ncmk2")]
+position = Vector2(1745, 370)
+rotation = -1.4278922
+
+[node name="objetoEmpurravel14" parent="Node2D" unique_id=1034562134 instance=ExtResource("2_ncmk2")]
+position = Vector2(1830, 456)
+
+[node name="objetoEmpurravel15" parent="Node2D" unique_id=1807753639 instance=ExtResource("2_ncmk2")]
+position = Vector2(1880, 454)
+
+[node name="objetoEmpurravel16" parent="Node2D" unique_id=533240070 instance=ExtResource("2_ncmk2")]
+position = Vector2(1815, 410)
+
+[node name="objetoEmpurravel17" parent="Node2D" unique_id=2059198482 instance=ExtResource("2_ncmk2")]
+position = Vector2(1862, 409)
+
+[node name="objetoEmpurravel18" parent="Node2D" unique_id=979245533 instance=ExtResource("2_ncmk2")]
+position = Vector2(1799, 362)
+
+[node name="objetoEmpurravel4" parent="Node2D" unique_id=1118838699 instance=ExtResource("2_ncmk2")]
+position = Vector2(1584, 458)
+
+[node name="objetoEmpurravel5" parent="Node2D" unique_id=1287114846 instance=ExtResource("2_ncmk2")]
+position = Vector2(1607, 416)
+
+[node name="objetoEmpurravel10" parent="Node2D" unique_id=718956640 instance=ExtResource("2_ncmk2")]
+position = Vector2(1636, 375)
+rotation = -1.2235993
+
+[node name="objetoEmpurravel11" parent="Node2D" unique_id=267020621 instance=ExtResource("2_ncmk2")]
+position = Vector2(1692, 374)
+
+[node name="objetoEmpurravel6" parent="Node2D" unique_id=811284457 instance=ExtResource("2_ncmk2")]
+position = Vector2(1657, 417)
+
+[node name="objetoEmpurravel7" parent="Node2D" unique_id=1701973471 instance=ExtResource("2_ncmk2")]
+position = Vector2(1630, 458)
+rotation = -0.95198154
+
+[node name="objetoEmpurravel8" parent="Node2D" unique_id=1333569664 instance=ExtResource("2_ncmk2")]
+position = Vector2(1679, 458)
+
+[node name="objetoEmpurravel9" parent="Node2D" unique_id=91149133 instance=ExtResource("2_ncmk2")]
+position = Vector2(1728, 460)
+rotation = -1.3545016
