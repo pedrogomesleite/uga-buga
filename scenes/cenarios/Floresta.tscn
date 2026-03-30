@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://dmxbc5c3oxewp" path="res://Prefab/npc/npc2.tscn" id="14_0yid4"]
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="15_0yid4"]
 [ext_resource type="PackedScene" uid="uid://cfjf1or5x4q8d" path="res://Prefab/npc/npc1_dialogo.tscn" id="16_iet4d"]
+[ext_resource type="PackedScene" uid="uid://cmuttegguxe7q" path="res://scenes/cenarios/saida.tscn" id="17_7m11w"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hxwco"]
 
@@ -235,7 +236,7 @@ scale = Vector2(0.6271769, 0.627177)
 polygon = PackedVector2Array(13.426025, 2.3088074, 93.30298, -12.926056, 88.83032, -2.3338928, -4.472412, 10.592163, -36.022705, 6.8706055, -96.88721, -5.868561, -89.28247, -17.058197, -35.35254, 1.8732605, 0.89624023, 4.698639)
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_e1oua")]
-position = Vector2(-403, 557)
+position = Vector2(5047.9995, -1006.9999)
 scale = Vector2(0.2, 0.2)
 
 [node name="objetoEmpurravel" parent="." unique_id=1341418358 instance=ExtResource("2_hxwco")]
@@ -319,6 +320,10 @@ offset_left = -316.0
 offset_top = 443.0
 offset_right = -65.0
 offset_bottom = 512.0
+
+[node name="Saida" parent="." unique_id=929659186 instance=ExtResource("17_7m11w")]
+position = Vector2(-2417, 672)
+next_scene = "res://scenes/cenarios/maloca.tscn"
 
 [connection signal="finalizar_cut_scene" from="CutScene" to="CutScene/Npc1" method="start_collision"]
 [connection signal="finalizar_cut_scene" from="CutScene" to="CutScene/Npc2" method="start_collision"]
