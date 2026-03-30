@@ -1,0 +1,267 @@
+[gd_scene format=3 uid="uid://hrlieo6tgl0b"]
+
+[ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_e1oua"]
+[ext_resource type="Texture2D" uid="uid://b5wjaakvrrc80" path="res://assets/SVG/arvore (3).svg" id="1_qlhad"]
+[ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_hxwco"]
+[ext_resource type="Texture2D" uid="uid://c0o6tcu321yp" path="res://assets/SVG/arvore (1).svg" id="2_j4bm0"]
+[ext_resource type="Texture2D" uid="uid://d1hegkwnttlv4" path="res://assets/SVG/vinhaboareal (2).svg" id="2_nbhgd"]
+[ext_resource type="Texture2D" uid="uid://clthbn68tsvi" path="res://assets/SVG/arvore (4).svg" id="3_e2vvb"]
+[ext_resource type="PackedScene" uid="uid://b8i4mlpodgbyv" path="res://scenes/interfaces/pause_menu.tscn" id="3_hxwco"]
+[ext_resource type="Texture2D" uid="uid://mfhogdvjip3a" path="res://assets/SVG/maloca (1).svg" id="4_e2vvb"]
+[ext_resource type="Texture2D" uid="uid://tpnmvrpemxbn" path="res://assets/SVG/maloca (2).svg" id="5_raw46"]
+[ext_resource type="Texture2D" uid="uid://bd4h8ksgwr6ww" path="res://assets/SVG/vinhaboareal (1).svg" id="9_raw46"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hxwco"]
+
+[node name="Floresta" type="Node2D" unique_id=276136146]
+
+[node name="Vinhaboareal(1)" type="Sprite2D" parent="." unique_id=935187584]
+position = Vector2(1920.9999, 69)
+rotation = 0.18846601
+scale = Vector2(0.6271769, 0.627177)
+texture = ExtResource("9_raw46")
+
+[node name="Vinhaboareal(2)" type="Sprite2D" parent="Vinhaboareal(1)" unique_id=582857068]
+position = Vector2(-186.5435, -331.2612)
+rotation = -0.69192976
+scale = Vector2(2.332825, 2.3328242)
+texture = ExtResource("2_nbhgd")
+
+[node name="Vinhaboareal(2)2" type="Sprite2D" parent="Vinhaboareal(1)" unique_id=512786103]
+position = Vector2(3178.8167, -1520.1494)
+rotation = -0.69192976
+scale = Vector2(2.332825, 2.3328242)
+texture = ExtResource("2_nbhgd")
+
+[node name="Vinhaboareal(2)3" type="Sprite2D" parent="Vinhaboareal(1)" unique_id=325768457]
+position = Vector2(3540.7798, -1818.0555)
+rotation = -0.69192976
+scale = Vector2(2.332825, 2.3328242)
+texture = ExtResource("2_nbhgd")
+
+[node name="Arvore(3)" type="Sprite2D" parent="." unique_id=1580243720]
+position = Vector2(1735, 416)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_qlhad")
+
+[node name="Arvore(3)2" type="Sprite2D" parent="Arvore(3)" unique_id=1207936852]
+position = Vector2(4046.667, -513.3333)
+texture = ExtResource("1_qlhad")
+
+[node name="Arvore(3)3" type="Sprite2D" parent="Arvore(3)" unique_id=964036347]
+position = Vector2(4610, -2563.3333)
+texture = ExtResource("1_qlhad")
+
+[node name="Arvore(3)4" type="Sprite2D" parent="Arvore(3)" unique_id=827302397]
+position = Vector2(-1913.3323, -1603.3333)
+texture = ExtResource("1_qlhad")
+
+[node name="Arvore(3)5" type="Sprite2D" parent="Arvore(3)" unique_id=724299638]
+position = Vector2(-9313.333, -1889.9999)
+texture = ExtResource("1_qlhad")
+
+[node name="Arvore(3)6" type="Sprite2D" parent="Arvore(3)" unique_id=528001735]
+position = Vector2(-6623.333, 420.00024)
+texture = ExtResource("1_qlhad")
+
+[node name="Arvore(3)7" type="Sprite2D" parent="Arvore(3)" unique_id=1038003449]
+position = Vector2(-4180, 126.666626)
+texture = ExtResource("1_qlhad")
+
+[node name="Arvore(1)" type="Sprite2D" parent="." unique_id=1967608245]
+position = Vector2(1196, 356)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_j4bm0")
+
+[node name="Arvore(1)2" type="Sprite2D" parent="Arvore(1)" unique_id=1972728427]
+position = Vector2(3426.6665, -570)
+texture = ExtResource("2_j4bm0")
+
+[node name="Arvore(1)3" type="Sprite2D" parent="Arvore(1)" unique_id=1784391557]
+position = Vector2(4856.6665, -2293.3333)
+texture = ExtResource("2_j4bm0")
+
+[node name="Arvore(1)4" type="Sprite2D" parent="Arvore(1)" unique_id=1860920852]
+position = Vector2(9726.666, 663.3334)
+texture = ExtResource("2_j4bm0")
+
+[node name="Arvore(1)5" type="Sprite2D" parent="Arvore(1)" unique_id=2046029062]
+position = Vector2(13653.334, 196.66663)
+texture = ExtResource("2_j4bm0")
+
+[node name="Arvore(4)" type="Sprite2D" parent="." unique_id=1992259995]
+position = Vector2(-14, 567)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_e2vvb")
+
+[node name="Arvore(4)2" type="Sprite2D" parent="Arvore(4)" unique_id=42118870]
+position = Vector2(2916, -232)
+texture = ExtResource("3_e2vvb")
+
+[node name="Arvore(4)3" type="Sprite2D" parent="Arvore(4)" unique_id=1020496533]
+position = Vector2(5236, -2412)
+texture = ExtResource("3_e2vvb")
+
+[node name="Arvore(4)4" type="Sprite2D" parent="Arvore(4)" unique_id=2033810917]
+position = Vector2(8300, -3628)
+texture = ExtResource("3_e2vvb")
+
+[node name="Arvore(4)5" type="Sprite2D" parent="Arvore(4)" unique_id=1784736392]
+position = Vector2(13340, -644)
+texture = ExtResource("3_e2vvb")
+
+[node name="Arvore(4)6" type="Sprite2D" parent="Arvore(4)" unique_id=375405233]
+position = Vector2(19720, 128)
+texture = ExtResource("3_e2vvb")
+
+[node name="Arvore(4)7" type="Sprite2D" parent="Arvore(4)" unique_id=1274492556]
+position = Vector2(23712, -824)
+texture = ExtResource("3_e2vvb")
+
+[node name="Arvore(4)8" type="Sprite2D" parent="Arvore(4)" unique_id=1618563080]
+position = Vector2(23712, -6020)
+texture = ExtResource("3_e2vvb")
+
+[node name="Arvore(4)9" type="Sprite2D" parent="Arvore(4)" unique_id=1512482895]
+position = Vector2(18816, -6088)
+texture = ExtResource("3_e2vvb")
+
+[node name="Arvore(4)10" type="Sprite2D" parent="Arvore(4)" unique_id=1990889309]
+position = Vector2(-1788, -208)
+texture = ExtResource("3_e2vvb")
+
+[node name="Maloca(1)" type="Sprite2D" parent="." unique_id=560809642]
+position = Vector2(1463, 394)
+rotation = 0.14041905
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_e2vvb")
+
+[node name="Maloca(1)2" type="Sprite2D" parent="." unique_id=1698974631]
+position = Vector2(2361.0002, -338.00003)
+rotation = 0.0017852914
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_e2vvb")
+
+[node name="Maloca(1)3" type="Sprite2D" parent="." unique_id=907648702]
+position = Vector2(4670, 585.0001)
+rotation = 0.0017852914
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_e2vvb")
+
+[node name="Maloca(1)4" type="Sprite2D" parent="." unique_id=1575147216]
+position = Vector2(150.99976, 562)
+rotation = 0.0017852914
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_e2vvb")
+
+[node name="Maloca(2)" type="Sprite2D" parent="." unique_id=1701460499]
+position = Vector2(2416, 214)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_raw46")
+
+[node name="Maloca(2)2" type="Sprite2D" parent="." unique_id=1751358419]
+position = Vector2(3574, -436.99994)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_raw46")
+
+[node name="Maloca(2)3" type="Sprite2D" parent="." unique_id=1335819263]
+position = Vector2(4347, 585.99994)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_raw46")
+
+[node name="Maloca(2)4" type="Sprite2D" parent="." unique_id=321929503]
+position = Vector2(5583, 411.00006)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_raw46")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1585869293]
+light_mask = 3
+visibility_layer = 3
+material = SubResource("CanvasItemMaterial_hxwco")
+collision_layer = 3
+collision_mask = 3
+
+[node name="Polygon2D7" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1936880179]
+position = Vector2(40, 117)
+polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 536, 434, 613, 462, 685, 474, 763, 459, 768, 491, 784, 507, 836, 504, 842, 483, 856, 402, 889, 349, 981, 344, 1086, 343, 1294, 343, 1686, 409, 2229, 417, 2707, 368, 2781, 319, 2825, 246, 2943, 256, 3182, 356, 3397, 403, 3553, 463, 3712, 502, 3854, 529, 4023, 547, 4356, 557, 4847.8154, 564.7428, 5047, 508, 5247, 414, 5521, 378, 5939, 346, 6168, 64, 6324.702, -277.5774, 6209, -1539, 6590, -1682, 6848, -1139, 6781, 817, 5305, 807, 3628, 801, 2160, 800, -552, 800, -1937, 817, -1958, -784, -1747, -1315, -1210, -758, -1401, -635, -1447, -404, -1282, -161, -1052, -163, -772.38837, 220.93134, -656.48236, 368.82288, -413, 520)
+
+[node name="Polygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=176614838]
+polygon = PackedVector2Array(2667, 380, 2572, 372, 2473, 382, 2305, 370, 2128, 354, 2032, 372, 1954, 332, 1928, 245, 1947, 130, 1980, 71, 2011, 82, 2032, 134, 2091, 200, 2131, 262, 2192, 295, 2245, 295, 2305, 302, 2404, 307, 2475, 302, 2536, 297, 2647, 283, 2751, 347)
+
+[node name="Polygon2D2" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1554863667]
+position = Vector2(112.900024, 19.699997)
+polygon = PackedVector2Array(1537, -110, 1560, -80, 1594, -86, 1630, -89, 1648, -86, 1660, -102, 1651, -121, 1616, -137, 1588, -139, 1554, -127)
+
+[node name="Polygon2D3" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=545681899]
+position = Vector2(1.0999756, 65.600006)
+polygon = PackedVector2Array(1940, -253, 1962, -228, 2038, -228, 2080, -204, 2188, -185, 2307, -216, 2452, -225, 2550, -187, 2676, -190, 2735, -225, 2800, -241, 2777, -273, 2721, -291, 2656, -282, 2595, -286, 2486, -312, 2413, -311, 2349, -306, 2275, -312, 2186, -317, 2143, -294, 2036, -325, 1990, -327, 1933, -306)
+
+[node name="Polygon2D4" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=2134861337]
+polygon = PackedVector2Array(4433, -719, 4520, -521, 4720, -483, 4841, -442, 4958, -376, 5051, -279, 5096, -386, 5231, -493, 5345, -431, 5445, -324, 5562, -449, 5690, -549, 5890, -497, 5966, -435, 6018, -597, 6132, -673, 6167, -725, 6059, -797, 5956, -849, 5880, -856, 5763, -852, 5631, -842, 5417, -839, 5255, -849, 5089, -849, 4969, -849, 4710, -873, 4487, -769)
+
+[node name="Polygon2D5" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1531277659]
+polygon = PackedVector2Array(2888, -220, 2970, -269, 3119, -238, 3212, -244, 3363, -283, 3465, -346, 3695, -356, 3766, -425, 3892, -464, 4024, -418, 4151, -331, 4066, -220, 4006, -182, 3871, -156, 3631, -167, 3512, -156, 3336, -103, 3148, -93, 2961, -133, 2903, -148)
+
+[node name="Polygon2D6" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=2072838408]
+position = Vector2(-24.400024, 69)
+polygon = PackedVector2Array(1838, 56, 1794, 79, 1741, 95, 1623, 73, 1509, 83, 1397, 84, 1258, 83, 1152, 36, 1131, -38, 1193, -28, 1276, -45, 1360, -29, 1434, -8, 1546, -15, 1638, -38, 1707, -24, 1773, -29, 1845, -24, 1893, -21)
+
+[node name="Vinhaboareal(2)" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1961168081]
+position = Vector2(1845, -157)
+rotation = -0.50346386
+scale = Vector2(1.463094, 1.4630936)
+polygon = PackedVector2Array(-79.43494, -10.200287, -22.160645, 3.3998413, 9.041016, 3.4192505, 78.1001, -10.042664, 74.14307, -2.8585815, 4.8150635, 9.674866, -25.45813, 9.386597, -74.49829, -3.5796509)
+
+[node name="Vinhaboareal(2)2" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1016238129]
+position = Vector2(4058, -494.00012)
+rotation = -0.50346386
+scale = Vector2(1.463094, 1.4630936)
+polygon = PackedVector2Array(-87.54761, -13.888306, -19.826904, 6.2459717, 100.65112, -15.568237, 177.86426, 4.3325195, 209.99438, 4.083008, 306.12524, -13.194824, 305.22217, -5.88916, 208.49268, 11.059082, 173.36914, 9.659668, 100.407715, -9.459717, -7.8535156, 12.841064, -37.918457, 15.008301, -82.67163, -5.7406006)
+
+[node name="Vinhaboareal(1)2" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=309448554]
+position = Vector2(1920.9999, 69)
+rotation = 0.18846601
+scale = Vector2(0.6271769, 0.627177)
+polygon = PackedVector2Array(13.426025, 2.3088074, 93.30298, -12.926056, 88.83032, -2.3338928, -4.472412, 10.592163, -36.022705, 6.8706055, -96.88721, -5.868561, -89.28247, -17.058197, -35.35254, 1.8732605, 0.89624023, 4.698639)
+
+[node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_e1oua")]
+position = Vector2(57, 441)
+scale = Vector2(0.2, 0.2)
+
+[node name="objetoEmpurravel" parent="." unique_id=1341418358 instance=ExtResource("2_hxwco")]
+position = Vector2(450, 218)
+
+[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("3_hxwco")]
+visible = false
+
+[node name="Polygon2D7" type="Polygon2D" parent="." unique_id=66684201]
+position = Vector2(40, 117)
+color = Color(0.35655707, 0.5247501, 0.34819347, 1)
+polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 536, 434, 613, 462, 685, 474, 763, 459, 768, 491, 784, 507, 836, 504, 842, 483, 856, 402, 889, 349, 981, 344, 1086, 343, 1294, 343, 1686, 409, 2229, 417, 2707, 368, 2781, 319, 2825, 246, 2943, 256, 3182, 356, 3397, 403, 3553, 463, 3712, 502, 3854, 529, 4023, 547, 4356, 557, 4847.8154, 564.7428, 5047, 508, 5247, 414, 5521, 378, 5939, 346, 6168, 64, 6324.702, -277.5774, 6209, -1539, 6590, -1682, 6848, -1139, 6781, 817, 5305, 807, 3628, 801, 2160, 800, -552, 800, -1937, 817, -1958, -784, -1747, -1315, -1210, -758, -1401, -635, -1447, -404, -1282, -161, -1052, -163, -772.38837, 220.93134, -656.48236, 368.82288, -413, 520)
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=701047151]
+color = Color(0.35655707, 0.5247501, 0.34819347, 1)
+polygon = PackedVector2Array(2667, 380, 2572, 372, 2473, 382, 2305, 370, 2128, 354, 2032, 372, 1954, 332, 1928, 245, 1947, 130, 1980, 71, 2011, 82, 2032, 134, 2091, 200, 2131, 262, 2192, 295, 2245, 295, 2305, 302, 2404, 307, 2475, 302, 2536, 297, 2647, 283, 2751, 347)
+
+[node name="Polygon2D2" type="Polygon2D" parent="." unique_id=323934692]
+position = Vector2(112.900024, 19.699997)
+color = Color(0.35655707, 0.5247501, 0.34819347, 1)
+polygon = PackedVector2Array(1537, -110, 1560, -80, 1594, -86, 1630, -89, 1648, -86, 1660, -102, 1651, -121, 1616, -137, 1588, -139, 1554, -127)
+
+[node name="Polygon2D3" type="Polygon2D" parent="." unique_id=392024798]
+position = Vector2(1.0999756, 65.600006)
+color = Color(0.35655707, 0.5247501, 0.34819347, 1)
+polygon = PackedVector2Array(1940, -253, 1962, -228, 2038, -228, 2080, -204, 2188, -185, 2307, -216, 2452, -225, 2550, -187, 2676, -190, 2735, -225, 2800, -241, 2777, -273, 2721, -291, 2656, -282, 2595, -286, 2486, -312, 2413, -311, 2349, -306, 2275, -312, 2186, -317, 2143, -294, 2036, -325, 1990, -327, 1933, -306)
+
+[node name="Polygon2D4" type="Polygon2D" parent="." unique_id=1828433864]
+color = Color(0.35655707, 0.5247501, 0.34819347, 1)
+polygon = PackedVector2Array(4433, -718, 4520, -521, 4720, -483, 4841, -442, 4958, -376, 5051, -279, 5096, -386, 5231, -493, 5345, -431, 5445, -324, 5562, -449, 5690, -549, 5890, -497, 5966, -435, 6018, -597, 6132, -673, 6167, -725, 6059, -797, 5956, -849, 5880, -856, 5763, -852, 5631, -842, 5417, -839, 5255, -849, 5089, -849, 4969, -849, 4710, -873, 4487, -769)
+
+[node name="Polygon2D5" type="Polygon2D" parent="." unique_id=519928842]
+color = Color(0.35655707, 0.5247501, 0.34819347, 1)
+polygon = PackedVector2Array(2888, -220, 2970, -269, 3119, -238, 3212, -244, 3363, -283, 3465, -346, 3695, -356, 3766, -425, 3892, -464, 4024, -418, 4111.2314, -358.2429, 4151, -331, 4066, -220, 4006, -182, 3871, -156, 3631, -167, 3512, -156, 3336, -103, 3148, -93, 2961, -133, 2903, -148)
+
+[node name="Polygon2D6" type="Polygon2D" parent="." unique_id=1172113568]
+position = Vector2(-24.400024, 69)
+color = Color(0.35655707, 0.5247501, 0.34819347, 1)
+polygon = PackedVector2Array(1838, 56, 1794, 79, 1741, 95, 1623, 73, 1509, 83, 1397, 84, 1258, 83, 1152, 36, 1131, -38, 1193, -28, 1276, -45, 1360, -29, 1434, -8, 1546, -15, 1638, -38, 1707, -24, 1773, -29, 1845, -24, 1893, -21)
