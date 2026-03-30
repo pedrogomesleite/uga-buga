@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://d74b13eap2t0"]
+
+[ext_resource type="Shader" uid="uid://dry77qr3irtya" path="res://shaders/dissolve_effect.gdshader" id="1_4c6wu"]
+[ext_resource type="Script" uid="uid://h67c4wp03pbd" path="res://scripts/homem_sombra_empurravel.gd" id="1_qhsvf"]
+[ext_resource type="Texture2D" uid="uid://c64dn2lyfs8km" path="res://assets/Old Assets/Corpo sem olho.svg" id="2_qhsvf"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_s4ldb"]
+noise_type = 3
+frequency = 0.0312
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_rb3qs"]
+noise = SubResource("FastNoiseLite_s4ldb")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_rb3qs"]
+noise_type = 3
+frequency = 0.0155
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_8qnb5"]
+noise = SubResource("FastNoiseLite_rb3qs")
+as_normal_map = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iowr0"]
+shader = ExtResource("1_4c6wu")
+shader_parameter/noise_tex_normal = SubResource("NoiseTexture2D_8qnb5")
+shader_parameter/noise_tex = SubResource("NoiseTexture2D_rb3qs")
+shader_parameter/strength = 4.0
+shader_parameter/pixel_count = 512.0
+shader_parameter/alpha_threshold = 1.0
+shader_parameter/hole_color = Color(0.4012269, 0.20473489, 0.13465631, 1)
+shader_parameter/hole_thickness = 0.1170000055575
+shader_parameter/hole_glow = 2.0
+shader_parameter/inside_color = Color(0.010699962, 0.0073814183, 0.0071542934, 1)
+shader_parameter/inside_alpha = 0.770000036575
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8rxso"]
+radius = 26.019224
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4c6wu"]
+radius = 18.439089
+
+[node name="HomemSombra" type="RigidBody2D" unique_id=1546881299]
+collision_layer = 3
+collision_mask = 3
+contact_monitor = true
+max_contacts_reported = 5
+script = ExtResource("1_qhsvf")
+timer = null
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1934540985]
+modulate = Color(0.19881096, 0.19881096, 0.19881096, 1)
+self_modulate = Color(0.7162962, 0.7162962, 0.7162962, 1)
+material = SubResource("ShaderMaterial_iowr0")
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_qhsvf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2008420857]
+position = Vector2(0, 13)
+shape = SubResource("CircleShape2D_8rxso")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=929527333]
+position = Vector2(0, -23)
+shape = SubResource("CircleShape2D_4c6wu")

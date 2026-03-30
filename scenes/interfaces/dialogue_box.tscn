@@ -1,23 +1,32 @@
 [gd_scene format=3 uid="uid://cr8waum0e74q"]
 
 [ext_resource type="Script" uid="uid://dmxeucswg06iv" path="res://scripts/dialogue_box.gd" id="1_nwrkd"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ilnc5"]
-load_path = "res://.godot/imported/Ativo 14.svg-c71ef7267245d39057d362fd869c1518.ctex"
+[ext_resource type="Texture2D" uid="uid://diro6ueb66ypm" path="res://assets/dialogo.svg" id="2_nwrkd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_atnx8"]
-size = Vector2(153.0625, 259.875)
+size = Vector2(220.0625, 259.875)
 
 [node name="Dialogo" type="MarginContainer" unique_id=572906939]
-offset_right = 153.0
-offset_bottom = 87.0
+offset_right = 221.0
+offset_bottom = 76.0
 script = ExtResource("1_nwrkd")
 metadata/text = ""
 
-[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=749268494]
+[node name="Area2D" type="Area2D" parent="." unique_id=617009404]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=794846668]
+position = Vector2(109.96875, 130.0625)
+shape = SubResource("RectangleShape2D_atnx8")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1866889852]
 layout_mode = 2
-texture = SubResource("CompressedTexture2D_ilnc5")
-region_rect = Rect2(69, 26, 68, 26)
+texture = ExtResource("2_nwrkd")
+patch_margin_left = 21
+patch_margin_top = 21
+patch_margin_right = 21
+patch_margin_bottom = 21
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=2081473434]
 layout_mode = 2
@@ -31,15 +40,9 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
+text = "Ola texto
+"
 fit_content = true
 vertical_alignment = 1
-
-[node name="Area2D" type="Area2D" parent="." unique_id=617009404]
-collision_layer = 4
-collision_mask = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=794846668]
-position = Vector2(76.46875, 130.0625)
-shape = SubResource("RectangleShape2D_atnx8")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
