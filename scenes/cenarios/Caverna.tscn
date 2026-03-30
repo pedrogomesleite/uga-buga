@@ -4,9 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_jh1cc"]
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="3_6css3"]
 [ext_resource type="PackedScene" uid="uid://c0bli2vbel2yy" path="res://Prefab/homem_sombra.tscn" id="4_55eat"]
-[ext_resource type="Script" uid="uid://cf2r41ta5t1f7" path="res://scenes/cenarios/parede_1.gd" id="5_tlmes"]
-[ext_resource type="Script" uid="uid://bddv37h6wy8gl" path="res://scenes/cenarios/saida_caverna.gd" id="6_b8f2w"]
-[ext_resource type="PackedScene" uid="uid://b30wgwspx1rye" path="res://scenes/interfaces/pause_menu.tscn" id="7_7y7tw"]
+[ext_resource type="Script" path="res://scenes/cenarios/parede_1.gd" id="5_tlmes"]
+[ext_resource type="PackedScene" uid="uid://dwjv63mn5msop" path="res://scenes/objeto_empurravelcaveira.tscn" id="6_b8f2w"]
 
 [node name="mundo2D2" type="Node2D" unique_id=449765058]
 
@@ -18,7 +17,7 @@ polygon = PackedVector2Array(-925, 1080, -1004, 233, 8021, 239, 7999, 1208)
 [node name="Polygon2D3" type="Polygon2D" parent="BG" unique_id=305024116]
 position = Vector2(-41, -863)
 color = Color(0.38916183, 0.31456712, 0.23074302, 1)
-polygon = PackedVector2Array(-925, 1080, -1004, 233, 8040, 170, 7999, 1208)
+polygon = PackedVector2Array(-986, 1104, -1004, 233, 8040, 170, 7999, 1208)
 
 [node name="Polygon2D4" type="Polygon2D" parent="BG" unique_id=2066368037]
 position = Vector2(-98, -1644)
@@ -30,10 +29,15 @@ position = Vector2(-161, -4165)
 color = Color(0.38916183, 0.31456712, 0.23074302, 1)
 polygon = PackedVector2Array(-925, 1080, -1004, 233, 8095, 232, 7999, 1208)
 
+[node name="Polygon2D8" type="Polygon2D" parent="BG" unique_id=32819007]
+position = Vector2(-137, -2485)
+color = Color(0.38916183, 0.31456712, 0.23074302, 1)
+polygon = PackedVector2Array(-925, 1080, -1004, 233, 9360, 229, 9328, 1144)
+
 [node name="Polygon2D6" type="Polygon2D" parent="BG" unique_id=1332520066]
 position = Vector2(-120, -3302)
 color = Color(0.31421146, 0.2500574, 0.18136188, 1)
-polygon = PackedVector2Array(-925, 1080, -1004, 233, 8119, 236, 7999, 1208)
+polygon = PackedVector2Array(-925, 1080, -1004, 233, 9421, 214, 9376, 836, 9347, 1184)
 
 [node name="Dialogo" parent="BG" unique_id=572906939 instance=ExtResource("3_6css3")]
 offset_left = 2879.0
@@ -68,21 +72,21 @@ polygon = PackedVector2Array(6918, -1856, 7139, -1884, 7340, -1878, 7529, -1869,
 
 [node name="Polygon2D" type="CollisionPolygon2D" parent="Colliders" unique_id=2092075629]
 position = Vector2(5472, -3987)
-polygon = PackedVector2Array(-144, 279, -107, 541, 25, 609, 102, 577, 187, 553, 337, 554, 490, 594, 669, 580, 811, 501, 933, 501, 998, 530, 1120, 514, 1200, 411, 1313, 297, 1463, 274, 1666, 276, 1838, 313, 2033, 295, 2231, 298, 2331, 306, 2453, 274, 2592, 242, 2719, 148, 2843, 71, 2983, 37, 3082, -38, 3123, -148, 3088, -227, 2998, -274, 2868, -288, 2755, -317, 2632, -422, 3017, -623, 3244, -692, 3452, -687, 3766, -736, 3897, -891, 4042, -902, 4153, -826, 4167, -725, 4267, -670, 4419, -670, 4522, -701, 4605, -698, 4636, -574, 4726, -570, 4756, -694, 4825, -723, 4938, -721, 5047, -721, 5208, -720, 5316, -738, 5382, -811, 5462, -871, 5575, -892, 5640, -990, 5732, -1015, 5782, -1099, 5833, -1151, 5913, -1185, 5961, -1263, 5973, -1304, 6085, -1312, 6122, -1388, 6329, -1410, 6369, -1430, 6493, -1490, 6663, -1518, 6984, -1524, 7134, -1532, 7368, -1524, 7509, -1524, 7500, 1067, -901, 1075, -1151, -1254, -1072, -2850, -48, -2869, 208, -2150, 21, -1678, 90, -1126, -107, -771, -68, -446)
+polygon = PackedVector2Array(-144, 279, -107, 541, 25, 609, 102, 577, 187, 553, 337, 554, 490, 594, 669, 580, 811, 501, 933, 501, 998, 530, 1120, 514, 1200, 411, 1313, 297, 1463, 274, 1666, 276, 1838, 313, 2033, 295, 2231, 298, 2331, 306, 2453, 274, 2592, 242, 2719, 148, 2843, 71, 2983, 37, 3082, -38, 3123, -148, 3088, -227, 2998, -274, 2868, -288, 2755, -317, 2632, -422, 3017, -623, 3244, -692, 3452, -687, 3766, -736, 3897, -891, 4042, -902, 4153, -826, 4167, -725, 4267, -670, 4419, -670, 4522, -701, 4605, -698, 4636, -574, 4726, -570, 4756, -694, 4825, -723, 4938, -721, 5047, -721, 5208, -720, 5316, -738, 5382, -811, 5462, -871, 5575, -892, 5640, -990, 5732, -1015, 5782, -1099, 5833, -1151, 5913, -1185, 5961, -1263, 5973, -1304, 6085, -1312, 6122, -1388, 6329, -1410, 6369, -1430, 6493, -1490, 6663, -1518, 6984, -1524, 7134, -1532, 7368, -1524, 9193, -1515, 9241, 1180, -901, 1075, -1151, -1254, -1072, -2850, -48, -2869, 208, -2150, 21, -1678, 90, -1126, -107, -771, -68, -446)
 
 [node name="Polygon2D9" type="CollisionPolygon2D" parent="Colliders" unique_id=397543882]
 position = Vector2(5472, -3987)
 polygon = PackedVector2Array(6759, -1737, 6736, -1795, 6764, -1858, 6607, -1824, 6475, -1811, 6424, -1825, 6338, -1832, 6258, -1829, 6164, -1816, 6081, -1830, 5963, -1833, 5820, -1796, 5709, -1740, 5641, -1643, 5544, -1597, 5615, -1524, 5720, -1487, 5849, -1531, 5886, -1637, 5892, -1684, 5966, -1735, 6002, -1737, 6121, -1745, 6200, -1754, 6261, -1717, 6433, -1705, 6512, -1730, 6585, -1732)
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_w0sfl")]
-position = Vector2(7155, -1631)
+position = Vector2(250.00002, -7)
 scale = Vector2(0.2, 0.2)
 
 [node name="Polygons Components" type="Node2D" parent="." unique_id=1077571515]
 
 [node name="Polygon2D" type="Polygon2D" parent="Polygons Components" unique_id=134640580]
 color = Color(0.18039216, 0.14509805, 0.105882354, 1)
-polygon = PackedVector2Array(-144, 279, -107, 541, 25, 609, 102, 577, 187, 553, 337, 554, 490, 594, 669, 580, 811, 501, 933, 501, 998, 530, 1120, 514, 1200, 411, 1313, 297, 1463, 274, 1666, 276, 1838, 313, 2033, 295, 2231, 298, 2331, 306, 2453, 274, 2592, 242, 2719, 148, 2843, 71, 2983, 37, 3082, -38, 3123, -148, 3088, -227, 2998, -274, 2868, -288, 2755, -317, 2632, -422, 3017, -623, 3244, -692, 3452, -687, 3766, -736, 3897, -891, 4042, -902, 4153, -826, 4167, -725, 4267, -670, 4419, -670, 4522, -701, 4605, -698, 4636, -574, 4670.5713, -572.46356, 4726, -570, 4756, -694, 4825, -723, 4938, -721, 5047, -721, 5208, -720, 5316, -738, 5382, -811, 5462, -871, 5575, -892, 5640, -990, 5732, -1015, 5782, -1099, 5833, -1151, 5913, -1185, 5958, -1262, 5970, -1306, 6085, -1313, 6120, -1388, 6325, -1409, 6493, -1490, 6663, -1518, 6984, -1524, 7134, -1532, 7368, -1524, 7509, -1524, 7500, 1067, -901, 1075, -1151, -1254, -1072, -2850, -48, -2869, 208, -2150, 21, -1678, 90, -1126, -107, -771, -68, -446)
+polygon = PackedVector2Array(-144, 279, -107, 541, 25, 609, 102, 577, 187, 553, 337, 554, 490, 594, 669, 580, 811, 501, 933, 501, 998, 530, 1120, 514, 1200, 411, 1313, 297, 1463, 274, 1666, 276, 1838, 313, 2033, 295, 2231, 298, 2331, 306, 2453, 274, 2592, 242, 2719, 148, 2843, 71, 2983, 37, 3082, -38, 3123, -148, 3088, -227, 2998, -274, 2868, -288, 2755, -317, 2632, -422, 3017, -623, 3244, -692, 3452, -687, 3766, -736, 3897, -891, 4042, -902, 4153, -826, 4167, -725, 4267, -670, 4419, -670, 4522, -701, 4605, -698, 4636, -574, 4670.5713, -572.46356, 4726, -570, 4756, -694, 4825, -723, 4938, -721, 5047, -721, 5208, -720, 5316, -738, 5382, -811, 5462, -871, 5575, -892, 5640, -990, 5732, -1015, 5782, -1099, 5833, -1151, 5913, -1185, 5958, -1262, 5970, -1306, 6085, -1313, 6120, -1388, 6325, -1409, 6493, -1490, 6663, -1518, 6984, -1524, 7134, -1532, 7368, -1524, 9202, -1514, 9239, 1194, -901, 1075, -1151, -1254, -1072, -2850, -48, -2869, 208, -2150, 21, -1678, 90, -1126, -107, -771, -68, -446)
 
 [node name="Polygon2D2" type="Polygon2D" parent="Polygons Components" unique_id=1312158257]
 position = Vector2(-34, -11)
@@ -217,7 +221,7 @@ offset_left = 5543.0
 offset_top = -1181.0
 offset_right = 5794.0
 offset_bottom = -1120.0
-texto_da_instancia = "guga stuck here forever"
+texto_da_instancia = "Guga steal chicken no more"
 
 [node name="HomemSombra4" parent="." unique_id=795494631 instance=ExtResource("4_55eat")]
 offset_left = 6124.0
@@ -264,14 +268,47 @@ polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Botao2" unique_id=1689239140]
 polygon = PackedVector2Array(7510, -2022, 7522, -2018, 7491, -1867, 7478, -1871)
 
-[node name="Saida" type="Area2D" parent="." unique_id=256071588]
-script = ExtResource("6_b8f2w")
+[node name="Node2D" type="Node2D" parent="." unique_id=914972593]
+position = Vector2(24, 563)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Saida" unique_id=1897569260]
-polygon = PackedVector2Array(7466, -1701, 7559, -1692, 7606, -1524, 7419, -1522)
+[node name="objetoEmpurravel4" parent="Node2D" unique_id=1986922042 instance=ExtResource("6_b8f2w")]
 
-[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("7_7y7tw")]
+[node name="objetoEmpurravel5" parent="Node2D" unique_id=362249072 instance=ExtResource("6_b8f2w")]
+position = Vector2(-74, -31)
 
-[connection signal="body_entered" from="Botao1" to="Grade1" method="_on_botao_1_body_entered"]
+[node name="objetoEmpurravel6" parent="Node2D" unique_id=578061969 instance=ExtResource("6_b8f2w")]
+position = Vector2(-18, -61)
+
+[node name="objetoEmpurravel7" parent="Node2D" unique_id=691073690 instance=ExtResource("6_b8f2w")]
+position = Vector2(475, 0)
+
+[node name="objetoEmpurravel8" parent="Node2D" unique_id=1907200294 instance=ExtResource("6_b8f2w")]
+position = Vector2(414, -14)
+
+[node name="objetoEmpurravel9" parent="Node2D" unique_id=719613252 instance=ExtResource("6_b8f2w")]
+position = Vector2(984, -58)
+
+[node name="objetoEmpurravel10" parent="Node2D" unique_id=1999574617 instance=ExtResource("6_b8f2w")]
+position = Vector2(52, -23)
+
+[node name="objetoEmpurravel11" parent="Node2D" unique_id=411251575 instance=ExtResource("6_b8f2w")]
+position = Vector2(454, -43)
+
+[node name="objetoEmpurravel12" parent="Node2D" unique_id=458648180 instance=ExtResource("6_b8f2w")]
+position = Vector2(2379, -966)
+
+[node name="objetoEmpurravel13" parent="Node2D" unique_id=169178610 instance=ExtResource("6_b8f2w")]
+position = Vector2(4167, -1322)
+
+[node name="objetoEmpurravel14" parent="Node2D" unique_id=1770461807 instance=ExtResource("6_b8f2w")]
+position = Vector2(4229, -1269)
+
+[node name="objetoEmpurravel15" parent="Node2D" unique_id=2066102726 instance=ExtResource("6_b8f2w")]
+position = Vector2(7275, -2461)
+
+[node name="objetoEmpurravel16" parent="Node2D" unique_id=965494628 instance=ExtResource("6_b8f2w")]
+position = Vector2(7335, -2438)
+
+[connection signal="body_entered" from="Botao1" to="Parede1" method="_on_botao_1_body_entered"]
 [connection signal="body_exited" from="Botao2" to="Grade2" method="_on_botao_1_body_entered"]
 [connection signal="body_entered" from="Saida" to="Saida" method="_on_body_entered"]

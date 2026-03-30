@@ -1,13 +1,15 @@
-[gd_scene format=3 uid="uid://btno2noxuwobp"]
+[gd_scene format=3 uid="uid://dwjv63mn5msop"]
 
-[ext_resource type="Texture2D" uid="uid://c16gnancg4lsg" path="res://assets/SVG/Ativo 61.svg" id="1_g66cw"]
+[ext_resource type="Texture2D" uid="uid://oo7dsq411kh5" path="res://assets/SVG/caveira.svg" id="1_uvt2n"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_db8xc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_db8xc"]
-radius = 9.672413
+radius = 7.0000005
 
 [node name="objetoEmpurravel" type="Node2D" unique_id=1341418358]
+light_mask = 3
+visibility_layer = 3
 
 [node name="objetoRigido" type="RigidBody2D" parent="." unique_id=1580537311]
 collision_layer = 3
@@ -20,7 +22,6 @@ contact_monitor = true
 scale = Vector2(3, 3)
 shape = SubResource("CircleShape2D_db8xc")
 
-[node name="Ativo61" type="Sprite2D" parent="objetoRigido" unique_id=548536595]
-position = Vector2(-9.536743e-07, 1.9999995)
-scale = Vector2(0.80263156, 0.80263156)
-texture = ExtResource("1_g66cw")
+[node name="Caveira" type="Sprite2D" parent="objetoRigido" unique_id=1036691689]
+scale = Vector2(0.44000024, 0.44000024)
+texture = ExtResource("1_uvt2n")
