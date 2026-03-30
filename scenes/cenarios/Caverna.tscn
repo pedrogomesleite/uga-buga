@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="3_6css3"]
 [ext_resource type="PackedScene" uid="uid://c0bli2vbel2yy" path="res://Prefab/homem_sombra.tscn" id="4_55eat"]
 [ext_resource type="Script" path="res://scenes/cenarios/parede_1.gd" id="5_tlmes"]
+[ext_resource type="PackedScene" uid="uid://dwjv63mn5msop" path="res://scenes/objeto_empurravelcaveira.tscn" id="6_b8f2w"]
 
 [node name="mundo2D2" type="Node2D" unique_id=449765058]
 
@@ -78,7 +79,7 @@ position = Vector2(5472, -3987)
 polygon = PackedVector2Array(6759, -1737, 6736, -1795, 6764, -1858, 6607, -1824, 6475, -1811, 6424, -1825, 6338, -1832, 6258, -1829, 6164, -1816, 6081, -1830, 5963, -1833, 5820, -1796, 5709, -1740, 5641, -1643, 5544, -1597, 5615, -1524, 5720, -1487, 5849, -1531, 5886, -1637, 5892, -1684, 5966, -1735, 6002, -1737, 6121, -1745, 6200, -1754, 6261, -1717, 6433, -1705, 6512, -1730, 6585, -1732)
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_w0sfl")]
-position = Vector2(4209.9995, -944.99994)
+position = Vector2(250.00002, -7)
 scale = Vector2(0.2, 0.2)
 
 [node name="Polygons Components" type="Node2D" parent="." unique_id=1077571515]
@@ -266,6 +267,47 @@ polygon = PackedVector2Array(7037, -1742, 7060, -1739, 7060, -1524, 7036, -1528)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Botao2" unique_id=1689239140]
 polygon = PackedVector2Array(7510, -2022, 7522, -2018, 7491, -1867, 7478, -1871)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=914972593]
+position = Vector2(24, 563)
+
+[node name="objetoEmpurravel4" parent="Node2D" unique_id=1986922042 instance=ExtResource("6_b8f2w")]
+
+[node name="objetoEmpurravel5" parent="Node2D" unique_id=362249072 instance=ExtResource("6_b8f2w")]
+position = Vector2(-74, -31)
+
+[node name="objetoEmpurravel6" parent="Node2D" unique_id=578061969 instance=ExtResource("6_b8f2w")]
+position = Vector2(-18, -61)
+
+[node name="objetoEmpurravel7" parent="Node2D" unique_id=691073690 instance=ExtResource("6_b8f2w")]
+position = Vector2(475, 0)
+
+[node name="objetoEmpurravel8" parent="Node2D" unique_id=1907200294 instance=ExtResource("6_b8f2w")]
+position = Vector2(414, -14)
+
+[node name="objetoEmpurravel9" parent="Node2D" unique_id=719613252 instance=ExtResource("6_b8f2w")]
+position = Vector2(984, -58)
+
+[node name="objetoEmpurravel10" parent="Node2D" unique_id=1999574617 instance=ExtResource("6_b8f2w")]
+position = Vector2(52, -23)
+
+[node name="objetoEmpurravel11" parent="Node2D" unique_id=411251575 instance=ExtResource("6_b8f2w")]
+position = Vector2(454, -43)
+
+[node name="objetoEmpurravel12" parent="Node2D" unique_id=458648180 instance=ExtResource("6_b8f2w")]
+position = Vector2(2379, -966)
+
+[node name="objetoEmpurravel13" parent="Node2D" unique_id=169178610 instance=ExtResource("6_b8f2w")]
+position = Vector2(4167, -1322)
+
+[node name="objetoEmpurravel14" parent="Node2D" unique_id=1770461807 instance=ExtResource("6_b8f2w")]
+position = Vector2(4229, -1269)
+
+[node name="objetoEmpurravel15" parent="Node2D" unique_id=2066102726 instance=ExtResource("6_b8f2w")]
+position = Vector2(7275, -2461)
+
+[node name="objetoEmpurravel16" parent="Node2D" unique_id=965494628 instance=ExtResource("6_b8f2w")]
+position = Vector2(7335, -2438)
 
 [connection signal="body_entered" from="Botao1" to="Parede1" method="_on_botao_1_body_entered"]
 [connection signal="body_exited" from="Botao2" to="Grade2" method="_on_botao_1_body_entered"]

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dwjv63mn5msop"]
+
+[ext_resource type="Texture2D" uid="uid://oo7dsq411kh5" path="res://assets/SVG/caveira.svg" id="1_uvt2n"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_db8xc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_db8xc"]
+radius = 7.0000005
+
+[node name="objetoEmpurravel" type="Node2D" unique_id=1341418358]
+light_mask = 3
+visibility_layer = 3
+
+[node name="objetoRigido" type="RigidBody2D" parent="." unique_id=1580537311]
+collision_layer = 3
+collision_mask = 3
+physics_material_override = SubResource("PhysicsMaterial_db8xc")
+can_sleep = false
+contact_monitor = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetoRigido" unique_id=1126254949]
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_db8xc")
+
+[node name="Caveira" type="Sprite2D" parent="objetoRigido" unique_id=1036691689]
+scale = Vector2(0.44000024, 0.44000024)
+texture = ExtResource("1_uvt2n")
