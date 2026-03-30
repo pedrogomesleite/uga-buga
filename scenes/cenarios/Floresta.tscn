@@ -251,53 +251,54 @@ position = Vector2(-1912, -32)
 rotation = -0.014299963
 texture = ExtResource("1_iet4d")
 
-[node name="Grama2" type="Sprite2D" parent="Grama" unique_id=1849550320]
-position = Vector2(691.1437, -5.117531)
+[node name="Grama2" type="Sprite2D" parent="." unique_id=1849550320]
+position = Vector2(-1221.0001, -47)
+rotation = -0.014299963
 texture = ExtResource("1_iet4d")
 
-[node name="Grama3" type="Sprite2D" parent="Grama" unique_id=988008807]
-position = Vector2(1771.1943, 698.3986)
-rotation = 0.0328994
+[node name="Grama3" type="Sprite2D" parent="." unique_id=988008807]
+position = Vector2(-131, 641.00006)
+rotation = 0.018599436
 texture = ExtResource("1_iet4d")
 
-[node name="Grama4" type="Sprite2D" parent="Grama" unique_id=652918529]
-position = Vector2(3025.6973, 532.3204)
-rotation = 0.0050203823
+[node name="Grama4" type="Sprite2D" parent="." unique_id=652918529]
+position = Vector2(1121, 457.00003)
+rotation = -0.009279581
 texture = ExtResource("1_iet4d")
 
-[node name="Grama5" type="Sprite2D" parent="Grama" unique_id=465761000]
-position = Vector2(3960.5867, 616.6973)
-rotation = 0.025903037
+[node name="Grama5" type="Sprite2D" parent="." unique_id=465761000]
+position = Vector2(2057, 527.99994)
+rotation = 0.011603073
 texture = ExtResource("1_iet4d")
 
-[node name="Grama6" type="Sprite2D" parent="Grama" unique_id=1369240297]
-position = Vector2(3388.3809, 137.46613)
-rotation = 0.025903037
+[node name="Grama6" type="Sprite2D" parent="." unique_id=1369240297]
+position = Vector2(1478.0001, 57)
+rotation = 0.011603073
 texture = ExtResource("1_iet4d")
 
-[node name="Grama7" type="Sprite2D" parent="Grama" unique_id=523479656]
-position = Vector2(4474.26, -126.03334)
-rotation = 0.025903037
+[node name="Grama7" type="Sprite2D" parent="." unique_id=523479656]
+position = Vector2(2560, -222.00002)
+rotation = 0.011603073
 texture = ExtResource("1_iet4d")
 
-[node name="Grama8" type="Sprite2D" parent="Grama" unique_id=2116917345]
-position = Vector2(5068.5137, -139.53719)
-rotation = 0.025903037
+[node name="Grama8" type="Sprite2D" parent="." unique_id=2116917345]
+position = Vector2(3154, -244.00002)
+rotation = 0.011603073
 texture = ExtResource("1_iet4d")
 
-[node name="Grama9" type="Sprite2D" parent="Grama" unique_id=659505813]
-position = Vector2(5551.952, -236.63423)
-rotation = 0.025903037
+[node name="Grama9" type="Sprite2D" parent="." unique_id=659505813]
+position = Vector2(3636.0002, -348.00003)
+rotation = 0.011603073
 texture = ExtResource("1_iet4d")
 
-[node name="Grama10" type="Sprite2D" parent="Grama" unique_id=226522255]
-position = Vector2(6961.044, -722.53467)
-rotation = 0.025903037
+[node name="Grama10" type="Sprite2D" parent="." unique_id=226522255]
+position = Vector2(5038, -854.00006)
+rotation = 0.011603073
 texture = ExtResource("1_iet4d")
 
-[node name="Grama11" type="Sprite2D" parent="Grama" unique_id=1833847151]
-position = Vector2(7417.826, -704.001)
-rotation = 0.025903037
+[node name="Grama11" type="Sprite2D" parent="." unique_id=1833847151]
+position = Vector2(5495.0005, -842)
+rotation = 0.011603073
 texture = ExtResource("1_iet4d")
 
 [node name="MapaComponentes" type="Node2D" parent="." unique_id=1600233508]
