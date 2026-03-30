@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://rsvrwqc4jehl"]
+
+[ext_resource type="Script" uid="uid://2f7d83knykcd" path="res://Prefab/npc/npc_rigid_body.gd" id="1_fl5gl"]
+[ext_resource type="Texture2D" uid="uid://c64dn2lyfs8km" path="res://assets/Old Assets/Corpo sem olho.svg" id="1_fx3uk"]
+[ext_resource type="Texture2D" uid="uid://hnpuwjsd6h65" path="res://assets/Old Assets/olho.tres" id="2_fl5gl"]
+[ext_resource type="Texture2D" uid="uid://boisx4jxy5oow" path="res://assets/SVG/cabelos (1).svg" id="3_ow4lv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nyrs1"]
+radius = 107.00467
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0g118"]
+radius = 72.780495
+
+[node name="Npc1" type="RigidBody2D" unique_id=1606053933]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_fl5gl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1241388419]
+position = Vector2(1, 12)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("CircleShape2D_nyrs1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1545929976]
+position = Vector2(1, -24)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("CircleShape2D_0g118")
+
+[node name="corpo" type="Sprite2D" parent="." unique_id=1806249624]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_fx3uk")
+
+[node name="olho" type="Sprite2D" parent="." unique_id=1186415447]
+position = Vector2(-8, -29)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_fl5gl")
+
+[node name="olho2" type="Sprite2D" parent="." unique_id=757041601]
+position = Vector2(9, -29)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_fl5gl")
+
+[node name="cabelo" type="Sprite2D" parent="." unique_id=87236044]
+position = Vector2(0, -36)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_ow4lv")

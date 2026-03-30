@@ -8,7 +8,7 @@ func _ready() -> void:
 	collision_layer = 0  
 	collision_mask = 0  
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var colliding_bodies = get_colliding_bodies()
 	if colliding_bodies.any(func(e): return e is CharacterBody2D):
 		if colide: 

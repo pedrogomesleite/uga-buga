@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dmxbc5c3oxewp"]
+
+[ext_resource type="Texture2D" uid="uid://c64dn2lyfs8km" path="res://assets/Old Assets/Corpo sem olho.svg" id="1_7tukf"]
+[ext_resource type="Script" uid="uid://2f7d83knykcd" path="res://Prefab/npc/npc_rigid_body.gd" id="1_klpxb"]
+[ext_resource type="Texture2D" uid="uid://hnpuwjsd6h65" path="res://assets/Old Assets/olho.tres" id="2_sd7wp"]
+[ext_resource type="Texture2D" uid="uid://cvu7g74fuoyrr" path="res://assets/SVG/cabelos (2).svg" id="3_7tukf"]
+[ext_resource type="Texture2D" uid="uid://tm474jgnxiwa" path="res://assets/SVG/cabelos (4).svg" id="4_sd7wp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nyrs1"]
+radius = 107.00467
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0g118"]
+radius = 72.780495
+
+[node name="Npc2" type="RigidBody2D" unique_id=1606053933]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_klpxb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1241388419]
+position = Vector2(0, 15)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("CircleShape2D_nyrs1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1545929976]
+position = Vector2(0, -22)
+scale = Vector2(0.25, 0.25)
+shape = SubResource("CircleShape2D_0g118")
+
+[node name="corpo" type="Sprite2D" parent="." unique_id=1806249624]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_7tukf")
+
+[node name="olho" type="Sprite2D" parent="." unique_id=1186415447]
+position = Vector2(-8.000006, -29)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_sd7wp")
+
+[node name="olho2" type="Sprite2D" parent="." unique_id=757041601]
+position = Vector2(9, -29)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_sd7wp")
+
+[node name="cabelo" type="Sprite2D" parent="." unique_id=87236044]
+position = Vector2(0, -36)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_7tukf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1391815701]
+position = Vector2(0, -15)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_sd7wp")

@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="3_6css3"]
 [ext_resource type="PackedScene" uid="uid://c0bli2vbel2yy" path="res://Prefab/homem_sombra.tscn" id="4_55eat"]
 [ext_resource type="Script" uid="uid://cf2r41ta5t1f7" path="res://scenes/cenarios/parede_1.gd" id="5_tlmes"]
+[ext_resource type="Script" uid="uid://bddv37h6wy8gl" path="res://scenes/cenarios/saida_caverna.gd" id="6_b8f2w"]
+[ext_resource type="PackedScene" uid="uid://b30wgwspx1rye" path="res://scenes/interfaces/pause_menu.tscn" id="7_7y7tw"]
 
 [node name="mundo2D2" type="Node2D" unique_id=449765058]
 
@@ -73,7 +75,7 @@ position = Vector2(5472, -3987)
 polygon = PackedVector2Array(6759, -1737, 6736, -1795, 6764, -1858, 6607, -1824, 6475, -1811, 6424, -1825, 6338, -1832, 6258, -1829, 6164, -1816, 6081, -1830, 5963, -1833, 5820, -1796, 5709, -1740, 5641, -1643, 5544, -1597, 5615, -1524, 5720, -1487, 5849, -1531, 5886, -1637, 5892, -1684, 5966, -1735, 6002, -1737, 6121, -1745, 6200, -1754, 6261, -1717, 6433, -1705, 6512, -1730, 6585, -1732)
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_w0sfl")]
-position = Vector2(7382.9995, -1947)
+position = Vector2(7155, -1631)
 scale = Vector2(0.2, 0.2)
 
 [node name="Polygons Components" type="Node2D" parent="." unique_id=1077571515]
@@ -101,37 +103,6 @@ polygon = PackedVector2Array(6918, -1856, 7139, -1884, 7340, -1878, 7529, -1869,
 color = Color(0.18039216, 0.14509805, 0.105882354, 1)
 polygon = PackedVector2Array(6759, -1737, 6736, -1795, 6764, -1858, 6607, -1824, 6475, -1811, 6424, -1825, 6338, -1832, 6258, -1829, 6164, -1816, 6081, -1830, 5963, -1833, 5820, -1796, 5709, -1740, 5641, -1643, 5544, -1597, 5615, -1524, 5720, -1487, 5849, -1531, 5886, -1637, 5892, -1684, 5966, -1735, 6002, -1737, 6121, -1745, 6200, -1754, 6261, -1717, 6433, -1705, 6512, -1730, 6585, -1732)
 
-[node name="Barras de ferro" type="Polygon2D" parent="." unique_id=363091596]
-position = Vector2(-40, 0)
-color = Color(0.3180198, 0.31801978, 0.31801975, 1)
-polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
-
-[node name="Polygon2D" type="Polygon2D" parent="Barras de ferro" unique_id=862126320]
-position = Vector2(10, 0)
-color = Color(0.3180198, 0.31801978, 0.31801975, 1)
-polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
-
-[node name="Polygon2D" type="Polygon2D" parent="Barras de ferro/Polygon2D" unique_id=1265324271]
-position = Vector2(10, 0)
-color = Color(0.3180198, 0.31801978, 0.31801975, 1)
-polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
-
-[node name="Barras de ferro" type="Polygon2D" parent="Barras de ferro" unique_id=1965185640]
-position = Vector2(2111, -484.81708)
-scale = Vector2(1, 1.4438884)
-color = Color(0.3180198, 0.31801978, 0.31801975, 1)
-polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -759.288, 4966, -721, 4971, -721, 4971, -783.61304, 4971, -870)
-
-[node name="Polygon2D" type="Polygon2D" parent="Barras de ferro/Barras de ferro" unique_id=1075978111]
-position = Vector2(10, 0)
-color = Color(0.3180198, 0.31801978, 0.31801975, 1)
-polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
-
-[node name="Polygon2D" type="Polygon2D" parent="Barras de ferro/Barras de ferro/Polygon2D" unique_id=1011504681]
-position = Vector2(10, 0)
-color = Color(0.3180198, 0.31801978, 0.31801975, 1)
-polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
-
 [node name="Botao" type="Polygon2D" parent="." unique_id=1234572817]
 color = Color(0.47753638, 0.19103047, 0.18861109, 1)
 polygon = PackedVector2Array(4643, -574, 4643, -580, 4720, -576, 4720, -570)
@@ -150,11 +121,26 @@ position = Vector2(4356, -757)
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Botao1" unique_id=1329702496]
 polygon = PackedVector2Array(4642, -582, 4719, -580, 4719, -572, 4641, -575)
 
-[node name="Parede1" type="StaticBody2D" parent="." unique_id=917494824]
+[node name="Grade1" type="StaticBody2D" parent="." unique_id=917494824]
 script = ExtResource("5_tlmes")
 
-[node name="Parede1" type="CollisionPolygon2D" parent="Parede1" unique_id=517652904]
+[node name="Parede1" type="CollisionPolygon2D" parent="Grade1" unique_id=517652904]
 polygon = PackedVector2Array(4923, -866, 4955, -866, 4953, -723, 4925, -722)
+
+[node name="Barras de ferro" type="Polygon2D" parent="Grade1" unique_id=363091596]
+position = Vector2(-40, 0)
+color = Color(0.3180198, 0.31801978, 0.31801975, 1)
+polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
+
+[node name="Polygon2D" type="Polygon2D" parent="Grade1/Barras de ferro" unique_id=862126320]
+position = Vector2(10, 0)
+color = Color(0.3180198, 0.31801978, 0.31801975, 1)
+polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
+
+[node name="Polygon2D" type="Polygon2D" parent="Grade1/Barras de ferro/Polygon2D" unique_id=1265324271]
+position = Vector2(10, 0)
+color = Color(0.3180198, 0.31801978, 0.31801975, 1)
+polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
 
 [node name="Dialogo" parent="." unique_id=1655245775 instance=ExtResource("3_6css3")]
 offset_left = 216.0
@@ -257,10 +243,35 @@ script = ExtResource("5_tlmes")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Grade2" unique_id=832783231]
 polygon = PackedVector2Array(7037, -1742, 7060, -1739, 7060, -1524, 7036, -1528)
 
+[node name="Barras de ferro2" type="Polygon2D" parent="Grade2" unique_id=1965185640]
+position = Vector2(2071, -484.81708)
+scale = Vector2(1, 1.4438884)
+color = Color(0.3180198, 0.31801978, 0.31801975, 1)
+polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -759.288, 4966, -721, 4971, -721, 4971, -783.61304, 4971, -870)
+
+[node name="Polygon2D" type="Polygon2D" parent="Grade2/Barras de ferro2" unique_id=1075978111]
+position = Vector2(10, 0)
+color = Color(0.3180198, 0.31801978, 0.31801975, 1)
+polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
+
+[node name="Polygon2D" type="Polygon2D" parent="Grade2/Barras de ferro2/Polygon2D" unique_id=1011504681]
+position = Vector2(10, 0)
+color = Color(0.3180198, 0.31801978, 0.31801975, 1)
+polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
+
 [node name="Botao2" type="Area2D" parent="." unique_id=899962892]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Botao2" unique_id=1689239140]
 polygon = PackedVector2Array(7510, -2022, 7522, -2018, 7491, -1867, 7478, -1871)
 
-[connection signal="body_entered" from="Botao1" to="Parede1" method="_on_botao_1_body_entered"]
+[node name="Saida" type="Area2D" parent="." unique_id=256071588]
+script = ExtResource("6_b8f2w")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Saida" unique_id=1897569260]
+polygon = PackedVector2Array(7466, -1701, 7559, -1692, 7606, -1524, 7419, -1522)
+
+[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("7_7y7tw")]
+
+[connection signal="body_entered" from="Botao1" to="Grade1" method="_on_botao_1_body_entered"]
 [connection signal="body_exited" from="Botao2" to="Grade2" method="_on_botao_1_body_entered"]
+[connection signal="body_entered" from="Saida" to="Saida" method="_on_body_entered"]

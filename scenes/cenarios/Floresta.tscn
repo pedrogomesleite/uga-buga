@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://hrlieo6tgl0b"]
 
+[ext_resource type="Script" uid="uid://kmaorkxpiy0" path="res://scenes/cenarios/floresta.gd" id="1_02ems"]
 [ext_resource type="Texture2D" uid="uid://1fpon8xhv2jl" path="res://assets/SVG/Malocona.svg" id="1_21d6b"]
 [ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_e1oua"]
 [ext_resource type="Texture2D" uid="uid://b5wjaakvrrc80" path="res://assets/SVG/arvore (3).svg" id="1_qlhad"]
@@ -7,10 +8,13 @@
 [ext_resource type="Texture2D" uid="uid://c0o6tcu321yp" path="res://assets/SVG/arvore (1).svg" id="2_j4bm0"]
 [ext_resource type="Texture2D" uid="uid://d1hegkwnttlv4" path="res://assets/SVG/vinhaboareal (2).svg" id="2_nbhgd"]
 [ext_resource type="Texture2D" uid="uid://clthbn68tsvi" path="res://assets/SVG/arvore (4).svg" id="3_e2vvb"]
-[ext_resource type="PackedScene" uid="uid://b8i4mlpodgbyv" path="res://scenes/interfaces/pause_menu.tscn" id="3_hxwco"]
+[ext_resource type="PackedScene" uid="uid://b30wgwspx1rye" path="res://scenes/interfaces/pause_menu.tscn" id="3_hxwco"]
 [ext_resource type="Texture2D" uid="uid://mfhogdvjip3a" path="res://assets/SVG/maloca (1).svg" id="4_e2vvb"]
 [ext_resource type="Texture2D" uid="uid://tpnmvrpemxbn" path="res://assets/SVG/maloca (2).svg" id="5_raw46"]
 [ext_resource type="Texture2D" uid="uid://bd4h8ksgwr6ww" path="res://assets/SVG/vinhaboareal (1).svg" id="9_raw46"]
+[ext_resource type="PackedScene" uid="uid://rsvrwqc4jehl" path="res://Prefab/npc/npc1.tscn" id="13_kqrno"]
+[ext_resource type="PackedScene" uid="uid://dmxbc5c3oxewp" path="res://Prefab/npc/npc2.tscn" id="14_0yid4"]
+[ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="15_0yid4"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hxwco"]
 
@@ -188,7 +192,7 @@ collision_mask = 3
 
 [node name="Polygon2D7" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1936880179]
 position = Vector2(40, 117)
-polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 536, 434, 613, 462, 685, 474, 763, 459, 768, 491, 784, 507, 836, 504, 842, 483, 856, 402, 889, 349, 981, 344, 1086, 343, 1294, 343, 1686, 409, 2229, 417, 2707, 368, 2781, 319, 2825, 246, 2943, 256, 3182, 356, 3397, 403, 3553, 463, 3712, 502, 3854, 529, 4023, 547, 4356, 557, 4847.8154, 564.7428, 5047, 508, 5247, 414, 5521, 378, 5939, 346, 6168, 64, 6324.702, -277.5774, 6209, -1539, 6590, -1682, 6848, -1139, 6781, 817, 5305, 807, 3628, 801, 2160, 800, -552, 800, -1937, 817, -1958, -784, -1747, -1315, -1210, -758, -1401, -635, -1447, -404, -1282, -161, -1052, -163, -772.38837, 220.93134, -656.48236, 368.82288, -413, 520)
+polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 536, 434, 613, 462, 685, 474, 763, 459, 768, 491, 784, 507, 836, 504, 842, 483, 856, 402, 889, 349, 981, 344, 1086, 343, 1294, 343, 1686, 409, 2229, 417, 2707, 368, 2781, 319, 2825, 246, 2943, 256, 3182, 356, 3397, 403, 3553, 463, 3712, 502, 3854, 529, 4023, 547, 4356, 557, 4847.8154, 564.7428, 5047, 508, 5247, 414, 5521, 378, 5939, 346, 6168, 64, 6324.702, -277.5774, 6209, -1539, 6590, -1682, 6848, -1139, 6781, 817, 5305, 807, 3628, 801, 2160, 800, -552, 800, -3622, 834, -3590, -1457, -1748, -1476, -1210, -758, -1401, -635, -1996, -600, -2313, -619, -2649, -484, -2780, -130, -1052, -163, -772.38837, 220.93134, -656.48236, 368.82288, -413, 520)
 
 [node name="Polygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=176614838]
 polygon = PackedVector2Array(2667, 380, 2572, 372, 2473, 382, 2305, 370, 2128, 354, 2032, 372, 1954, 332, 1928, 245, 1947, 130, 1980, 71, 2011, 82, 2032, 134, 2091, 200, 2131, 262, 2192, 295, 2245, 295, 2305, 302, 2404, 307, 2475, 302, 2536, 297, 2647, 283, 2751, 347)
@@ -230,21 +234,18 @@ scale = Vector2(0.6271769, 0.627177)
 polygon = PackedVector2Array(13.426025, 2.3088074, 93.30298, -12.926056, 88.83032, -2.3338928, -4.472412, 10.592163, -36.022705, 6.8706055, -96.88721, -5.868561, -89.28247, -17.058197, -35.35254, 1.8732605, 0.89624023, 4.698639)
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_e1oua")]
-position = Vector2(57, 441)
+position = Vector2(-2624, -61.00003)
 scale = Vector2(0.2, 0.2)
 
 [node name="objetoEmpurravel" parent="." unique_id=1341418358 instance=ExtResource("2_hxwco")]
 position = Vector2(450, 218)
-
-[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("3_hxwco")]
-visible = false
 
 [node name="MapaComponentes" type="Node2D" parent="." unique_id=1600233508]
 position = Vector2(40, 117)
 
 [node name="Polygon2D7" type="Polygon2D" parent="MapaComponentes" unique_id=66684201]
 color = Color(0.35655707, 0.5247501, 0.34819347, 1)
-polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 536, 434, 613, 462, 685, 474, 763, 459, 768, 491, 784, 507, 836, 504, 842, 483, 856, 402, 889, 349, 981, 344, 1086, 343, 1294, 343, 1686, 409, 2229, 417, 2707, 368, 2781, 319, 2825, 246, 2943, 256, 3182, 356, 3397, 403, 3553, 463, 3712, 502, 3854, 529, 4023, 547, 4356, 557, 4847.8154, 564.7428, 5047, 508, 5247, 414, 5521, 378, 5939, 346, 6168, 64, 6324.702, -277.5774, 6209, -1539, 6590, -1682, 6848, -1139, 6781, 817, 5305, 807, 3628, 801, 2160, 800, -552, 800, -1937, 817, -1958, -784, -1747, -1315, -1210, -758, -1401, -635, -1447, -404, -1282, -161, -1052, -163, -772.38837, 220.93134, -656.48236, 368.82288, -413, 520)
+polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 536, 434, 613, 462, 685, 474, 763, 459, 768, 491, 784, 507, 836, 504, 842, 483, 856, 402, 889, 349, 981, 344, 1086, 343, 1294, 343, 1686, 409, 2229, 417, 2707, 368, 2781, 319, 2825, 246, 2943, 256, 3182, 356, 3397, 403, 3553, 463, 3712, 502, 3854, 529, 4023, 547, 4356, 557, 4847.8154, 564.7428, 5047, 508, 5247, 414, 5521, 378, 5939, 346, 6168, 64, 6324.702, -277.5774, 6209, -1539, 6590, -1682, 6848, -1139, 6781, 817, 5305, 807, 3628, 801, 2160, 800, -552, 800, -3622, 834, -3590, -1457, -1748, -1476, -1210, -758, -1401, -635, -1996, -600, -2313, -619, -2649, -484, -2780, -130, -1052, -163, -772.38837, 220.93134, -656.48236, 368.82288, -413, 520)
 
 [node name="Polygon2D" type="Polygon2D" parent="MapaComponentes" unique_id=701047151]
 position = Vector2(-40, -117)
@@ -275,3 +276,46 @@ polygon = PackedVector2Array(2888, -220, 2970, -269, 3119, -238, 3212, -244, 336
 position = Vector2(-64.400024, -48)
 color = Color(0.35655707, 0.5247501, 0.34819347, 1)
 polygon = PackedVector2Array(1838, 56, 1794, 79, 1741, 95, 1623, 73, 1509, 83, 1397, 84, 1258, 83, 1152, 36, 1131, -38, 1193, -28, 1276, -45, 1360, -29, 1434, -8, 1546, -15, 1638, -38, 1707, -24, 1773, -29, 1845, -24, 1893, -21)
+
+[node name="CutScene" type="Node2D" parent="." unique_id=1760321098]
+script = ExtResource("1_02ems")
+
+[node name="Area" type="Area2D" parent="CutScene" unique_id=2007382277]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CutScene/Area" unique_id=1034752776]
+polygon = PackedVector2Array(-2447, -116, -2238, -115, -2235, -24, -2449, -19)
+
+[node name="Camera2D" type="Camera2D" parent="CutScene" unique_id=1156411405]
+position = Vector2(-1511, -254)
+
+[node name="Npc1" parent="CutScene" unique_id=1606053933 instance=ExtResource("13_kqrno")]
+position = Vector2(-1646, -72)
+colide_from_start = false
+
+[node name="Npc2" parent="CutScene" unique_id=525113789 instance=ExtResource("14_0yid4")]
+position = Vector2(-1483, -77)
+colide_from_start = false
+
+[node name="Dialogo" parent="CutScene" unique_id=572906939 instance=ExtResource("15_0yid4")]
+offset_left = -1764.0
+offset_top = -218.0
+offset_right = -1543.0
+offset_bottom = -159.0
+texto_da_instancia = "Dumb guga maneged to get cought"
+delay_time = 3
+
+[node name="Dialogo2" parent="CutScene" unique_id=275147521 instance=ExtResource("15_0yid4")]
+offset_left = -1574.0
+offset_top = -220.0
+offset_right = -1353.0
+offset_bottom = -160.0
+texto_da_instancia = "Smealy gugu will never feel the flavor of chiken meat again"
+
+[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("3_hxwco")]
+
+[connection signal="finalizar_cut_scene" from="CutScene" to="CutScene/Npc1" method="start_collision"]
+[connection signal="finalizar_cut_scene" from="CutScene" to="CutScene/Npc2" method="start_collision"]
+[connection signal="body_entered" from="CutScene/Area" to="CutScene" method="_on_area_body_entered"]
+[connection signal="body_entered" from="CutScene/Area" to="CutScene/Dialogo" method="start_cut_scene_dialog"]
+[connection signal="fim_dialogo" from="CutScene/Dialogo" to="CutScene/Dialogo2" method="start_cut_scene_dialog_empty"]
+[connection signal="fim_dialogo" from="CutScene/Dialogo2" to="CutScene" method="finaliza_camera"]
