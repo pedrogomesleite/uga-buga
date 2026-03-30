@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_jh1cc"]
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="3_6css3"]
 [ext_resource type="PackedScene" uid="uid://c0bli2vbel2yy" path="res://Prefab/homem_sombra.tscn" id="4_55eat"]
-[ext_resource type="Script" uid="uid://cf2r41ta5t1f7" path="res://scripts/parede_1.gd" id="5_tlmes"]
+[ext_resource type="Script" path="res://scripts/parede_1.gd" id="5_tlmes"]
 [ext_resource type="PackedScene" uid="uid://dwjv63mn5msop" path="res://scenes/objeto_empurravelcaveira.tscn" id="6_b8f2w"]
-[ext_resource type="Script" uid="uid://bddv37h6wy8gl" path="res://scripts/saida_caverna.gd" id="7_7y7tw"]
+[ext_resource type="Script" path="res://scripts/saida_caverna.gd" id="7_7y7tw"]
 
 [node name="mundo2D2" type="Node2D" unique_id=449765058]
 

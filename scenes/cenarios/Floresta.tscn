@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://hrlieo6tgl0b"]
 
-[ext_resource type="Script" uid="uid://kmaorkxpiy0" path="res://scripts/floresta.gd" id="1_02ems"]
+[ext_resource type="Script" path="res://scripts/floresta.gd" id="1_02ems"]
 [ext_resource type="Texture2D" uid="uid://1fpon8xhv2jl" path="res://assets/SVG/Malocona.svg" id="1_21d6b"]
 [ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_e1oua"]
+[ext_resource type="Texture2D" uid="uid://bwujfe5y8abtt" path="res://assets/SVG/Grama.svg" id="1_iet4d"]
 [ext_resource type="Texture2D" uid="uid://b5wjaakvrrc80" path="res://assets/SVG/arvore (3).svg" id="1_qlhad"]
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_hxwco"]
 [ext_resource type="Texture2D" uid="uid://c0o6tcu321yp" path="res://assets/SVG/arvore (1).svg" id="2_j4bm0"]
@@ -19,6 +20,11 @@
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hxwco"]
 
 [node name="Floresta" type="Node2D" unique_id=276136146]
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1649407276]
+position = Vector2(1230, -473)
+color = Color(0.41280216, 0.66532046, 0.80001277, 1)
+polygon = PackedVector2Array(-3619, -2566, -3673, 1280, 7238, 1128, 7270, -2577)
 
 [node name="Malocona" type="Sprite2D" parent="." unique_id=903427723]
 position = Vector2(5290, -1091)
@@ -239,6 +245,60 @@ scale = Vector2(0.2, 0.2)
 
 [node name="objetoEmpurravel" parent="." unique_id=1341418358 instance=ExtResource("2_hxwco")]
 position = Vector2(450, 218)
+
+[node name="Grama" type="Sprite2D" parent="." unique_id=645842729]
+position = Vector2(-1912, -32)
+rotation = -0.014299963
+texture = ExtResource("1_iet4d")
+
+[node name="Grama2" type="Sprite2D" parent="Grama" unique_id=1849550320]
+position = Vector2(691.1437, -5.117531)
+texture = ExtResource("1_iet4d")
+
+[node name="Grama3" type="Sprite2D" parent="Grama" unique_id=988008807]
+position = Vector2(1771.1943, 698.3986)
+rotation = 0.0328994
+texture = ExtResource("1_iet4d")
+
+[node name="Grama4" type="Sprite2D" parent="Grama" unique_id=652918529]
+position = Vector2(3025.6973, 532.3204)
+rotation = 0.0050203823
+texture = ExtResource("1_iet4d")
+
+[node name="Grama5" type="Sprite2D" parent="Grama" unique_id=465761000]
+position = Vector2(3960.5867, 616.6973)
+rotation = 0.025903037
+texture = ExtResource("1_iet4d")
+
+[node name="Grama6" type="Sprite2D" parent="Grama" unique_id=1369240297]
+position = Vector2(3388.3809, 137.46613)
+rotation = 0.025903037
+texture = ExtResource("1_iet4d")
+
+[node name="Grama7" type="Sprite2D" parent="Grama" unique_id=523479656]
+position = Vector2(4474.26, -126.03334)
+rotation = 0.025903037
+texture = ExtResource("1_iet4d")
+
+[node name="Grama8" type="Sprite2D" parent="Grama" unique_id=2116917345]
+position = Vector2(5068.5137, -139.53719)
+rotation = 0.025903037
+texture = ExtResource("1_iet4d")
+
+[node name="Grama9" type="Sprite2D" parent="Grama" unique_id=659505813]
+position = Vector2(5551.952, -236.63423)
+rotation = 0.025903037
+texture = ExtResource("1_iet4d")
+
+[node name="Grama10" type="Sprite2D" parent="Grama" unique_id=226522255]
+position = Vector2(6961.044, -722.53467)
+rotation = 0.025903037
+texture = ExtResource("1_iet4d")
+
+[node name="Grama11" type="Sprite2D" parent="Grama" unique_id=1833847151]
+position = Vector2(7417.826, -704.001)
+rotation = 0.025903037
+texture = ExtResource("1_iet4d")
 
 [node name="MapaComponentes" type="Node2D" parent="." unique_id=1600233508]
 position = Vector2(40, 117)
