@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_jh1cc"]
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="3_6css3"]
 [ext_resource type="PackedScene" uid="uid://c0bli2vbel2yy" path="res://Prefab/homem_sombra.tscn" id="4_55eat"]
-[ext_resource type="PackedScene" uid="uid://b8i4mlpodgbyv" path="res://scenes/interfaces/pause_menu.tscn" id="5_tlmes"]
 
 [node name="mundo2D2" type="Node2D" unique_id=449765058]
 
