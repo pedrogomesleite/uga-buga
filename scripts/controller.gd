@@ -4,7 +4,7 @@ extends Node
 
 func _ready() -> void:
 	fade_rect.modulate.a = 0.0
-	get_tree().change_scene_to_file("res://scenes/cenarios/Floresta.tscn")
+	get_tree().change_scene_to_file("res://scenes/cenarios/Caverna.tscn")
 
 func trocar_cena(caminho_da_cena: String):
 	var tween = get_tree().create_tween()

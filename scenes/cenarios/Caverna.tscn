@@ -18,11 +18,6 @@ position = Vector2(-41, -863)
 color = Color(0.38916183, 0.31456712, 0.23074302, 1)
 polygon = PackedVector2Array(-925, 1080, -1004, 233, 8040, 170, 7999, 1208)
 
-[node name="Polygon2D5" type="Polygon2D" parent="BG" unique_id=551797606]
-position = Vector2(-139, -2507)
-color = Color(0.38916183, 0.31456712, 0.23074302, 1)
-polygon = PackedVector2Array(-925, 1080, -1004, 233, 8116, 243, 7999, 1208)
-
 [node name="Polygon2D4" type="Polygon2D" parent="BG" unique_id=2066368037]
 position = Vector2(-98, -1644)
 color = Color(0.31421146, 0.2500574, 0.18136188, 1)
@@ -39,32 +34,18 @@ color = Color(0.31421146, 0.2500574, 0.18136188, 1)
 polygon = PackedVector2Array(-925, 1080, -1004, 233, 8119, 236, 7999, 1208)
 
 [node name="Dialogo" parent="BG" unique_id=572906939 instance=ExtResource("3_6css3")]
-offset_left = 4155.0
-offset_top = -927.0
-offset_right = 4315.0
-offset_bottom = -851.0
-texto_da_instancia = "HUmmmmmm [tornado]chiken[/tornado]"
+offset_left = 2879.0
+offset_top = -183.0
+offset_right = 3100.0
+offset_bottom = -124.0
+texto_da_instancia = "Guga has to escape Guga very hungry"
 
-[node name="Dialogo2" parent="BG" unique_id=1826109545 instance=ExtResource("3_6css3")]
-offset_left = 4615.0
-offset_top = -859.0
-offset_right = 4719.0
-offset_bottom = -783.0
-texto_da_instancia = "looks loked"
-
-[node name="Dialogo3" parent="BG" unique_id=636821425 instance=ExtResource("3_6css3")]
-offset_left = 5008.0
-offset_top = -857.0
-offset_right = 5079.0
-offset_bottom = -781.0
-texto_da_instancia = "ghum? "
-
-[node name="HomemSombra" parent="BG" unique_id=1320274112 instance=ExtResource("4_55eat")]
-offset_left = 247.0
-offset_top = 319.0
-offset_right = 400.0
-offset_bottom = 441.0
-texto_da_instancia = "Vai se fuder guga"
+[node name="Dialogo2" parent="BG" unique_id=1430720558 instance=ExtResource("3_6css3")]
+offset_left = 3139.0
+offset_top = -901.0
+offset_right = 3360.0
+offset_bottom = -836.0
+texto_da_instancia = "point rocks rebember Guga of chiken wings"
 
 [node name="Colliders" type="StaticBody2D" parent="." unique_id=1006773909]
 position = Vector2(-5472, 3987)
@@ -92,14 +73,14 @@ position = Vector2(5472, -3987)
 polygon = PackedVector2Array(6759, -1737, 6736, -1795, 6764, -1858, 6607, -1824, 6475, -1811, 6424, -1825, 6338, -1832, 6258, -1829, 6164, -1816, 6081, -1830, 5963, -1833, 5820, -1796, 5709, -1740, 5641, -1643, 5544, -1597, 5615, -1524, 5720, -1487, 5849, -1531, 5886, -1637, 5892, -1684, 5966, -1735, 6002, -1737, 6121, -1745, 6200, -1754, 6261, -1717, 6433, -1705, 6512, -1730, 6585, -1732)
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_w0sfl")]
-position = Vector2(257.99997, 509.99997)
+position = Vector2(7382.9995, -1947)
 scale = Vector2(0.2, 0.2)
 
 [node name="Polygons Components" type="Node2D" parent="." unique_id=1077571515]
 
 [node name="Polygon2D" type="Polygon2D" parent="Polygons Components" unique_id=134640580]
 color = Color(0.18039216, 0.14509805, 0.105882354, 1)
-polygon = PackedVector2Array(-144, 279, -107, 541, 25, 609, 102, 577, 187, 553, 337, 554, 490, 594, 669, 580, 811, 501, 933, 501, 998, 530, 1120, 514, 1200, 411, 1313, 297, 1463, 274, 1666, 276, 1838, 313, 2033, 295, 2231, 298, 2331, 306, 2453, 274, 2592, 242, 2719, 148, 2843, 71, 2983, 37, 3082, -38, 3123, -148, 3088, -227, 2998, -274, 2868, -288, 2755, -317, 2632, -422, 3017, -623, 3244, -692, 3452, -687, 3766, -736, 3897, -891, 4042, -902, 4153, -826, 4167, -725, 4267, -670, 4419, -670, 4522, -701, 4605, -698, 4636, -574, 4726, -570, 4756, -694, 4825, -723, 4938, -721, 5047, -721, 5208, -720, 5316, -738, 5382, -811, 5462, -871, 5575, -892, 5640, -990, 5732, -1015, 5782, -1099, 5833, -1151, 5913, -1185, 5958, -1262, 5970, -1306, 6085, -1313, 6120, -1388, 6325, -1409, 6493, -1490, 6663, -1518, 6984, -1524, 7134, -1532, 7368, -1524, 7509, -1524, 7500, 1067, -901, 1075, -1151, -1254, -1072, -2850, -48, -2869, 208, -2150, 21, -1678, 90, -1126, -107, -771, -68, -446)
+polygon = PackedVector2Array(-144, 279, -107, 541, 25, 609, 102, 577, 187, 553, 337, 554, 490, 594, 669, 580, 811, 501, 933, 501, 998, 530, 1120, 514, 1200, 411, 1313, 297, 1463, 274, 1666, 276, 1838, 313, 2033, 295, 2231, 298, 2331, 306, 2453, 274, 2592, 242, 2719, 148, 2843, 71, 2983, 37, 3082, -38, 3123, -148, 3088, -227, 2998, -274, 2868, -288, 2755, -317, 2632, -422, 3017, -623, 3244, -692, 3452, -687, 3766, -736, 3897, -891, 4042, -902, 4153, -826, 4167, -725, 4267, -670, 4419, -670, 4522, -701, 4605, -698, 4636, -574, 4670.5713, -572.46356, 4726, -570, 4756, -694, 4825, -723, 4938, -721, 5047, -721, 5208, -720, 5316, -738, 5382, -811, 5462, -871, 5575, -892, 5640, -990, 5732, -1015, 5782, -1099, 5833, -1151, 5913, -1185, 5958, -1262, 5970, -1306, 6085, -1313, 6120, -1388, 6325, -1409, 6493, -1490, 6663, -1518, 6984, -1524, 7134, -1532, 7368, -1524, 7509, -1524, 7500, 1067, -901, 1075, -1151, -1254, -1072, -2850, -48, -2869, 208, -2150, 21, -1678, 90, -1126, -107, -771, -68, -446)
 
 [node name="Polygon2D2" type="Polygon2D" parent="Polygons Components" unique_id=1312158257]
 position = Vector2(-34, -11)
@@ -136,8 +117,8 @@ color = Color(0.3180198, 0.31801978, 0.31801975, 1)
 polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -721, 4971, -721, 4971, -870)
 
 [node name="Barras de ferro" type="Polygon2D" parent="Barras de ferro" unique_id=1965185640]
-position = Vector2(2111, -770)
-scale = Vector2(1, 1.0483505)
+position = Vector2(2111, -484.81708)
+scale = Vector2(1, 1.4438884)
 color = Color(0.3180198, 0.31801978, 0.31801975, 1)
 polygon = PackedVector2Array(4966, -870, 4966, -802.5749, 4966, -759.288, 4966, -721, 4971, -721, 4971, -783.61304, 4971, -870)
 
@@ -176,10 +157,10 @@ script = ExtResource("5_tlmes")
 polygon = PackedVector2Array(4923, -866, 4955, -866, 4953, -723, 4925, -722)
 
 [node name="Dialogo" parent="." unique_id=1655245775 instance=ExtResource("3_6css3")]
-offset_left = -21.0
-offset_top = 297.0
-offset_right = 82.0
-offset_bottom = 373.0
+offset_left = 216.0
+offset_top = 362.0
+offset_right = 319.0
+offset_bottom = 438.0
 texto_da_instancia = "Guga stuck"
 
 [node name="Dialogo2" parent="." unique_id=107732262 instance=ExtResource("3_6css3")]
@@ -189,4 +170,97 @@ offset_right = 939.0
 offset_bottom = 355.0
 texto_da_instancia = "very steep I no legs"
 
+[node name="Dialogo3" parent="." unique_id=1920813656 instance=ExtResource("3_6css3")]
+offset_left = 3875.0
+offset_top = -1050.0
+offset_right = 4035.0
+offset_bottom = -974.0
+texto_da_instancia = "HUmmmmmm [tornado]chiken[/tornado]"
+
+[node name="Dialogo4" parent="." unique_id=1826109545 instance=ExtResource("3_6css3")]
+offset_left = 4328.0
+offset_top = -887.0
+offset_right = 4432.0
+offset_bottom = -811.0
+texto_da_instancia = "looks loked"
+
+[node name="Dialogo5" parent="." unique_id=636821425 instance=ExtResource("3_6css3")]
+offset_left = 5008.0
+offset_top = -866.0
+offset_right = 5079.0
+offset_bottom = -790.0
+texto_da_instancia = "ghum? "
+
+[node name="HomemSombra" parent="." unique_id=1320274112 instance=ExtResource("4_55eat")]
+offset_left = 1308.0
+offset_top = 96.0
+offset_right = 1483.0
+offset_bottom = 174.0
+texto_da_instancia = "You dumb will never get out"
+
+[node name="HomemSombra2" parent="." unique_id=1174791559 instance=ExtResource("4_55eat")]
+offset_left = 2133.0
+offset_top = 108.0
+offset_right = 2384.0
+offset_bottom = 180.0
+texto_da_instancia = "dumb dumb gonna die from hunger"
+
+[node name="Dialogo6" parent="." unique_id=1419083129 instance=ExtResource("3_6css3")]
+offset_left = 6782.0
+offset_top = -1712.0
+offset_right = 7003.0
+offset_bottom = -1661.0
+texto_da_instancia = "loked again? "
+
+[node name="Dialogo7" parent="." unique_id=712983246 instance=ExtResource("3_6css3")]
+offset_left = 7045.0
+offset_top = -2090.0
+offset_right = 7266.0
+offset_bottom = -2028.0
+texto_da_instancia = "guga tummy makes noises"
+
+[node name="Dialogo8" parent="." unique_id=1065374982 instance=ExtResource("3_6css3")]
+offset_left = 5346.0
+offset_top = -1783.0
+offset_right = 5567.0
+offset_bottom = -1721.0
+texto_da_instancia = "small holes be making guga wanting to take a large dump"
+
+[node name="HomemSombra3" parent="." unique_id=1267252368 instance=ExtResource("4_55eat")]
+offset_left = 5543.0
+offset_top = -1181.0
+offset_right = 5794.0
+offset_bottom = -1120.0
+texto_da_instancia = "guga stuck here forever"
+
+[node name="HomemSombra4" parent="." unique_id=795494631 instance=ExtResource("4_55eat")]
+offset_left = 6124.0
+offset_top = -1585.0
+offset_right = 6375.0
+offset_bottom = -1530.0
+texto_da_instancia = "[shake]AHAHAHHAHAHAHAH[/shake]"
+
+[node name="HomemSombra5" parent="." unique_id=1594407613 instance=ExtResource("4_55eat")]
+offset_left = 6105.0
+offset_top = -2012.0
+offset_right = 6356.0
+offset_bottom = -1955.0
+texto_da_instancia = "scruny ass looking goin to starve to death"
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=2097124920]
+color = Color(0.47843137, 0.19215687, 0.1882353, 1)
+polygon = PackedVector2Array(7508, -2023, 7524, -2019, 7491, -1868, 7478, -1873)
+
+[node name="Grade2" type="StaticBody2D" parent="." unique_id=1392685131]
+script = ExtResource("5_tlmes")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Grade2" unique_id=832783231]
+polygon = PackedVector2Array(7037, -1742, 7060, -1739, 7060, -1524, 7036, -1528)
+
+[node name="Botao2" type="Area2D" parent="." unique_id=899962892]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Botao2" unique_id=1689239140]
+polygon = PackedVector2Array(7510, -2022, 7522, -2018, 7491, -1867, 7478, -1871)
+
 [connection signal="body_entered" from="Botao1" to="Parede1" method="_on_botao_1_body_entered"]
+[connection signal="body_exited" from="Botao2" to="Grade2" method="_on_botao_1_body_entered"]

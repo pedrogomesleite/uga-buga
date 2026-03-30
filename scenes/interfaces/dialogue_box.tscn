@@ -43,6 +43,8 @@ bbcode_enabled = true
 text = "Ola texto
 "
 fit_content = true
+scroll_active = false
+horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

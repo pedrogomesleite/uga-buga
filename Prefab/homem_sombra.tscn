@@ -43,10 +43,11 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
 text = "asdasd"
 fit_content = true
+horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RigidBody2D" parent="." unique_id=1546881299 instance=ExtResource("3_8xxy5")]
-position = Vector2(204, 152)
+position = Vector2(127, 143)
 timer = 5.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

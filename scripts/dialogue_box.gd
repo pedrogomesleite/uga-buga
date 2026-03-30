@@ -15,6 +15,10 @@ func iniciar_dialogo(conteudo: String):
 		show()
 		started = true
 		_animar_texto(conteudo)
+		var tween_out = get_tree().create_tween()
+		tween_out.tween_property(self, "modulate:a", 0.0, 10.0)
+		await tween_out.finished
+		queue_free()
 
 func _animar_texto(text: String):
 	label.text = text

@@ -11,10 +11,11 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var colliding_bodies = get_colliding_bodies()
 	if colliding_bodies.any(func(e): return e is CharacterBody2D):
-		if colide: # Verifica se já não começou o processo de sumir
+		if colide: 
 			colide = false
-			await get_tree().create_timer(timer).timeout
-			print("chegeui oloco")
+			var tween_out = get_tree().create_tween()
+			tween_out.tween_property(self, "modulate:a", 0.0, timer)
+			await tween_out.finished
 			queue_free()
 
 func _on_area_2d_body_entered(_body: Node2D) -> void:
