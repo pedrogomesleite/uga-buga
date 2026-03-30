@@ -13,7 +13,11 @@ func _physics_process(delta: float) -> void:
 	else:
 		#atrito
 		velocity.x = lerp(velocity.x, 0.0, 15.0 * delta)
-		
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var objeto = collision.get_collider()
+		if objeto.has_method("levar_hit"):
+			objeto.levar_hit()
 	move_and_slide()
 
 func _on_pau_objeto_tocado(movimento_bloqueado: Vector2, delta: float) -> void:

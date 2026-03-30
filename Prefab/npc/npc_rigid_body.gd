@@ -27,12 +27,6 @@ func start_collision():
 	set_deferred("freeze", false)
 	set_deferred("sleeping", false)
 
-func _on_body_entered(body: Node) -> void:
-	print("tomei")
-	
-	if body is CharacterBody2D and colidindo:
-		levar_hit()
-
 func levar_hit():
 	vida -= 1
 	
