@@ -28,8 +28,9 @@ func start_collision():
 	set_deferred("sleeping", false)
 
 func _on_body_entered(body: Node) -> void:
+	print("tomei")
+	
 	if body is CharacterBody2D and colidindo:
-		print("tomei")
 		levar_hit()
 
 func levar_hit():

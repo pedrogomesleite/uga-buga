@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://hrlieo6tgl0b"]
 
-[ext_resource type="Script" uid="uid://kmaorkxpiy0" path="res://scenes/cenarios/floresta.gd" id="1_02ems"]
+[ext_resource type="Script" uid="uid://kmaorkxpiy0" path="res://scripts/floresta.gd" id="1_02ems"]
 [ext_resource type="Texture2D" uid="uid://1fpon8xhv2jl" path="res://assets/SVG/Malocona.svg" id="1_21d6b"]
 [ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_e1oua"]
 [ext_resource type="Texture2D" uid="uid://b5wjaakvrrc80" path="res://assets/SVG/arvore (3).svg" id="1_qlhad"]

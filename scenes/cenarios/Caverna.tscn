@@ -4,8 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_jh1cc"]
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="3_6css3"]
 [ext_resource type="PackedScene" uid="uid://c0bli2vbel2yy" path="res://Prefab/homem_sombra.tscn" id="4_55eat"]
-[ext_resource type="Script" path="res://scenes/cenarios/parede_1.gd" id="5_tlmes"]
+[ext_resource type="Script" uid="uid://cf2r41ta5t1f7" path="res://scripts/parede_1.gd" id="5_tlmes"]
 [ext_resource type="PackedScene" uid="uid://dwjv63mn5msop" path="res://scenes/objeto_empurravelcaveira.tscn" id="6_b8f2w"]
+[ext_resource type="Script" uid="uid://bddv37h6wy8gl" path="res://scripts/saida_caverna.gd" id="7_7y7tw"]
 
 [node name="mundo2D2" type="Node2D" unique_id=449765058]
 
@@ -79,7 +80,7 @@ position = Vector2(5472, -3987)
 polygon = PackedVector2Array(6759, -1737, 6736, -1795, 6764, -1858, 6607, -1824, 6475, -1811, 6424, -1825, 6338, -1832, 6258, -1829, 6164, -1816, 6081, -1830, 5963, -1833, 5820, -1796, 5709, -1740, 5641, -1643, 5544, -1597, 5615, -1524, 5720, -1487, 5849, -1531, 5886, -1637, 5892, -1684, 5966, -1735, 6002, -1737, 6121, -1745, 6200, -1754, 6261, -1717, 6433, -1705, 6512, -1730, 6585, -1732)
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_w0sfl")]
-position = Vector2(250.00002, -7)
+position = Vector2(294.99997, -733.99994)
 scale = Vector2(0.2, 0.2)
 
 [node name="Polygons Components" type="Node2D" parent="." unique_id=1077571515]
@@ -309,6 +310,13 @@ position = Vector2(7275, -2461)
 [node name="objetoEmpurravel16" parent="Node2D" unique_id=965494628 instance=ExtResource("6_b8f2w")]
 position = Vector2(7335, -2438)
 
-[connection signal="body_entered" from="Botao1" to="Parede1" method="_on_botao_1_body_entered"]
+[node name="Saida" type="Area2D" parent="." unique_id=709655106]
+script = ExtResource("7_7y7tw")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Saida" unique_id=1759761064]
+position = Vector2(66, -2)
+polygon = PackedVector2Array(7527, -1679, 7743, -1688, 7745, -1525, 7570, -1525)
+
+[connection signal="body_entered" from="Botao1" to="Grade1" method="_on_botao_1_body_entered"]
 [connection signal="body_exited" from="Botao2" to="Grade2" method="_on_botao_1_body_entered"]
 [connection signal="body_entered" from="Saida" to="Saida" method="_on_body_entered"]

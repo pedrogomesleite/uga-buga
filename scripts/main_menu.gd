@@ -15,7 +15,7 @@ func _on_options_pressed() -> void:
 
 
 func _on_start_game_pressed() -> void:
-	Controller.trocar_cena("res://scenes/interfaces/Slide.tscn")
+	Controller.trocar_cena("res://scenes/cenarios/Caverna.tscn")
 
 func _on_quit_game_pressed() -> void:
 	get_tree().quit()
