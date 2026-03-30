@@ -16,8 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://rsvrwqc4jehl" path="res://Prefab/npc/npc1.tscn" id="13_kqrno"]
 [ext_resource type="PackedScene" uid="uid://dmxbc5c3oxewp" path="res://Prefab/npc/npc2.tscn" id="14_0yid4"]
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="15_0yid4"]
-[ext_resource type="PackedScene" uid="uid://cfjf1or5x4q8d" path="res://Prefab/npc/npc1_dialogo.tscn" id="16_iet4d"]
-[ext_resource type="PackedScene" uid="uid://cmuttegguxe7q" path="res://scenes/cenarios/saida.tscn" id="17_7m11w"]
+[ext_resource type="PackedScene" path="res://Prefab/npc/npc1_dialogo.tscn" id="16_iet4d"]
+[ext_resource type="PackedScene" path="res://scenes/cenarios/saida.tscn" id="17_7m11w"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hxwco"]
 
@@ -377,14 +377,43 @@ texto_da_instancia = "Smealy gugu will never feel the flavor of chiken meat agai
 [node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("3_hxwco")]
 
 [node name="HomemSombra" parent="." unique_id=971403128 instance=ExtResource("16_iet4d")]
-offset_left = -316.0
-offset_top = 443.0
-offset_right = -65.0
-offset_bottom = 512.0
+offset_left = -254.0
+offset_top = 437.0
+offset_right = -3.0
+offset_bottom = 506.0
+texto_da_instancia = "HEY wat you doing here gug??"
 
 [node name="Saida" parent="." unique_id=929659186 instance=ExtResource("17_7m11w")]
 position = Vector2(-2417, 672)
 next_scene = "res://scenes/cenarios/maloca.tscn"
+
+[node name="Npc1Dialogo" parent="." unique_id=942308440 instance=ExtResource("16_iet4d")]
+offset_left = 2479.0
+offset_top = 84.0
+offset_right = 2730.0
+offset_bottom = 206.0
+texto_da_instancia = "YOU NEVER GET OUR MEAT AGAIN"
+
+[node name="Npc1Dialogo2" parent="." unique_id=912196476 instance=ExtResource("16_iet4d")]
+offset_left = 2276.0
+offset_top = -445.0
+offset_right = 2527.0
+offset_bottom = -323.0
+texto_da_instancia = "NOOO NOT AGAIN"
+
+[node name="Npc1Dialogo3" parent="." unique_id=1954164308 instance=ExtResource("16_iet4d")]
+offset_left = 4387.0
+offset_top = 465.0
+offset_right = 4638.0
+offset_bottom = 587.0
+texto_da_instancia = "NO MEAT HERE GUGS"
+
+[node name="Npc1Dialogo5" parent="." unique_id=678401185 instance=ExtResource("16_iet4d")]
+offset_left = 3529.0
+offset_top = -558.0
+offset_right = 3780.0
+offset_bottom = -436.0
+texto_da_instancia = "Bunga will kill u gug"
 
 [connection signal="finalizar_cut_scene" from="CutScene" to="CutScene/Npc1" method="start_collision"]
 [connection signal="finalizar_cut_scene" from="CutScene" to="CutScene/Npc2" method="start_collision"]
