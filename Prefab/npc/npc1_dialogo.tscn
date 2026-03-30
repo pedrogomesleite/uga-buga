@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cfjf1or5x4q8d"]
+
+[ext_resource type="Script" uid="uid://cyxkxud5x2rtt" path="res://scripts/npc_dialogue_box.gd" id="1_kfvj4"]
+[ext_resource type="Texture2D" uid="uid://diro6ueb66ypm" path="res://assets/dialogo.svg" id="2_008mk"]
+[ext_resource type="PackedScene" uid="uid://rsvrwqc4jehl" path="res://Prefab/npc/npc1.tscn" id="3_likxu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atnx8"]
+size = Vector2(250.0625, 259.875)
+
+[node name="Npc1Dialogo" type="MarginContainer" unique_id=572906939]
+offset_right = 251.0
+offset_bottom = 87.0
+script = ExtResource("1_kfvj4")
+metadata/text = ""
+
+[node name="Area2D" type="Area2D" parent="." unique_id=617009404]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=794846668]
+position = Vector2(124.96875, 130.0625)
+shape = SubResource("RectangleShape2D_atnx8")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=749268494]
+layout_mode = 2
+texture = ExtResource("2_008mk")
+patch_margin_left = 21
+patch_margin_top = 21
+patch_margin_right = 21
+patch_margin_bottom = 21
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2081473434]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Text" type="RichTextLabel" parent="MarginContainer" unique_id=75571064]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "asdasd"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Npc1" parent="." unique_id=1606053933 instance=ExtResource("3_likxu")]
+position = Vector2(125, 160)
+colide_from_start = false
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Npc1" method="_on_area_2d_body_entered"]

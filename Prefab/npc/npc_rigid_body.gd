@@ -46,3 +46,7 @@ func morrer():
 	tween_fade.tween_property(self, "modulate:a", 0.0, tempo_fade)
 	
 	tween_fade.finished.connect(queue_free)
+
+
+func _on_area_2d_body_entered(_body: Node2D) -> void:
+	start_collision()

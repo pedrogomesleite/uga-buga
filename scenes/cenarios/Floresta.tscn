@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://rsvrwqc4jehl" path="res://Prefab/npc/npc1.tscn" id="13_kqrno"]
 [ext_resource type="PackedScene" uid="uid://dmxbc5c3oxewp" path="res://Prefab/npc/npc2.tscn" id="14_0yid4"]
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="15_0yid4"]
+[ext_resource type="PackedScene" uid="uid://cfjf1or5x4q8d" path="res://Prefab/npc/npc1_dialogo.tscn" id="16_iet4d"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_hxwco"]
 
@@ -234,18 +235,18 @@ scale = Vector2(0.6271769, 0.627177)
 polygon = PackedVector2Array(13.426025, 2.3088074, 93.30298, -12.926056, 88.83032, -2.3338928, -4.472412, 10.592163, -36.022705, 6.8706055, -96.88721, -5.868561, -89.28247, -17.058197, -35.35254, 1.8732605, 0.89624023, 4.698639)
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_e1oua")]
-position = Vector2(-2624, -61.00003)
+position = Vector2(-403, 557)
 scale = Vector2(0.2, 0.2)
 
 [node name="objetoEmpurravel" parent="." unique_id=1341418358 instance=ExtResource("2_hxwco")]
-position = Vector2(450, 218)
+position = Vector2(584, 307)
 
 [node name="MapaComponentes" type="Node2D" parent="." unique_id=1600233508]
 position = Vector2(40, 117)
 
 [node name="Polygon2D7" type="Polygon2D" parent="MapaComponentes" unique_id=66684201]
 color = Color(0.35655707, 0.5247501, 0.34819347, 1)
-polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 536, 434, 613, 462, 685, 474, 763, 459, 768, 491, 784, 507, 836, 504, 842, 483, 856, 402, 889, 349, 981, 344, 1086, 343, 1294, 343, 1686, 409, 2229, 417, 2707, 368, 2781, 319, 2825, 246, 2943, 256, 3182, 356, 3397, 403, 3553, 463, 3712, 502, 3854, 529, 4023, 547, 4356, 557, 4847.8154, 564.7428, 5047, 508, 5247, 414, 5521, 378, 5939, 346, 6168, 64, 6324.702, -277.5774, 6209, -1539, 6590, -1682, 6848, -1139, 6781, 817, 5305, 807, 3628, 801, 2160, 800, -552, 800, -3622, 834, -3590, -1457, -1748, -1476, -1210, -758, -1401, -635, -1996, -600, -2313, -619, -2649, -484, -2780, -130, -1052, -163, -772.38837, 220.93134, -656.48236, 368.82288, -413, 520)
+polygon = PackedVector2Array(-2, 533, 143, 532, 255, 497, 294, 456, 356, 437, 453, 442, 536, 434, 613, 462, 685, 474, 763, 459, 768, 491, 784, 507, 836, 504, 842, 483, 856, 402, 889, 349, 981, 344, 1086, 343, 1294, 343, 1686, 409, 2229, 417, 2707, 368, 2781, 319, 2825, 246, 2943, 256, 3182, 356, 3397, 403, 3553, 463, 3712, 502, 3854, 529, 4023, 547, 4356, 557, 4847.8154, 564.7428, 5047, 508, 5247, 414, 5521, 378, 5939, 346, 6168, 64, 6324.702, -277.5774, 6209, -1539, 6590, -1682, 7715, -2258, 8994, -115, 7843, 2423, 5407, 2572, 3410, 2719, -627, 2780, -4058, 1744, -3590, -1457, -1748, -1476, -1210, -758, -1401, -635, -1996, -600, -2313, -619, -2649, -484, -2780, -130, -1052, -163, -772.38837, 220.93134, -656.48236, 368.82288, -413, 520)
 
 [node name="Polygon2D" type="Polygon2D" parent="MapaComponentes" unique_id=701047151]
 position = Vector2(-40, -117)
@@ -312,6 +313,12 @@ offset_bottom = -160.0
 texto_da_instancia = "Smealy gugu will never feel the flavor of chiken meat again"
 
 [node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("3_hxwco")]
+
+[node name="HomemSombra" parent="." unique_id=971403128 instance=ExtResource("16_iet4d")]
+offset_left = -316.0
+offset_top = 443.0
+offset_right = -65.0
+offset_bottom = 512.0
 
 [connection signal="finalizar_cut_scene" from="CutScene" to="CutScene/Npc1" method="start_collision"]
 [connection signal="finalizar_cut_scene" from="CutScene" to="CutScene/Npc2" method="start_collision"]
