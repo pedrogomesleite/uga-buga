@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://btno2noxuwobp" path="res://scenes/objeto_empurravel.tscn" id="2_jh1cc"]
 [ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="3_6css3"]
 [ext_resource type="PackedScene" uid="uid://c0bli2vbel2yy" path="res://Prefab/homem_sombra.tscn" id="4_55eat"]
+[ext_resource type="Script" uid="uid://cf2r41ta5t1f7" path="res://scenes/cenarios/parede_1.gd" id="5_tlmes"]
 
 [node name="mundo2D2" type="Node2D" unique_id=449765058]
 
@@ -37,6 +38,34 @@ position = Vector2(-120, -3302)
 color = Color(0.31421146, 0.2500574, 0.18136188, 1)
 polygon = PackedVector2Array(-925, 1080, -1004, 233, 8119, 236, 7999, 1208)
 
+[node name="Dialogo" parent="BG" unique_id=572906939 instance=ExtResource("3_6css3")]
+offset_left = 4155.0
+offset_top = -927.0
+offset_right = 4315.0
+offset_bottom = -851.0
+texto_da_instancia = "HUmmmmmm [tornado]chiken[/tornado]"
+
+[node name="Dialogo2" parent="BG" unique_id=1826109545 instance=ExtResource("3_6css3")]
+offset_left = 4615.0
+offset_top = -859.0
+offset_right = 4719.0
+offset_bottom = -783.0
+texto_da_instancia = "looks loked"
+
+[node name="Dialogo3" parent="BG" unique_id=636821425 instance=ExtResource("3_6css3")]
+offset_left = 5008.0
+offset_top = -857.0
+offset_right = 5079.0
+offset_bottom = -781.0
+texto_da_instancia = "ghum? "
+
+[node name="HomemSombra" parent="BG" unique_id=1320274112 instance=ExtResource("4_55eat")]
+offset_left = 247.0
+offset_top = 319.0
+offset_right = 400.0
+offset_bottom = 441.0
+texto_da_instancia = "Vai se fuder guga"
+
 [node name="Colliders" type="StaticBody2D" parent="." unique_id=1006773909]
 position = Vector2(-5472, 3987)
 collision_layer = 3
@@ -63,7 +92,7 @@ position = Vector2(5472, -3987)
 polygon = PackedVector2Array(6759, -1737, 6736, -1795, 6764, -1858, 6607, -1824, 6475, -1811, 6424, -1825, 6338, -1832, 6258, -1829, 6164, -1816, 6081, -1830, 5963, -1833, 5820, -1796, 5709, -1740, 5641, -1643, 5544, -1597, 5615, -1524, 5720, -1487, 5849, -1531, 5886, -1637, 5892, -1684, 5966, -1735, 6002, -1737, 6121, -1745, 6200, -1754, 6261, -1717, 6433, -1705, 6512, -1730, 6585, -1732)
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_w0sfl")]
-position = Vector2(4218, -755.9999)
+position = Vector2(257.99997, 509.99997)
 scale = Vector2(0.2, 0.2)
 
 [node name="Polygons Components" type="Node2D" parent="." unique_id=1077571515]
@@ -135,37 +164,29 @@ position = Vector2(4449, -735)
 [node name="objetoEmpurravel3" parent="." unique_id=449770110 instance=ExtResource("2_jh1cc")]
 position = Vector2(4356, -757)
 
-[node name="DialogueBox" parent="." unique_id=572906939 instance=ExtResource("3_6css3")]
-offset_left = 4154.0
-offset_top = -947.0
-offset_right = 4307.0
-offset_bottom = -860.0
-texto_da_instancia = "hummmm chunken [img=34x34]res://assets/chiken.jpg[/img]
-"
+[node name="Botao1" type="Area2D" parent="." unique_id=247294660]
 
-[node name="DialogueBox2" parent="." unique_id=1263513325 instance=ExtResource("3_6css3")]
-offset_left = 4454.0
-offset_top = -959.0
-offset_right = 4607.0
-offset_bottom = -872.0
-texto_da_instancia = "Me [wave]very[/wave] [tornado]very[/tornado] hungry "
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Botao1" unique_id=1329702496]
+polygon = PackedVector2Array(4642, -582, 4719, -580, 4719, -572, 4641, -575)
 
-[node name="DialogueBox3" parent="." unique_id=795442656 instance=ExtResource("3_6css3")]
-offset_left = 3284.0
-offset_top = -949.0
-offset_right = 3437.0
-offset_bottom = -862.0
-texto_da_instancia = "[pulse][img=40x40]res://assets/shank.jpg[/img][/pulse]"
+[node name="Parede1" type="StaticBody2D" parent="." unique_id=917494824]
+script = ExtResource("5_tlmes")
 
-[node name="DialogueBox4" parent="." unique_id=1222481951 instance=ExtResource("4_55eat")]
-offset_left = 3906.0
-offset_top = -1094.0
-offset_right = 4059.0
-offset_bottom = -1007.0
-texto_da_instancia = "Guga very dumb"
+[node name="Parede1" type="CollisionPolygon2D" parent="Parede1" unique_id=517652904]
+polygon = PackedVector2Array(4923, -866, 4955, -866, 4953, -723, 4925, -722)
 
-[node name="HomemSombra" parent="." unique_id=181108715 instance=ExtResource("4_55eat")]
-offset_left = 3581.0
-offset_top = -916.0
-offset_right = 3734.0
-offset_bottom = -829.0
+[node name="Dialogo" parent="." unique_id=1655245775 instance=ExtResource("3_6css3")]
+offset_left = -21.0
+offset_top = 297.0
+offset_right = 82.0
+offset_bottom = 373.0
+texto_da_instancia = "Guga stuck"
+
+[node name="Dialogo2" parent="." unique_id=107732262 instance=ExtResource("3_6css3")]
+offset_left = 771.0
+offset_top = 279.0
+offset_right = 939.0
+offset_bottom = 355.0
+texto_da_instancia = "very steep I no legs"
+
+[connection signal="body_entered" from="Botao1" to="Parede1" method="_on_botao_1_body_entered"]
