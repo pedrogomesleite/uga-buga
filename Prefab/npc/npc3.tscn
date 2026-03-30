@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://b5lcqsjimecpm"]
+
+[ext_resource type="Script" uid="uid://2f7d83knykcd" path="res://Prefab/npc/npc_rigid_body.gd" id="1_saojl"]
+[ext_resource type="Texture2D" uid="uid://c64dn2lyfs8km" path="res://assets/Old Assets/Corpo sem olho.svg" id="2_nwcmq"]
+[ext_resource type="Texture2D" uid="uid://dko1qfegrpsds" path="res://assets/Old Assets/olho.svg" id="3_saojl"]
+[ext_resource type="Texture2D" uid="uid://b7kxmpa7nlvqb" path="res://assets/SVG/cabelos (3).svg" id="4_nwcmq"]
+[ext_resource type="Texture2D" uid="uid://tm474jgnxiwa" path="res://assets/SVG/cabelos (4).svg" id="5_qjdlu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nyrs1"]
+radius = 107.00467
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0g118"]
+radius = 72.780495
+
+[node name="Npc2" type="RigidBody2D" unique_id=1606053933]
+scale = Vector2(0.5, 0.5)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_saojl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1241388419]
+position = Vector2(0, 28)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_nyrs1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1545929976]
+position = Vector2(0, -50)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_0g118")
+
+[node name="corpo" type="Sprite2D" parent="." unique_id=1806249624]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_nwcmq")
+
+[node name="olho" type="Sprite2D" parent="." unique_id=1186415447]
+position = Vector2(-14, -58)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_saojl")
+
+[node name="olho2" type="Sprite2D" parent="." unique_id=757041601]
+position = Vector2(16, -58)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_saojl")
+
+[node name="cabelo" type="Sprite2D" parent="." unique_id=87236044]
+position = Vector2(0, -72)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_nwcmq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1391815701]
+position = Vector2(0, -26)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_qjdlu")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1438291848]
+color = Color(1, 0.93333334, 0, 1)
+polygon = PackedVector2Array(-26, -72, -26, -98, -14, -88, -4, -106, 10, -88, 24, -104, 26, -72, 8, -78, -12, -78)

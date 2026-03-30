@@ -18,3 +18,6 @@ func trocar_cena(caminho_da_cena: String):
 	
 	var tween_out = get_tree().create_tween()
 	tween_out.tween_property(fade_rect, "modulate:a", 0.0, 0.5)
+
+func finalizar_game():
+	get_tree().quit()

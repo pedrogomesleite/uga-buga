@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://b0oqeejvuaxa0"]
+
+[ext_resource type="Script" uid="uid://kmaorkxpiy0" path="res://scripts/floresta.gd" id="1_0uj0u"]
+[ext_resource type="PackedScene" uid="uid://rsvrwqc4jehl" path="res://Prefab/npc/npc1.tscn" id="2_cbsf0"]
+[ext_resource type="PackedScene" uid="uid://dmxbc5c3oxewp" path="res://Prefab/npc/npc2.tscn" id="3_n2buu"]
+[ext_resource type="PackedScene" uid="uid://cr8waum0e74q" path="res://scenes/interfaces/dialogue_box.tscn" id="4_8ahax"]
+
+[node name="CutScene" type="Node2D" unique_id=193310426]
+script = ExtResource("1_0uj0u")
+
+[node name="Area" type="Area2D" parent="." unique_id=1116717579]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area" unique_id=1143503982]
+polygon = PackedVector2Array(-2447, -116, -2238, -115, -2235, -24, -2449, -19)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1824023063]
+position = Vector2(-1511, -254)
+
+[node name="Npc1" parent="." unique_id=1606053933 instance=ExtResource("2_cbsf0")]
+position = Vector2(-1646, -72)
+colide_from_start = false
+
+[node name="Npc2" parent="." unique_id=1983731906 instance=ExtResource("3_n2buu")]
+position = Vector2(-1483, -77)
+colide_from_start = false
+
+[node name="Dialogo" parent="." unique_id=572906939 instance=ExtResource("4_8ahax")]
+offset_left = -1764.0
+offset_top = -218.0
+offset_right = -1543.0
+offset_bottom = -159.0
+texto_da_instancia = "Dumb guga maneged to get cought"
+delay_time = 3
+
+[node name="Dialogo2" parent="." unique_id=929994158 instance=ExtResource("4_8ahax")]
+offset_left = -1574.0
+offset_top = -220.0
+offset_right = -1353.0
+offset_bottom = -160.0
+texto_da_instancia = "Smealy gugu will never feel the flavor of chiken meat again"
+
+[connection signal="finalizar_cut_scene" from="." to="Npc1" method="start_collision"]
+[connection signal="finalizar_cut_scene" from="." to="Npc2" method="start_collision"]
+[connection signal="body_entered" from="Area" to="." method="_on_area_body_entered"]
+[connection signal="body_entered" from="Area" to="Dialogo" method="start_cut_scene_dialog"]
+[connection signal="fim_dialogo" from="Dialogo" to="Dialogo2" method="start_cut_scene_dialog_empty"]
+[connection signal="fim_dialogo" from="Dialogo2" to="." method="finaliza_camera"]

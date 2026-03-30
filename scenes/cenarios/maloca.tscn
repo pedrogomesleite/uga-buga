@@ -1,15 +1,20 @@
 [gd_scene format=3 uid="uid://bjrqvymjsoxm"]
 
+[ext_resource type="Script" uid="uid://bfs4banrbub7o" path="res://scenes/cenarios/maloca.gd" id="1_v1yak"]
 [ext_resource type="PackedScene" uid="uid://uri37aqtafpm" path="res://Prefab/guga/Guga.tscn" id="1_w6p1k"]
 [ext_resource type="PackedScene" uid="uid://dgyqjphvdjc2q" path="res://scenes/objeto_empurravelcarne.tscn" id="2_ncmk2"]
+[ext_resource type="PackedScene" uid="uid://cds3ya2safbg4" path="res://scenes/cenarios/cut_scene_maloca.tscn" id="3_11efk"]
+[ext_resource type="PackedScene" uid="uid://b30wgwspx1rye" path="res://scenes/interfaces/pause_menu.tscn" id="5_328w6"]
 
 [node name="Maloca" type="Node2D" unique_id=342589492]
+script = ExtResource("1_v1yak")
 
 [node name="Guga" parent="." unique_id=390553853 groups=["rachadores"] instance=ExtResource("1_w6p1k")]
 position = Vector2(57, 441)
 scale = Vector2(0.2, 0.2)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1838521350]
+position = Vector2(0, -2)
 collision_layer = 3
 collision_mask = 3
 
@@ -20,6 +25,7 @@ polygon = PackedVector2Array(-88, 765, -79, 487, -62, 214, 59, 14, 323, -94, 108
 polygon = PackedVector2Array(-85, 510, 374, 603, 1104, 595, 1407, 474, 1482, 489, 1957, 491, 1909, 801, -99, 768)
 
 [node name="Polygon2D3" type="Polygon2D" parent="." unique_id=1587924092]
+position = Vector2(-12, 1)
 color = Color(0.28852957, 0.2050069, 0.10337318, 1)
 polygon = PackedVector2Array(-686, -403, 2449, -380, 2449, 958, -541, 1181)
 
@@ -134,3 +140,15 @@ position = Vector2(1679, 458)
 [node name="objetoEmpurravel9" parent="Node2D" unique_id=91149133 instance=ExtResource("2_ncmk2")]
 position = Vector2(1728, 460)
 rotation = -1.3545016
+
+[node name="CutScene2" parent="." unique_id=193310426 instance=ExtResource("3_11efk")]
+position = Vector2(2386, 629)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2070163102]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1731336831]
+polygon = PackedVector2Array(1523, 302, 1885, 329, 1916, 467, 1505, 473)
+
+[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("5_328w6")]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

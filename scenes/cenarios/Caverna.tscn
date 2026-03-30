@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://cf2r41ta5t1f7" path="res://scripts/parede_1.gd" id="5_tlmes"]
 [ext_resource type="PackedScene" uid="uid://dwjv63mn5msop" path="res://scenes/objeto_empurravelcaveira.tscn" id="6_b8f2w"]
 [ext_resource type="PackedScene" uid="uid://cmuttegguxe7q" path="res://scenes/cenarios/saida.tscn" id="7_7y7tw"]
+[ext_resource type="PackedScene" uid="uid://b30wgwspx1rye" path="res://scenes/interfaces/pause_menu.tscn" id="8_sfc1e"]
 
 [node name="mundo2D2" type="Node2D" unique_id=449765058]
 
@@ -311,6 +312,8 @@ position = Vector2(7275, -2461)
 position = Vector2(7335, -2438)
 
 [node name="Saida" parent="." unique_id=929659186 instance=ExtResource("7_7y7tw")]
+
+[node name="PauseMenu" parent="." unique_id=2087021427 instance=ExtResource("8_sfc1e")]
 
 [connection signal="body_entered" from="Botao1" to="Grade1" method="_on_botao_1_body_entered"]
 [connection signal="body_exited" from="Botao2" to="Grade2" method="_on_botao_1_body_entered"]
