@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cmuttegguxe7q"]
+
+[ext_resource type="Script" uid="uid://bddv37h6wy8gl" path="res://scripts/saida_caverna.gd" id="1_bw4pq"]
+
+[node name="Saida" type="Area2D" unique_id=929659186]
+script = ExtResource("1_bw4pq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=524872085]
+position = Vector2(66, -2)
+polygon = PackedVector2Array(7527, -1679, 7743, -1688, 7745, -1525, 7570, -1525)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
